@@ -1,0 +1,507 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin:700,500);
+
+/* BODY */
+html {
+   margin:0;
+   padding:0;
+}
+
+/* TEXT */
+
+#home-button, ul, h1, h2, h3 {
+   font-family: 'Cabin', sans-serif;
+}
+
+#banner{
+   width:100;
+}
+
+p{
+   font-family: Garamond, serif;
+   line-height: 1.3em;
+}
+
+#project-process, #proj-overview, #masterhead, .welcome_box{
+   margin-left: 4.8rem;
+   margin-right: 4.8rem;
+}
+
+/* NAV */
+
+#masterhead {
+   border-bottom: 2px solid;
+   padding-bottom: 4rem;
+   margin-bottom: 1rem;
+}
+
+#home-button{
+   float:left;
+   padding-left: 4.8rem;
+}
+
+#og-home-button{
+   text-decoration: none;
+   color: black;
+   background-color: white;
+   font-weight: bold;
+}
+
+#alt-home-button{
+   visibility: hidden;
+   position: absolute;
+}
+
+#nav {
+   padding-left: 2.4rem;
+   padding-right: 2.4rem;
+   float:right;
+}
+
+.nav-link{
+   display:inline-block;
+   margin-right: 1.2rem;
+}
+
+.nav-link a{
+   text-decoration: none;
+   color: black;
+   background-color: white;
+   font-weight: bold;
+}
+
+.nav-link a:hover{
+   background-color: grey;
+}
+
+#subnav {
+   position: absolute;
+   padding-left: 0rem;
+   padding-top: .4rem;
+   display:none;
+   list-style: none;
+}
+
+.nav-link:hover #subnav{
+   display:block;
+}
+
+/* HOMEPAGE*/
+#fishies_1, #fishies_2 {
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+   height: 70%;
+}
+
+#fishies_1 {
+   position: absolute;
+   top: 4.5rem;
+   animation-name: swim1;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-duration: 7s;
+}
+
+#fishies_2 {
+   position: absolute;
+   top: 9.35rem;
+   animation-name: swim2;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-duration: 7s;
+}
+
+#fishies_1 img{
+   width: 7rem;
+   clear:both;
+   padding:3.65rem;
+}
+
+#fishies_2 img{
+   width: 12rem;
+   clear:both;
+   padding:3rem;
+}
+
+.flip img {
+   animation-name: flip;
+   animation-timing-function: step-start;
+   animation-duration: 7s;
+}
+
+@keyframes swim1 {
+   from { margin-left: 10%; width: 16%;}
+   to { margin-left: 85%;}
+}
+
+@keyframes swim2 {
+   from { margin-left: -10%; width: 24%; }
+   to { margin-left: 100%; width: 24%; }
+}
+
+@keyframes flip {
+   from { transform: rotateY(180deg); }
+   to { transform: rotateY(180deg); }
+}
+
+/* OVERVIEW */
+
+#proj-overview {
+   padding-bottom: 3rem;
+}
+
+#proj-overview div{
+   position:absolute;
+   right: 4.8rem;
+   bottom: 2rem;
+   width: 26rem;
+   padding: 1rem;
+   z-index: 2;
+   background-color:rgba(255,255,255, .75);
+}
+
+#proj-overview img{
+   width:100%;
+}
+
+/* PROCESS */
+
+#project-process {
+   clear: both;
+   padding-bottom: 16rem;
+}
+
+#project-process-sub {
+   padding-left: 4.8rem;
+}
+
+#project-process-sub div {
+   float: left;
+   margin-right:1.8rem;
+   width: 23rem;
+}
+
+
+/* PROJECT TWO */
+
+#margin, #grey-box{
+   margin-top: 5rem;
+   margin-left: 4.8rem;
+   margin-right: 4.8rem;
+}
+
+#grey-box{
+   background-color: #efefef;
+   padding-right:2rem;
+   padding-left:4rem;
+   padding-top: 2rem;
+   height: 99rem;
+}
+
+#grey-box-headers{
+   float:left;
+   width:20rem;
+}
+
+#grey-box p{
+   float:left;
+   width:30rem;
+   padding-left: 8rem;
+}
+
+#grey-box ul{
+   float:left;
+   width:30rem;
+   padding-left: 8rem;
+}
+
+.project-series{
+   clear:both;
+   padding-top: 3rem;
+}
+
+.project-series-text {
+   float:left;
+}
+
+.project-series-text ul{
+   list-style: none;
+   font-weight: bold;
+}
+
+/* PROJ 2 IMAGES */
+
+.project-series-img1 {
+   background-image: url(img/SASE_poster.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   width:20rem;
+   height:20rem;
+   float:left;
+}
+
+.project-series-img2 {
+   background-image: url(img/SASE_bag.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   width:20rem;
+   height:20rem;
+   float:left;
+}
+
+.project-series-img3 {
+   background-image: url(img/SASE_badge.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   width:20rem;
+   height:20rem;
+   float:left;
+}
+
+.project-series-img4 {
+   background-image: url(img/SASE_program.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   width:20rem;
+   height:20rem;
+   float:left;
+}
+
+/* CONTACT ME */
+#grey-box-contact{
+   background-color: #efefef;
+   margin-top: 3rem;
+   margin-left: 4.8rem;
+   margin-right: 4.8rem;
+   height: 33rem;
+   padding: 3rem 7% 3rem 7%;
+}
+
+.profile {
+   background-image: url(img/profile.jpg);
+   background-repeat: no-repeat;
+   background-size: 85%;
+   background-position: center;
+   border: 5px solid red;
+   width:20rem;
+   height:20rem;
+   float:left;
+   margin-right: 6%;
+}
+
+.profile-intro{
+   position: absolute;
+   top: 41rem;
+}
+
+.profile-intro p {
+   width:20rem;
+   float: left;
+   padding-right: 8%;
+}
+
+
+form {
+   float:left;
+   width: 40%;
+   margin-right: 6%;
+}
+
+form>input, form>textarea {
+   width: 100%;
+   padding: .5rem 0 .5rem 1rem;
+   margin-bottom: .5rem;
+}
+
+#form-button {
+   width: 30%;
+}
+
+.icon {
+   float: left;
+   width: 3rem;
+}
+
+.icon img {
+   width: 100%;
+}
+
+.hidden_icon {
+   visibility: hidden;
+}
+
+/* FOOTER */
+
+#footer {
+   clear:both;
+   right:0;
+   bottom:0;
+   left:0;
+   background-color: #efefef;
+   padding:0.5rem;
+   padding-left: 4.8rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1115px) {
+   #home-button span:first-of-type{
+      position: absolute;
+      visibility: hidden;
+   }
+
+   #grey-box-contact {
+      height: 45rem;
+   }
+
+   form {
+      clear:left;
+      width: 26rem;
+      margin-top: 4rem;
+      margin-right: 3rem;
+   }
+
+   .icon {
+      margin-top: 5rem;
+   }
+
+   .profile {
+      width:18rem;
+      height:18rem;
+   }
+
+   .profile-intro{
+      position: static;
+   }
+
+   .profile-intro p {
+      float: left;
+      width: 45%;
+      padding-right: 0;
+   }
+}
+
+@media screen and (max-width: 910px) {
+   .profile {
+      width:15rem;
+      height:15rem;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   #home-button {
+      visibility:hidden;
+      position:absolute;
+   }
+   #alt-home-button {
+      visibility:visible;
+      position: static;
+   }
+
+   #masterhead {
+      margin-left: 2rem;
+      margin-right: 2rem;
+   }
+
+   #fishies_1, #fishies_2, .flip img {
+      animation-duration: 3s;
+   }
+
+   @keyframes swim1 {
+      from { margin-left: -40%;}
+      to { margin-left: 70%;}
+   }
+
+   @keyframes swim2 {
+      from { margin-left: -60%; }
+      to { margin-left: 80%;}
+   }
+
+   #fishies_1 img{
+      width: 5rem;
+   }
+
+   #fishies_2 img{
+      width: 9rem;
+   }
+
+   #grey-box-contact {
+      height: 25rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+   }
+
+   .profile-intro p {
+      float: none;
+      width: 70%;
+   }
+
+   .profile-intro {
+      position: absolute;
+      top: 35rem;
+   }
+
+   form {
+      visibility: hidden;
+      position: absolute;
+   }
+
+   .icon {
+      margin-top: 0rem;
+   }
+
+   .hidden_icon {
+      visibility: visible;
+   }
+
+   .profile-intro p:nth-of-type(2) {
+      visibility: hidden;
+   }
+}
+
+@media screen and (max-width: 465px) {
+
+   #masterhead, #grey-box-contact{
+      margin-left: 0rem;
+      margin-right: 0rem;
+   }
+
+   #grey-box-contact {
+      margin-top: 0rem;
+      height: 23rem;
+      padding-top: 2rem;
+   }
+
+   #margin {
+      font-size: 1.6em;
+      margin: 2.5rem 0rem 1.5rem 2rem;
+   }
+
+   .profile, .profile-intro, .icon {
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+   }
+
+   .profile-intro {
+      position: static;
+      padding-top: 1rem;
+   }
+
+   .profile-intro p{
+      width: 97%;
+   }
+
+   .icon {
+      width: 70vw;
+      position: absolute;
+      top: 40rem;
+   }
+
+   .icon img {
+      width: 23%;
+   }
+
+}
