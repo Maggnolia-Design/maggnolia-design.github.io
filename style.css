@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Cabin:700,500);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
 /* BODY */
 html {
@@ -9,7 +9,11 @@ html {
 /* TEXT */
 
 #home-button, ul, h1, h2, h3 {
-   font-family: 'Cabin', sans-serif;
+   font-family: 'Lato', sans-serif;
+}
+
+#og-home-button:hover {
+   background-color: #FF8E6B;
 }
 
 #banner{
@@ -36,7 +40,7 @@ p{
 
 #home-button{
    float:left;
-   padding-left: 4.8rem;
+   padding-left: 3rem;
 }
 
 #og-home-button{
@@ -44,6 +48,7 @@ p{
    color: black;
    background-color: white;
    font-weight: bold;
+   padding: 0.6rem 1.2rem 0.6rem 1.2rem;
 }
 
 #alt-home-button{
@@ -59,7 +64,6 @@ p{
 
 .nav-link{
    display:inline-block;
-   margin-right: 1.2rem;
 }
 
 .nav-link a{
@@ -67,18 +71,23 @@ p{
    color: black;
    background-color: white;
    font-weight: bold;
+   padding: 0.6rem 1.2rem 0.6rem 1.2rem;
 }
 
 .nav-link a:hover{
-   background-color: grey;
+   background-color: #FF8E6B;
 }
 
 #subnav {
    position: absolute;
    padding-left: 0rem;
-   padding-top: .4rem;
+   padding-top: .8rem;
    display:none;
    list-style: none;
+}
+
+.subnav-link {
+   margin-top: 1.1rem;
 }
 
 .nav-link:hover #subnav{
@@ -96,21 +105,19 @@ p{
 #fishies_1 {
    position: absolute;
    top: 4.5rem;
-   animation-name: swim1;
-   animation-timing-function: linear;
-   animation-iteration-count: infinite;
-   animation-direction: alternate;
-   animation-duration: 7s;
+   -webkit-animation:  swim1 7s linear infinite alternate;
+   -moz-animation:     swim1 7s linear infinite alternate;
+   -o-animation:       swim1 7s linear infinite alternate;
+   animation:          swim1 7s linear infinite alternate;
 }
 
 #fishies_2 {
    position: absolute;
    top: 9.35rem;
-   animation-name: swim2;
-   animation-timing-function: linear;
-   animation-iteration-count: infinite;
-   animation-direction: alternate;
-   animation-duration: 7s;
+   -webkit-animation:  swim2 7s linear infinite alternate;
+   -moz-animation:     swim2 7s linear infinite alternate;
+   -o-animation:       swim2 7s linear infinite alternate;
+   animation:          swim2 7s linear infinite alternate;
 }
 
 #fishies_1 img{
@@ -126,9 +133,10 @@ p{
 }
 
 .flip img {
-   animation-name: flip;
-   animation-timing-function: step-start;
-   animation-duration: 7s;
+   -webkit-animation:  flip 14s steps(2,start) infinite;
+   -moz-animation:     flip 14s steps(2,start) infinite;
+   -o-animation:       flip 14s steps(2,start) infinite;
+   animation:          flip 14s steps(2,start) infinite;
 }
 
 @keyframes swim1 {
@@ -142,7 +150,7 @@ p{
 }
 
 @keyframes flip {
-   from { transform: rotateY(180deg); }
+   from { transform: rotateY(-180deg); }
    to { transform: rotateY(180deg); }
 }
 
@@ -328,6 +336,29 @@ form>input, form>textarea {
    width: 100%;
 }
 
+.icon img:hover {
+   -webkit-box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.75);
+   -o-box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.75);
+   box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.75);
+}
+
+.icon img:active {
+   -webkit-box-shadow: -2px -4px 4px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: -2px -4px 4px 0px rgba(0,0,0,0.0.75);
+   -o-box-shadow: -2px -4px 4px 0px rgba(0,0,0,0.0.75);
+   box-shadow: -2px -4px 4px 0px rgba(0,0,0,0.0.75);
+}
+
+.profile-intro>p>a {
+   font-family: "Lato",sans-serif;
+   color: #b04;
+}
+
+.profile-intro>p>a:hover {
+   color: red;
+}
+
 .hidden_icon {
    visibility: hidden;
 }
@@ -388,9 +419,9 @@ form>input, form>textarea {
       width:15rem;
       height:15rem;
    }
-}
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 850px) {
    #home-button {
       visibility:hidden;
       position:absolute;
@@ -405,8 +436,12 @@ form>input, form>textarea {
       margin-right: 2rem;
    }
 
-   #fishies_1, #fishies_2, .flip img {
-      animation-duration: 3s;
+   #fishies_1, #fishies_2{
+      animation-duration: 4s;
+   }
+
+   .flip img {
+      animation-duration: 8s;
    }
 
    @keyframes swim1 {
@@ -459,9 +494,13 @@ form>input, form>textarea {
    .profile-intro p:nth-of-type(2) {
       visibility: hidden;
    }
+
+   .nav-link a{
+      padding: .3rem 0.65rem .3rem 0.65rem;
+   }
 }
 
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 475px) {
 
    #masterhead, #grey-box-contact{
       margin-left: 0rem;
@@ -475,7 +514,7 @@ form>input, form>textarea {
    }
 
    #margin {
-      font-size: 1.6em;
+      font-size: 1.4em;
       margin: 2.5rem 0rem 1.5rem 2rem;
    }
 
@@ -504,4 +543,7 @@ form>input, form>textarea {
       width: 23%;
    }
 
+   #nav {
+      padding: 0 .5rem 0 .5rem;
+   }
 }
