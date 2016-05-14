@@ -194,32 +194,30 @@ p{
 
 /* PROJECT TWO */
 
-#margin, #grey-box{
+.margin, .grey-box{
    margin-top: 5rem;
    margin-left: 4.8rem;
    margin-right: 4.8rem;
 }
 
-#grey-box{
+.grey-box{
    background-color: #efefef;
-   padding-right:2rem;
-   padding-left:4rem;
-   padding-top: 2rem;
-   height: 99rem;
+   padding: 2rem 2rem 0rem 4rem;
 }
 
-#grey-box-headers{
+
+.grey-box-headers{
    float:left;
    width:20rem;
 }
 
-#grey-box p{
+.grey-box p{
    float:left;
    width:30rem;
    padding-left: 8rem;
 }
 
-#grey-box ul{
+.grey-box ul{
    float:left;
    width:30rem;
    padding-left: 8rem;
@@ -241,40 +239,21 @@ p{
 
 /* PROJ 2 IMAGES */
 
-.project-series-img1 {
-   background-image: url(img/SASE_poster.jpg);
-   background-repeat: no-repeat;
-   background-size: contain;
+.project-series-img {
    width:20rem;
    height:20rem;
    float:left;
 }
 
-.project-series-img2 {
-   background-image: url(img/SASE_bag.jpg);
-   background-repeat: no-repeat;
-   background-size: contain;
-   width:20rem;
-   height:20rem;
-   float:left;
+.project-series-img>img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   overflow:hidden;
 }
 
-.project-series-img3 {
-   background-image: url(img/SASE_badge.jpg);
-   background-repeat: no-repeat;
-   background-size: contain;
-   width:20rem;
-   height:20rem;
-   float:left;
-}
-
-.project-series-img4 {
-   background-image: url(img/SASE_program.jpg);
-   background-repeat: no-repeat;
-   background-size: contain;
-   width:20rem;
-   height:20rem;
-   float:left;
+.project-series-img {
+   background-image: url(img/placeholder1.png);
 }
 
 /* CONTACT ME */
@@ -370,9 +349,9 @@ form>input, form>textarea {
    right:0;
    bottom:0;
    left:0;
+   margin-top: 2rem;
    background-color: #efefef;
-   padding:0.5rem;
-   padding-left: 4.8rem;
+   padding: 0.5rem 0rem 0.5rem 4.8rem;
 }
 
 /* MEDIA QUERIES */
@@ -513,7 +492,7 @@ form>input, form>textarea {
       padding-top: 2rem;
    }
 
-   #margin {
+   .margin {
       font-size: 1.4em;
       margin: 2.5rem 0rem 1.5rem 2rem;
    }
