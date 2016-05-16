@@ -56,8 +56,13 @@ textarea {
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
+$lightest: #ffffff;
+$darkest: #212121;
+$black: #000000;
+
 body {
     font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
+    background-color: $darkest;
 }
 
 .wrapper {
@@ -81,37 +86,42 @@ h1 {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-$lightest: #ffffff;
-$darkest: #212121;
-$black: #000000;
 
 /* =Header */
 .header-container {
     text-align: center;
     color: $lightest;
-    background: rgba(81,44,98,1);
-    background: -moz-linear-gradient(top, rgba(81,44,98,1) 0%, rgba(49,51,114,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(81,44,98,1)), color-stop(100%, rgba(49,51,114,1)));
-    background: -webkit-linear-gradient(top, rgba(81,44,98,1) 0%, rgba(49,51,114,1) 100%);
-    background: -o-linear-gradient(top, rgba(81,44,98,1) 0%, rgba(49,51,114,1) 100%);
-    background: -ms-linear-gradient(top, rgba(81,44,98,1) 0%, rgba(49,51,114,1) 100%);
-    background: linear-gradient(to bottom, rgba(81,44,98,1) 0%, rgba(49,51,114,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#512c62', endColorstr='#313372', GradientType=0 );
     .wrapper {
         padding-top: 120px;
         z-index: 2;
+        position: relative;
     }
-    &:before {
-        content: '1';
-        display: block;
-        font-size: 30em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: transparentize($lightest,.95);
-        z-index: 1;
-        transform: translate(-50%, -50%);
-        font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
+}
+
+.bcg {
+    background: no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+    .header-container & {
+        background-image: url(../img/img_mountains01.jpg);
+        background-size: cover;
+    }
+    #slide01 & {
+        background: url(../img/img_mountains02.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    #slide02 & {
+        background: url(../img/img_mountains03.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    #slide03 & {
+        background: url(../img/img_mountains04.jpg) no-repeat center center;
+        background-size: cover;
+        opacity: 0.7;
     }
 }
 
@@ -146,7 +156,7 @@ nav {
         position: absolute;
         right: 0;
         top: 50%;
-        background-color: transparentize($lightest,.5);
+        background-color: transparentize($lightest,.1);
         -webkit-border-radius: 100%; 
         border-radius: 100%;
         transform: translateY(-50%); 
@@ -167,6 +177,14 @@ nav {
             background-color: transparentize($black,.5);
         }
     }
+    &.is-light {
+        a {
+            color: $lightest;
+        }
+        .nav-dot {
+            background-color: transparentize($lightest,.5);
+        }
+    }
     ul {
         margin: 0;
         padding: 0;
@@ -177,15 +195,23 @@ nav {
     }
 }
 .scroll-hint {
+    color: $darkest;
     position: absolute;
     bottom: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 10px 40px;
+    border: 3px $lightest solid;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 2;
 }
 
 /* =Main */
 p {
-    font-size: 20px;
+    font-size: 16px;
 }
 .fs {
     height: 100vh;
@@ -194,47 +220,36 @@ p {
     color: $lightest;
     position: relative;
     .wrapper {
-        padding-top: 120px;
+        padding-top: 30px;
         text-align: center;
+        position: relative;
+        z-index: 2;
     }
     &#slide01 {
-        background: rgba(49,114,95,1);
-        background: -moz-linear-gradient(top, rgba(49,114,95,1) 0%, rgba(44,76,99,1) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(49,114,95,1)), color-stop(100%, rgba(44,76,99,1)));
-        background: -webkit-linear-gradient(top, rgba(49,114,95,1) 0%, rgba(44,76,99,1) 100%);
-        background: -o-linear-gradient(top, rgba(49,114,95,1) 0%, rgba(44,76,99,1) 100%);
-        background: -ms-linear-gradient(top, rgba(49,114,95,1) 0%, rgba(44,76,99,1) 100%);
-        background: linear-gradient(to bottom, rgba(49,114,95,1) 0%, rgba(44,76,99,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31725f', endColorstr='#2c4c63', GradientType=0 );
+        .wrapper {
+            position: absolute;
+            top: 10%;
+        }
     }
     &#slide02 {
-        background: rgba(114,49,97,1);
-        background: -moz-linear-gradient(top, rgba(114,49,97,1) 0%, rgba(99,44,45,1) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(114,49,97,1)), color-stop(100%, rgba(99,44,45,1)));
-        background: -webkit-linear-gradient(top, rgba(114,49,97,1) 0%, rgba(99,44,45,1) 100%);
-        background: -o-linear-gradient(top, rgba(114,49,97,1) 0%, rgba(99,44,45,1) 100%);
-        background: -ms-linear-gradient(top, rgba(114,49,97,1) 0%, rgba(99,44,45,1) 100%);
-        background: linear-gradient(to bottom, rgba(114,49,97,1) 0%, rgba(99,44,45,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#723161', endColorstr='#632c2d', GradientType=0 );
+        .wrapper {
+            position: absolute;
+            bottom: 10%;
+        }
     }
     &#slide03 {
-        color: $darkest;
-        background: rgba(230,233,237,1);
-        background: -moz-linear-gradient(top, rgba(230,233,237,1) 0%, rgba(255,255,255,1) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(230,233,237,1)), color-stop(100%, rgba(255,255,255,1)));
-        background: -webkit-linear-gradient(top, rgba(230,233,237,1) 0%, rgba(255,255,255,1) 100%);
-        background: -o-linear-gradient(top, rgba(230,233,237,1) 0%, rgba(255,255,255,1) 100%);
-        background: -ms-linear-gradient(top, rgba(230,233,237,1) 0%, rgba(255,255,255,1) 100%);
-        background: linear-gradient(to bottom, rgba(230,233,237,1) 0%, rgba(255,255,255,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e9ed', endColorstr='#ffffff', GradientType=0 );
         .button {
-            border-color: transparentize($black,.3);
+            border-color: $lightest;
             color: $darkest;
+            background-color: rgba(255,255,255,0.9);
             &:hover {
                 border-color: $darkest;
                 background-color: $darkest;
                 color: $lightest;
             }
+        }
+        .wrapper {
+            padding-top: 100px;
         }
     }
     &#slide04 {
@@ -256,19 +271,44 @@ p {
     }
 }
 
+/* =Content Block */
+.content-block {
+    background-color: $darkest;
+    color: transparentize($lightest,.1);
+    .wrapper {
+        padding: 30px 0;
+        text-align: center;
+    }
+    .no-touch & {
+        .wrapper {
+            visibility: hidden;
+            opacity: 0;
+        }
+        &.is-active {
+            .wrapper {
+                visibility: visible;
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
+
+}
+
 /* =Footer */
 .footer-container {
     text-align: center;
     font-size: 14px;
-    color: transparentize($black,.1);
-    background-color: transparentize($black,.9);
+    color: transparentize($lightest,.5);
+    background-color: #06060d;
     h3 {
         margin: 0;
         padding: 20px 0;
         font-weight: normal;
     }
     a {
-        color: transparentize($black,.1);
+        color: transparentize($lightest,.5);
     }
 }
 
@@ -288,9 +328,14 @@ p {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
+    &.slideInUp2{transition-delay: 0.2s;}
+    &.slideInUp3{transition-delay: 0.4s;}
 }
 
-
+#iht_logo {
+    width: 100px;
+    margin-bottom: 30px;
+}
 
 
 /* ==========================================================================
@@ -302,16 +347,22 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+    body {
+        font-weight: 100;
+    }
     h1 {
         font-size: 3em;
     }
+    p { font-size: 20px; }
     /* =Header */
     .header-container {
+        overflow: hidden;
+        position: relative;
         .wrapper {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -120%);
             margin: 0;
             padding: 0;
         }
@@ -319,20 +370,84 @@ p {
             font-size: 70em;
         }
     }
+    .scroll-hint {
+        font-size: 20px;
+    }
+    .bcg {
+        opacity: 1;
+    }
     .slide {
+        overflow: hidden;
         section {
             max-width: 400px;
         }
+        overflow-x: hidden;
         .wrapper {
+            padding-top: 120px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: left;
+            width: 100%;
+            margin: 0;
+        }
+        &#slide01,
+        &#slide02,
+        &#slide03 {
+            color: $darkest;
+            .wrapper {
+                top: 20%;
+                text-align: center;
+            }
+            section {
+                margin: 0 auto;
+            }
+        }
+        &#slide01 {
+            color: $lightest;
+        }
+        &#slide02 {
+            color: $lightest;
+            .wrapper {
+                top: auto;
+                bottom: 40%;
+                left: 10%;
+                text-align: left;
+                transform: translate(0);
+                padding: 0;
+            }
+            section {
+                margin: 0;
+            }
+        }
+        &#slide03 {
+            .wrapper {
+                padding: 0;
+                top: 15%;
+                transform: translate(-50%, 0);
+            }
+            section {
+                margin: 0 auto;
+                max-width: 570px;
+            }
+            .button {
+                border-color: transparentize($black,.3);
+                background-color: transparent;
+                color: $darkest;
+            }
+            .bcg {
+                opacity: 1;
+            }
         }
     }
     nav {
         display: block;
+    }
+    .content-block {
+        .wrapper {
+            padding: 120px 0;
+        }
     }
 }
 

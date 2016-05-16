@@ -269,6 +269,10 @@ p {
   width: 30rem;
   padding-left: 8rem;
 }
+.grey-box ul li {
+  list-style: none;
+  font-weight: bold;
+}
 
 .project-series {
   clear: both;
