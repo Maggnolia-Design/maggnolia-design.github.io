@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -37,12 +37,33 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
+    <div class="all">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        
         <div id="intro" class="header-container fs">
             <div class="bcg"></div>
+            <div class="horizon scroll">
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+                <img class="fishies" src="../img/fishies.png" width="" height=""/>
+            </div>
             <header class="wrapper">
                 <h1 class="title">Hello, I'm Maggie Zhang!</h1>
                 <p> Welcome to my portfolio website. Scroll down to see some <br>sample works, or click the button below to enter now.</p>
@@ -143,7 +164,9 @@
                 <h3>2016 &copy; <a href="https://ihatetomatoes.net" target="_blank">Ihatetomatoes.net</a> | <a href="https://twitter.com/ihatetomatoes" target="_blank">@ihatetomatoes</a> | Images by <a href="http://raumrot.com/portfolio/set-06-free-for-commercial-use-photos/" target="_blank">Markus Spiske / raumrot.com</a> | Animate responsibly!</h3>
             </footer>
         </div>
+    </div>
 
+<!-- scripts for ScrollMagic and GreenSock -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
@@ -155,6 +178,22 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 
         <script src="js/main.js"></script>
+
+<!-- scripts for jinvertScroll -->
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
+        <script type="text/javascript">
+        (function($) {
+            $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+                {
+                height: 6000,                    // optional: define the height the user can scroll
+                onScroll: function(percent) {   // optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                    console.log(percent);
+                }
+            });
+        }(jQuery));
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
