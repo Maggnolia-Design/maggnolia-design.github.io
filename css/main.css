@@ -3,11 +3,11 @@
 html {
   margin: 0;
   padding: 0;
-  font-size: 15px;
+  font-size: .95rem;
 }
 
 body {
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -54,8 +54,8 @@ p {
 /* NAV */
 #masterhead {
   border-bottom: 2px solid;
-  padding-bottom: 4rem;
-  margin-bottom: 1rem;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
 }
 #masterhead #home-button {
   float: left;
@@ -72,26 +72,29 @@ p {
   background-color: #FF8E6B;
 }
 
+/*
 #masterhead_gallery {
-  border-bottom: 2px solid;
-  padding: 1.5rem 0rem 3rem 0rem;
-  margin: 0rem 5.3rem 0rem 5.3rem;
-}
-#masterhead_gallery #home-button {
-  float: left;
-  padding-left: 2.2rem;
-}
-#masterhead_gallery #home-button #og-home-button {
-  text-decoration: none;
-  color: black;
-  background-color: white;
-  font-weight: bold;
-  padding: 0.6rem 1.2rem 0.6rem 1.2rem;
-}
-#masterhead_gallery #home-button #og-home-button:hover {
-  background-color: #FF8E6B;
-}
+   border-bottom: 2px solid;
+   padding: 1.5rem 0rem 3rem 0rem;
+   margin: 0rem 5.3rem 0rem 5.3rem;
 
+   #home-button{
+      float:left;
+      padding-left: 2.2rem;
+
+      #og-home-button{
+         text-decoration: none;
+         color: black;
+         background-color: white;
+         font-weight: bold;
+         padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+      }
+      #og-home-button:hover {
+         background-color: #FF8E6B;
+      }
+   }
+}
+*/
 #nav {
   padding-left: 2.1rem;
   padding-right: 2.1rem;
