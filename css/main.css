@@ -300,6 +300,17 @@ p {
   overflow: hidden;
 }
 
+/* GRAPHIC */
+.thumb {
+  margin-bottom: 2rem;
+}
+
+.section-label {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
 /* CONTACT ME */
 .grey-box-contact {
   background-color: #efefef;
