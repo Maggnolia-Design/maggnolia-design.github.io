@@ -28,7 +28,7 @@ body {
    }
 }
 
-p{
+p {
    font-family: Garamond, serif;
    line-height: 1.3em;
 }
@@ -36,7 +36,7 @@ p{
 /* HOMEPAGE */
 
 .welcome_box h1 {
-  font: italic bold 80px Georgia, Serif;
+  font: italic bold 50px Georgia, Serif;
   padding-top: 5rem;
 }
 
@@ -61,7 +61,6 @@ p{
 
 
 /* NAV */
-
 
 #masterhead {
    border-bottom: 2px solid;
@@ -173,7 +172,7 @@ p{
    animation:          swim1 4s linear infinite alternate;
 
    img{
-      width: 7rem;
+      width: 5rem;
       clear:both;
       padding:3.65rem;
    }
@@ -182,13 +181,13 @@ p{
 #fishies_2 {
    position: absolute;
    top: 11.35rem;
-   -webkit-animation:  swim2 4s linear infinite alternate;
-   -moz-animation:     swim2 4s linear infinite alternate;
-   -o-animation:       swim2 4s linear infinite alternate;
-   animation:          swim2 4s linear infinite alternate;
+   -webkit-animation:  swim2 3s linear infinite alternate;
+   -moz-animation:     swim2 3s linear infinite alternate;
+   -o-animation:       swim2 3s linear infinite alternate;
+   animation:          swim2 3s linear infinite alternate;
 
    img{
-      width: 12rem;
+      width: 10rem;
       clear:both;
       padding:3rem;
    }
@@ -196,10 +195,10 @@ p{
 
 
 .flip img {
-   -webkit-animation:  flip 8s steps(2,start) infinite;
-   -moz-animation:     flip 8s steps(2,start) infinite;
-   -o-animation:       flip 8s steps(2,start) infinite;
-   animation:          flip 8s steps(2,start) infinite;
+   -webkit-animation:  flip 6s steps(2,start) infinite;
+   -moz-animation:     flip 6s steps(2,start) infinite;
+   -o-animation:       flip 6s steps(2,start) infinite;
+   animation:          flip 6s steps(2,start) infinite;
 }
 
 @keyframes swim1 {
@@ -377,22 +376,22 @@ p{
 
    .profile-intro {
       position: static;
-      padding-top: 1rem;
+      padding-top: 2rem;
       top: 41rem;
       p {
-         width:97%;
-         float: left;
-         padding-right: 8%;
+         width:20rem;
+         margin: auto;
       }
    }
 
    .icon {
-      width: 70vw;
-      position: absolute;
-      top: 40rem;
+      padding-top: 1rem;
+      width: 20rem;
+      margin: auto;
 
-      img {
+      a>img {
          width: 16%;
+         margin: auto;
       }
 
       .hidden_icon {
@@ -424,10 +423,9 @@ form {
 
 .icon {
    float: left;
-   width: 3rem;
 
    img {
-      width: 100%;
+      width: 80%;
    }
 
    img:hover {
@@ -482,22 +480,10 @@ form {
    position:absolute;
 }
 
- #fishies_1, #fishies_2{
-      animation-duration: 4s;
-}
-
-.flip img {
-      animation-duration: 8s;
-}
-
 
 /*
 
-@media screen and (min-width: 1115px) {
-   #home-button span:first-of-type{
-      position: absolute;
-      visibility: hidden;
-   }
+@media screen and (min-width: 992px) {
 
    .grey-box-contact {
       height: 45rem;
@@ -529,36 +515,40 @@ form {
       }
    }
 }
-
-@media screen and (min-width: 910px) {
-   .grey-box-contact .profile {
-      width:15rem;
-      height:15rem;
-   }
+*/
 
 
 @media screen and (min-width: 768px) {
 
-   #alt-home-button {
-      visibility:visible;
+   #alt-home-button, #minimize {
+      visibility: visible;
       position: static;
+   }
+
+   #un-minimize, #alt-home-button, #home-button>span {
+      visibility: hidden;
+      position: absolute;
    }
 
    #masterhead {
       margin-left: 2rem;
       margin-right: 2rem;
       #home-button {
-         visibility:hidden;
+         visibility:visible;
          position:absolute;
       }
    }
 
+   .welcome_box h1 {
+     font: italic bold 70px Georgia, Serif;
+   }
+
    #fishies_1, #fishies_2{
-      animation-duration: 4s;
+      animation-duration: 6s;
    }
 
    .flip img {
-      animation-duration: 8s;
+      animation-duration: 12s;
    }
 
    @keyframes swim1 {
@@ -572,11 +562,11 @@ form {
    }
 
    #fishies_1 img{
-      width: 5rem;
+      width: 7rem;
    }
 
    #fishies_2 img{
-      width: 9rem;
+      width: 12rem;
    }
 
    .grey-box-contact {
@@ -585,12 +575,12 @@ form {
       margin-right: 2rem;
 
       .profile-intro {
-         position: absolute;
+         position: static;
          top: 35rem;
 
          p {
-            float: none;
-            width: 70%;
+            clear: both;
+            width: 28rem;
          }
          p:nth-of-type(2) {
             visibility: hidden;
@@ -604,16 +594,82 @@ form {
 
       .icon {
          margin-top: 0rem;
+         width: 20rem;
 
          .hidden_icon {
             visibility: visible;
          }
       }
-   }
 
    .nav-link a{
       padding: .3rem 0.65rem .3rem 0.65rem;
    }
 }
+
+@media screen and (min-width: 992px) {
+   .grey-box-contact {
+      margin-left: 4.8rem;
+      margin-right: 4.8rem;
+
+      .profile {
+         width:18rem;
+         height:18rem;
+         float:left;
+      }
+
+      .profile-intro {
+         width: 6rem;
+         float: left;
+         clear: left;
+         p {
+            width: 20rem;
+         }
+      }
+
+      form {
+         visibility: visible;
+         width: 65%;
+         margin-top: 1.8rem;
+         padding-left: 25rem;
+         float: left;
+      }
+
+      .icon {
+         margin-top: 5rem;
+         float: left;
+
+         .hidden_icon {
+            visibility: hidden;
+         }
+      }
+   }
+
+   #masterhead {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      #home-button {
+         a, span {
+            visibility: visible;
+            position:relative;
+         }
+      }
+   }
+
+   .welcome_box h1 {
+     font: italic bold 80px Georgia, Serif;
+   }
+
+   #fishies_1, #fishies_2{
+      animation-duration: 7s;
+      img {
+         width: 14rem;
+      }
+   }
+
+   .flip img {
+      animation-duration: 14s;
+   }
 }
-*/
+
+
+}
