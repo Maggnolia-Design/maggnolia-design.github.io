@@ -5,11 +5,11 @@
 html {
    margin:0;
    padding:0;
-   font-size: 15px;
+   font-size: 13px;
 }
 
 body {
-   font-size: 15px;
+   font-size: 13px;
    line-height: 1.4
 }
 
@@ -341,6 +341,7 @@ p {
 }
 
 .section-label {
+   clear:left;
    font-size: 1.5rem;
    margin-top: 5rem;
    margin-bottom: 2rem;
@@ -403,11 +404,8 @@ p {
 
 
 form {
-   float:left;
-   width: 40%;
-   margin-right: 6%;
-   visibility: hidden;
-   position: absolute;
+   width: 80%;
+   margin: auto;
 
    input, textarea {
       width: 100%;
@@ -422,8 +420,7 @@ form {
 }
 
 .icon {
-   float: left;
-
+   margin: auto;
    img {
       width: 80%;
    }
@@ -587,11 +584,6 @@ form {
          }
       }
 
-      form {
-         visibility: hidden;
-         position: absolute;
-      }
-
       .icon {
          margin-top: 0rem;
          width: 20rem;
@@ -669,6 +661,10 @@ form {
    .flip img {
       animation-duration: 14s;
    }
+}
+
+@media screen and (min-width: 1200px) {
+
 }
 
 

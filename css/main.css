@@ -3,11 +3,11 @@
 html {
   margin: 0;
   padding: 0;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 body {
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.4;
 }
 
@@ -311,6 +311,7 @@ p {
 }
 
 .section-label {
+  clear: left;
   font-size: 1.5rem;
   margin-top: 5rem;
   margin-bottom: 2rem;
@@ -363,11 +364,8 @@ p {
 }
 
 form {
-  float: left;
-  width: 40%;
-  margin-right: 6%;
-  visibility: hidden;
-  position: absolute;
+  width: 80%;
+  margin: auto;
 }
 form input, form textarea {
   width: 100%;
@@ -379,7 +377,7 @@ form #form-button {
 }
 
 .icon {
-  float: left;
+  margin: auto;
 }
 .icon img {
   width: 80%;
@@ -538,10 +536,6 @@ form #form-button {
   }
   .grey-box-contact .profile-intro p:nth-of-type(2) {
     visibility: hidden;
-  }
-  .grey-box-contact form {
-    visibility: hidden;
-    position: absolute;
   }
   .grey-box-contact .icon {
     margin-top: 0rem;
