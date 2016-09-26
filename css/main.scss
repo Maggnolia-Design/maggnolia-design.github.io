@@ -14,7 +14,6 @@ body {
 }
 
 #project-process, #proj-overview, #masterhead, .welcome_box{
-   margin-left: 4.8rem;
    margin-right: 4.8rem;
 }
 
@@ -372,7 +371,7 @@ p {
    margin-top: 0rem;
    margin-left: 0rem;
    margin-right: 0rem;
-   height: 23rem;
+   height: 72vh;
    padding: 2rem 7% 3rem 7%;
 
    .profile {
@@ -388,11 +387,12 @@ p {
       float:none;
       margin-right: auto;
       margin-left: auto;
+      margin-top: 1rem;
    }
 
    .profile-intro {
       position: static;
-      padding-top: 2rem;
+      padding-top: 3rem;
       top: 41rem;
       p {
          width:20rem;
@@ -422,21 +422,20 @@ form {
    width: 80%;
    margin: auto;
    margin-top: 1rem;
+   font-size: 0.9rem;
 
    input, textarea {
       width: 100%;
-      padding: .5rem 0 .5rem 1rem;
+      padding: .4rem 0 .4rem 1rem;
       margin-bottom: .5rem;
    }
 
    #form-button {
       width: 30%;
    }
-
 }
 
 .icon {
-   margin: auto;
    img {
       width: 80%;
    }
@@ -583,7 +582,7 @@ form {
    }
 
    .grey-box-contact {
-      height: 25rem;
+      height: 69vh;
       margin-left: 2rem;
       margin-right: 2rem;
 
@@ -617,6 +616,7 @@ form {
 
 @media screen and (min-width: 992px) {
    .grey-box-contact {
+      height: 50vh;
       margin-left: 4.8rem;
       margin-right: 4.8rem;
 
@@ -637,13 +637,12 @@ form {
       }
 
       form {
-         width: 30rem;
-         margin-left: 15rem;
+         width: 25rem;
+         margin-left: 8rem;
          float: left;
       }
 
       .icon {
-         margin-top: 5rem;
          float: left;
 
          .hidden_icon {
