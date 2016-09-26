@@ -133,7 +133,12 @@ p {
 
    .nav-link:hover #subnav{
       display:block;
+      width: 100%;
    }
+/*
+   #subnav {
+      border: 1px red solid;
+   }*/
 }
 
 #alt-home-button {
@@ -237,7 +242,7 @@ p {
 #proj-overview {
    padding-bottom: 3rem;
 
-   img{
+   img {
       width:100%;
    }
 
@@ -338,6 +343,16 @@ p {
 
 .thumb {
    margin-bottom: 2rem;
+/*   height: $("#thumb").width();*/
+/*   .img-responsive {
+      height: calc(width*0.75);
+   }*/
+
+}
+
+.test-stuff-stuff {
+   width: 100% !important;
+   height: 100% !important;
 }
 
 .section-label {
@@ -349,7 +364,7 @@ p {
 }
 
 
-/* CONTACT ME */
+/* ABOUT ME */
 
 
 .grey-box-contact {
@@ -381,6 +396,7 @@ p {
       top: 41rem;
       p {
          width:20rem;
+         padding-bottom: 1rem;
          margin: auto;
       }
    }
@@ -399,13 +415,13 @@ p {
          visibility: visible;
       }
    }
-
 }
 
 
 form {
    width: 80%;
    margin: auto;
+   margin-top: 1rem;
 
    input, textarea {
       width: 100%;
@@ -579,9 +595,10 @@ form {
             clear: both;
             width: 28rem;
          }
-         p:nth-of-type(2) {
-            visibility: hidden;
-         }
+      }
+
+      form {
+         width: 30rem;
       }
 
       .icon {
@@ -607,22 +624,21 @@ form {
          width:18rem;
          height:18rem;
          float:left;
+         margin-left: 15rem;
       }
 
       .profile-intro {
          width: 6rem;
          float: left;
-         clear: left;
+         margin-left: 5rem;
          p {
             width: 20rem;
          }
       }
 
       form {
-         visibility: visible;
-         width: 65%;
-         margin-top: 1.8rem;
-         padding-left: 25rem;
+         width: 30rem;
+         margin-left: 15rem;
          float: left;
       }
 

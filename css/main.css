@@ -101,6 +101,10 @@ p {
   padding-left: 2.1rem;
   padding-right: 2.1rem;
   float: right;
+  /*
+     #subnav {
+        border: 1px red solid;
+     }*/
 }
 #nav .nav-link {
   display: inline-block;
@@ -117,6 +121,7 @@ p {
 }
 #nav .nav-link:hover #subnav {
   display: block;
+  width: 100%;
 }
 
 #alt-home-button {
@@ -308,6 +313,15 @@ p {
 /* GRAPHIC */
 .thumb {
   margin-bottom: 2rem;
+  /*   height: $("#thumb").width();*/
+  /*   .img-responsive {
+        height: calc(width*0.75);
+     }*/
+}
+
+.test-stuff-stuff {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .section-label {
@@ -317,7 +331,7 @@ p {
   margin-bottom: 2rem;
 }
 
-/* CONTACT ME */
+/* ABOUT ME */
 .grey-box-contact {
   background-color: #efefef;
   margin-top: 0rem;
@@ -348,6 +362,7 @@ p {
 }
 .grey-box-contact .profile-intro p {
   width: 20rem;
+  padding-bottom: 1rem;
   margin: auto;
 }
 .grey-box-contact .icon {
@@ -366,6 +381,7 @@ p {
 form {
   width: 80%;
   margin: auto;
+  margin-top: 1rem;
 }
 form input, form textarea {
   width: 100%;
@@ -534,8 +550,8 @@ form #form-button {
     clear: both;
     width: 28rem;
   }
-  .grey-box-contact .profile-intro p:nth-of-type(2) {
-    visibility: hidden;
+  .grey-box-contact form {
+    width: 30rem;
   }
   .grey-box-contact .icon {
     margin-top: 0rem;
@@ -557,20 +573,19 @@ form #form-button {
     width: 18rem;
     height: 18rem;
     float: left;
+    margin-left: 15rem;
   }
   .grey-box-contact .profile-intro {
     width: 6rem;
     float: left;
-    clear: left;
+    margin-left: 5rem;
   }
   .grey-box-contact .profile-intro p {
     width: 20rem;
   }
   .grey-box-contact form {
-    visibility: visible;
-    width: 65%;
-    margin-top: 1.8rem;
-    padding-left: 25rem;
+    width: 30rem;
+    margin-left: 15rem;
     float: left;
   }
   .grey-box-contact .icon {
