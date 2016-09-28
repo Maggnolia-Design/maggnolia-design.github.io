@@ -38,34 +38,58 @@
 
    <body>
 
-      <div id="masterhead">
-         <p id="home-button">
-            <a id="og-home-button" href="home.html">MAGGIE ZHANG</a>
-            <span>Graphic and Interactive</span><span> Designs</span>
-         </p>
-         <ul id="nav">
-            <li class="nav-link"><a id="alt-home-button" href="home.html">Home</a></li>
-            <li class="nav-link"><a href="about.html">About</a></li>
-            <li class="nav-link"><a href="contact.html">Contact</a></li>
-            <li class="nav-link" id="portfolio-btn"><a href="#">Portfolio</a>
-               <ul id="subnav">
-                  <li class="subnav-link"><a href="classwork.html">Class Work</a></li>
-                  <li class="subnav-link"><a href="student.html">Student Activities</a></li>
-                  <li class="subnav-link"><a href="chinese.html">Chinese Design</a></li>
-               </ul>
-            </li>
-         </ul>
-      </div>
-
-
-   <div class="portfolio-categories">
-      <main>
-         <h1><a href="classwork.html" id="cw">Class Work</a></h1>
-         <h1><a href="student.html" id="sa">Student Activities</a></h1>
-         <h1><a href="chinese.html" id="cd">Chinese Design</a></h1>
-      </main>
+   <div id="masterhead">
+      <p id="home-button">
+         <a id="og-home-button" href="home.html">MAGGIE ZHANG</a>
+         <span>Graphic and Interactive</span><span> Designs</span>
+      </p>
+      <ul id="nav">
+         <li class="nav-link"><a id="alt-home-button" href="home.html">Home</a></li>
+         <li class="nav-link"><a href="about.html">About</a></li>
+         <li class="nav-link"><a href="contact.html">Contact</a></li>
+         <li class="nav-link"><a href="portfolio.html">Portfolio</a>
+            <ul id="subnav">
+               <li class="subnav-link"><a href="classwork.html">Class Work</a></li>
+               <li class="subnav-link"><a href="student.html">Student Activities</a></li>
+               <li class="subnav-link"><a href="chinese.html">Chinese Design</a></li>
+            </ul>
+         </li>
+      </ul>
    </div>
 
+
+   <div class="container">
+        <div class="row grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+
+            <div class="col-lg-12">
+                <h1 class="margin">Student Activities</h1>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/Ecaasu1.jpg" alt="">
+                </a>
+                <p>East Coast Asian American Student Union conference on AAPI awareness</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/CSASpiritfest.jpg" alt="">
+                </a>
+                <p>Chinese Student Association advertising and branding materials</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/SASEmaterials.jpg" alt="">
+                </a>
+                <p>Society of Asian Scientists and Engineers regional conference advertisements</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/EonMockup.jpg" alt="">
+                </a>
+                <p>Eon Dance Troupe advertising and branding materials</p>
+            </div>
+        </div>
+   </div>
 
    </body>
 </html>

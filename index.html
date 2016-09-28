@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width" initial-scale=1”>
-      <title>Contact</title>
-
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+    	<meta name="viewport" content="width=device-width" initial-scale=1”>
+		<title>Homepage</title>
 
       <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
       <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
@@ -28,31 +27,46 @@
       <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
       <meta name="theme-color" content="#ffffff">
 
-      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
       <link rel="stylesheet" type="text/css" href="css/main.css">
+      <script src="js/jquery-3.1.1.slim.min.js"></script>
 
-   </head>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+      <script src="js/script1.js"></script>
+	</head>
 
-   <body>
+	<body>
       <div id="masterhead">
          <p id="home-button">
-            <a id="og-home-button" href="home.html">MAGGIE ZHANG</a>
+            <a id="og-home-button" href="index.html">MAGGIE ZHANG</a>
             <span>Graphic and Interactive</span><span> Designs</span>
          </p>
          <ul id="nav">
-            <li class="nav-link"><a id="alt-home-button" href="home.html">Home</a></li>
+            <li class="nav-link"><a id="alt-home-button" href="index.html">Home</a></li>
             <li class="nav-link"><a href="about.html">About</a></li>
-            <li class="nav-link"><a href="contact.html">Contact</a></li>
-            <li class="nav-link"><a href="portfolio.html">Portfolio</a>
+            <li class="nav-link" id="contact-btn"><a href="#">Contact</a></li>
+            <li class="nav-link" id="portfolio-btn"><a href="#">Portfolio</a>
                <ul id="subnav">
-                  <li class="subnav-link"><a href="classwork.html">Class Work</a></li>
-                  <li class="subnav-link"><a href="student.html">Extracurriculars</a></li>
-                  <li class="subnav-link"><a href="chinese.html">Chinese Design</a></li>
+                  <li class="subnav-link" id="classwork-btn"><a href="#">Class Work</a></li>
+                  <li class="subnav-link" id="student-btn"><a href="#">Extracurriculars</a></li>
+                  <li class="subnav-link" id="chinese-btn"><a href="#">Chinese Design</a></li>
                </ul>
             </li>
          </ul>
       </div>
 
+<!-- - - - end of nav - - - - -->
+
+   <div class="container">
+      <div class="col-lg-3 col-md-4 col-xs-6 welcome_box">
+         <h1>Welcome!</h1>
+         <p>See More</p>
+      </div>
+
+<!-- - - - end of page 1 - - - - -->
+
+
+   <div class="pages" id="contact-page">
       <h1 class="margin">Contact Me</h1>
       <div class="grey-box-contact-2">
 
@@ -76,6 +90,35 @@
             </div>
          </div>
       </div>
+   </div>
 
-   </body>
+<!-- - - - end of page 2 - - - - -->
+   <div class="pages" id="about-page">
+      <h1 class="margin">About Me!</h1>
+      <div class="grey-box-contact">
+         <div>
+            <div class="profile"></div>
+            <div class="profile-intro">
+               <p>Hello, my name is Maggie! Pa simus aceribus alibus si test, sint ea pligendios eost laccus aut omnis enderia aut autenihit quam il id quia vol- orum elibus.</p>
+               <p>Hello, my name is Maggie! Pa simus aceribus alibus si test, sint ea pligendios eost laccus aut omnis enderia aut autenihit quam il id quia vol- orum elibus.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+<!-- - - - end of page 3 - - - - -->
+
+   <div class="pages" id="portfolio-page">
+
+      <h1><a href="classwork.html" id="cw">Class Work</a></h1>
+      <h1><a href="student.html" id="sa">Student Activities</a></h1>
+      <h1><a href="chinese.html" id="cd">Chinese Design</a></h1>
+
+   </div>
+
+<!-- - - - end of page 4 - - - - -->
+
+ </div>
+
+	</body>
 </html>
