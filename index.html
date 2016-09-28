@@ -38,14 +38,14 @@
 	<body>
       <div id="masterhead">
          <p id="home-button">
-            <a id="og-home-button" href="index.html">MAGGIE ZHANG</a>
+            <a id="og-home-button" href="#">MAGGIE ZHANG</a>
             <span>Graphic and Interactive</span><span> Designs</span>
          </p>
          <ul id="nav">
-            <li class="nav-link"><a id="alt-home-button" href="index.html">Home</a></li>
-            <li class="nav-link"><a href="about.html">About</a></li>
+            <li class="nav-link" id="home-btn"><a id="alt-home-button" href="#">Home</a></li>
+            <li class="nav-link" id="about-btn"><a href="#">About</a></li>
             <li class="nav-link" id="contact-btn"><a href="#">Contact</a></li>
-            <li class="nav-link" id="portfolio-btn"><a href="#">Portfolio</a>
+            <li class="nav-link"><a>Portfolio</a>
                <ul id="subnav">
                   <li class="subnav-link" id="classwork-btn"><a href="#">Class Work</a></li>
                   <li class="subnav-link" id="student-btn"><a href="#">Extracurriculars</a></li>
@@ -58,9 +58,12 @@
 <!-- - - - end of nav - - - - -->
 
    <div class="container">
-      <div class="col-lg-3 col-md-4 col-xs-6 welcome_box">
-         <h1>Welcome!</h1>
-         <p>See More</p>
+
+      <div class="pages" id="home-page">
+         <div class="col-lg-3 col-md-4 col-xs-6 welcome_box">
+            <h1>Welcome!</h1>
+            <p>See More</p>
+         </div>
       </div>
 
 <!-- - - - end of page 1 - - - - -->
@@ -117,6 +120,115 @@
    </div>
 
 <!-- - - - end of page 4 - - - - -->
+
+   <div class="pages" id="classwork-page">
+        <div class="row grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+
+            <div class="col-lg-12">
+                <h1 class="margin">Class Work</h1>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/BiogenSystems.jpg" alt="">
+                </a>
+                <p>Biogen Idec systems and experience map</p>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive test-stuff-stuff" src="img/projects/BookCoverfinal.jpg" alt="">
+                </a>
+                <p>Three Men in a Boat book cover and spreads</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/Jenson1.jpg" alt="">
+                </a>
+                <p>Adobe Jenson type analysis and broadside</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/ArtbookSpread.jpg" alt="">
+                </a>
+                <p>Designing with Type art book</p>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/TapeUsage.jpg" alt="">
+                </a>
+                <p>Tape dispenser graphic translation and juxtaposition</p>
+            </div>
+        </div>
+   </div>
+
+   <div class="pages" id="student-page">
+        <div class="row grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+
+            <div class="col-lg-12">
+                <h1 class="margin">Student Activities</h1>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/Ecaasu1.jpg" alt="">
+                </a>
+                <p>East Coast Asian American Student Union conference on AAPI awareness</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/CSASpiritfest.jpg" alt="">
+                </a>
+                <p>Chinese Student Association advertising and branding materials</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/SASEmaterials.jpg" alt="">
+                </a>
+                <p>Society of Asian Scientists and Engineers regional conference advertisements</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/EonMockup.jpg" alt="">
+                </a>
+                <p>Eon Dance Troupe advertising and branding materials</p>
+            </div>
+        </div>
+   </div>
+
+   <div class="pages" id="chinese-page">
+        <div class="row grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+
+            <div class="col-lg-12">
+                <h1 class="margin">Chinese Design</h1>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/PeonyPoster.jpg" alt="">
+                </a>
+                <p>The Peony Pavilion play program and poster</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/Teahouse.jpg" alt="">
+                </a>
+                <p>Tea House play poster</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="img/projects/MusicLogo.jpg" alt="">
+                </a>
+                <p>Case studies in Chinese typography and design</p>
+            </div>
+        </div>
+   </div>
+
+
+
+
+
+<!-- - - - end of portfolio subcategories - - - - -->
 
  </div>
 
