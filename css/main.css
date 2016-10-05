@@ -198,7 +198,7 @@ p {
   display: none;
 }
 
-/* ABOUT ME */
+/*   - - - - ABOUT ME   - - - - */
 .grey-box-contact, .grey-box-contact-2 {
   background-color: #efefef;
   margin-top: 0rem;
@@ -301,7 +301,7 @@ form #form-button {
   padding: 0.5rem 0rem 0.5rem 4.8rem;
 }
 
-/* MEDIA QUERIES */
+/*   - - - - MEDIA QUERIES - - - - */
 #alt-home-button {
   visibility: visible;
   position: static;
@@ -312,41 +312,7 @@ form #form-button {
   position: absolute;
 }
 
-/*
-
-@media screen and (min-width: 992px) {
-
-   .grey-box-contact {
-      height: 45rem;
-
-      form {
-         clear:left;
-         width: 26rem;
-         margin-top: 4rem;
-         margin-right: 3rem;
-      }
-
-      .icon {
-         margin-top: 5rem;
-      }
-
-      .profile {
-         width:18rem;
-         height:18rem;
-      }
-
-      .profile-intro{
-         position: static;
-
-         p {
-            float: left;
-            width: 45%;
-            padding-right: 0;
-         }
-      }
-   }
-}
-*/
+/* MEDIUM SCREEN 768 */
 @media screen and (min-width: 768px) {
   #alt-home-button, #minimize {
     visibility: visible;
@@ -430,6 +396,8 @@ form #form-button {
   .grey-box-contact {
     height: 69vh;
   }
+
+  /* BIG SCREEN 992 */
 }
 @media screen and (min-width: 768px) and (min-width: 992px) {
   .grey-box-contact, .grey-box-contact-2 {

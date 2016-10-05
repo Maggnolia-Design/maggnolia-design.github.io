@@ -210,9 +210,7 @@ p {
 }
 
 
-
-/* ABOUT ME */
-
+/*   - - - - ABOUT ME   - - - - */
 
 .grey-box-contact, .grey-box-contact-2 {
    background-color: #efefef;
@@ -263,7 +261,6 @@ p {
 .grey-box-contact {
    height: 72vh;
 }
-
 
 .grey-box-contact-2 {
    height: 82vh;
@@ -327,7 +324,7 @@ form {
    padding: 0.5rem 0rem 0.5rem 4.8rem;
 }
 
-/* MEDIA QUERIES */
+/*   - - - - MEDIA QUERIES - - - - */
 
 #alt-home-button {
    visibility:visible;
@@ -339,43 +336,7 @@ form {
    position:absolute;
 }
 
-
-/*
-
-@media screen and (min-width: 992px) {
-
-   .grey-box-contact {
-      height: 45rem;
-
-      form {
-         clear:left;
-         width: 26rem;
-         margin-top: 4rem;
-         margin-right: 3rem;
-      }
-
-      .icon {
-         margin-top: 5rem;
-      }
-
-      .profile {
-         width:18rem;
-         height:18rem;
-      }
-
-      .profile-intro{
-         position: static;
-
-         p {
-            float: left;
-            width: 45%;
-            padding-right: 0;
-         }
-      }
-   }
-}
-*/
-
+/* MEDIUM SCREEN 768 */
 
 @media screen and (min-width: 768px) {
 
@@ -460,6 +421,8 @@ form {
    .grey-box-contact {
       height: 69vh;
    }
+
+/* BIG SCREEN 992 */
 
 @media screen and (min-width: 992px) {
    .grey-box-contact, .grey-box-contact-2 {
