@@ -75,7 +75,6 @@ p {
       #og-home-button{
          text-decoration: none;
          color: black;
-         background-color: white;
          font-weight: bold;
          padding: 0.6rem 1.2rem 0.6rem 1.2rem;
       }
@@ -121,7 +120,6 @@ p {
       a {
          text-decoration: none;
          color: black;
-         background-color: white;
          font-weight: bold;
          padding: 0.6rem 0.8rem 0.6rem 0.8rem;
       }
@@ -134,10 +132,6 @@ p {
       display:block;
       width: 100%;
    }
-/*
-   #subnav {
-      border: 1px red solid;
-   }*/
 }
 
 #alt-home-button {
@@ -156,6 +150,11 @@ p {
       margin-top: 1.1rem;
    }
 }
+
+.active>a {
+   background-color: #FF8E6B;
+}
+
 
 
 /* HOMEPAGE*/
@@ -222,16 +221,19 @@ p {
 
 /* GALLERY PAGES */
 
+.line {
+   width: 100vw;
+   height: 3rem;
+   color: black;
+}
+
 .container {
-   margin-top: 4rem;
+   margin-top: 2rem;
 }
 .pages{
    display: none;
 }
-.active{
-   color:red;
-   font-style:italic;
-}
+
 a#cw:link {
    background-image: url("../img/CultureShow_Banner.jpg");
    background-repeat: no-repeat;
@@ -282,9 +284,6 @@ a#cw, a#sa, a#cd {
 //         text-shadow: 5px 5px 10px #000;
    }
 }
-
-
-
 
 
 /* CSA PAGE */
@@ -610,6 +609,7 @@ form {
    .grey-box-contact, .grey-box-contact-2 {
       margin-left: 2rem;
       margin-right: 2rem;
+     padding-left: 0rem;
 
       .profile-intro {
          position: static;
@@ -704,10 +704,6 @@ form {
    .flip img {
       animation-duration: 14s;
    }
-}
-
-@media screen and (min-width: 1200px) {
-
 }
 
 
