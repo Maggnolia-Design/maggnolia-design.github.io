@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-/* GENERAL */
+/* - - - - GENERAL - - - - */
 html {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
   margin-right: 4.8rem;
 }
 
-/* TEXT */
+/* - - - - TEXT - - - - */
 #home-button, ul, h1, h2, h3 {
   font-family: 'Lato', sans-serif;
 }
@@ -28,29 +28,7 @@ p {
   line-height: 1.3em;
 }
 
-/* HOMEPAGE */
-.welcome_box h1 {
-  font: italic bold 50px Georgia, Serif;
-  padding-top: 5rem;
-}
-
-/* LINE */
-#line {
-  position: absolute;
-  top: -28rem;
-  right: 310px;
-}
-#line img {
-  height: auto;
-  width: 50px;
-  bottom: 0px;
-}
-#line :hover {
-  transform: translateY(30.7rem);
-  transition-duration: 1s;
-}
-
-/* NAV */
+/* - - - - NAV - - - - */
 #masterhead {
   border-bottom: 2px solid;
   padding-bottom: 3rem;
@@ -72,29 +50,6 @@ p {
   background-color: #FF8E6B;
 }
 
-/*
-#masterhead_gallery {
-   border-bottom: 2px solid;
-   padding: 1.5rem 0rem 3rem 0rem;
-   margin: 0rem 5.3rem 0rem 5.3rem;
-
-   #home-button{
-      float:left;
-      padding-left: 2.2rem;
-
-      #og-home-button{
-         text-decoration: none;
-         color: black;
-         background-color: white;
-         font-weight: bold;
-         padding: 0.6rem 1.2rem 0.6rem 1.2rem;
-      }
-      #og-home-button:hover {
-         background-color: #FF8E6B;
-      }
-   }
-}
-*/
 #nav {
   padding-left: 2.1rem;
   padding-right: 2.1rem;
@@ -137,7 +92,28 @@ p {
   background-color: #FF8E6B;
 }
 
-/* HOMEPAGE*/
+/* - - - - HOMEPAGE - - - - */
+.welcome_box h1 {
+  font: italic bold 50px Georgia, Serif;
+  padding-top: 5rem;
+}
+
+/* LINE */
+#line {
+  position: absolute;
+  top: -28rem;
+  right: 310px;
+}
+#line img {
+  height: auto;
+  width: 50px;
+  bottom: 0px;
+}
+#line :hover {
+  transform: translateY(30.7rem);
+  transition-duration: 1s;
+}
+
 #fishies_1, #fishies_2 {
   margin-left: auto;
   margin-right: auto;
@@ -207,7 +183,7 @@ p {
     transform: rotateY(180deg);
   }
 }
-/* GALLERY PAGES */
+/*  - - - - PORTFOLIO PAGES  - - - - */
 .line {
   width: 100vw;
   height: 3rem;
@@ -220,136 +196,6 @@ p {
 
 .pages {
   display: none;
-}
-
-a#cw:link {
-  background-image: url("../img/CultureShow_Banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-a#sa:link {
-  background-image: url("../img/cooking.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 75% auto;
-  background-position: center;
-}
-
-a#cd:link {
-  background-image: url("../img/calli.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.categories {
-  width: 74%;
-  margin-right: 13%;
-  margin-left: 13%;
-}
-.categories h1 {
-  font: 42px "Open Sans" sans-serif;
-}
-.categories h1 a {
-  padding-top: 10%;
-  padding-bottom: 20%;
-  text-decoration: none;
-  color: white;
-  display: block;
-  padding-left: 66%;
-  text-shadow: 2px 2px 10px #222;
-}
-
-a#cw:hover, a#sa:hover, a#cd:hover {
-  opacity: 0.6;
-}
-
-/* CSA PAGE */
-#proj-overview {
-  padding-bottom: 3rem;
-}
-#proj-overview img {
-  width: 100%;
-}
-#proj-overview div {
-  position: absolute;
-  right: 4.8rem;
-  bottom: 2rem;
-  width: 26rem;
-  padding: 1rem;
-  z-index: 2;
-  background-color: rgba(255, 255, 255, 0.75);
-}
-
-#project-process {
-  clear: both;
-  padding-bottom: 16rem;
-}
-#project-process #project-process-sub {
-  padding-left: 4.8rem;
-}
-#project-process #project-process-sub div {
-  float: left;
-  margin-right: 1.8rem;
-  width: 23rem;
-}
-
-/* NUSASE and COURSEWORK PAGE */
-.margin, .grey-box {
-  margin-top: 5rem;
-  margin-left: 4.8rem;
-  margin-right: 4.8rem;
-}
-
-.grey-box {
-  background-color: #efefef;
-  padding: 2rem 2rem 0rem 4rem;
-}
-.grey-box .grey-box-headers {
-  float: left;
-  width: 20rem;
-}
-.grey-box p {
-  float: left;
-  width: 30rem;
-  padding-left: 8rem;
-}
-.grey-box ul {
-  float: left;
-  width: 30rem;
-  padding-left: 8rem;
-}
-.grey-box ul li {
-  list-style: none;
-  font-weight: bold;
-}
-
-.project-series {
-  clear: both;
-  padding-top: 3rem;
-}
-.project-series .project-series-text {
-  float: left;
-}
-.project-series .project-series-text .project-series-text ul {
-  list-style: none;
-  font-weight: bold;
-}
-
-/* NUSASE and COURSEWORK IMAGES */
-.project-series-img {
-  width: 20rem;
-  height: 20rem;
-  float: left;
-  background-image: url(../img/placeholder1.png);
-}
-.project-series-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
 }
 
 /* ABOUT ME */
