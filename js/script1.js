@@ -12,6 +12,8 @@ $(document).ready(function(){
      //Your actions here
      $(".pages").hide();
      $("#home-page").show();
+     $("li").removeClass("active");
+     $("#home-btn").addClass("active");
    });
 
     $("#about-btn").click(function(event){
