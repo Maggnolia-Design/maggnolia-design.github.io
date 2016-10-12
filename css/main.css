@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-/* GENERAL */
+/* - - - - GENERAL - - - - */
 html {
   margin: 0;
   padding: 0;
@@ -15,12 +15,12 @@ body {
   margin-right: 4.8rem;
 }
 
-/* TEXT */
+/* - - - - TEXT - - - - */
 #home-button, ul, h1, h2, h3 {
   font-family: 'Lato', sans-serif;
 }
 #home-button #og-home-button:hover, ul #og-home-button:hover, h1 #og-home-button:hover, h2 #og-home-button:hover, h3 #og-home-button:hover {
-  background-color: #FF8E6B;
+  background-color: rgba(255, 142, 107, 0.5);
 }
 
 p {
@@ -28,29 +28,7 @@ p {
   line-height: 1.3em;
 }
 
-/* HOMEPAGE */
-.welcome_box h1 {
-  font: italic bold 50px Georgia, Serif;
-  padding-top: 5rem;
-}
-
-/* LINE */
-#line {
-  position: absolute;
-  top: -28rem;
-  right: 310px;
-}
-#line img {
-  height: auto;
-  width: 50px;
-  bottom: 0px;
-}
-#line :hover {
-  transform: translateY(30.7rem);
-  transition-duration: 1s;
-}
-
-/* NAV */
+/* - - - - NAV - - - - */
 #masterhead {
   border-bottom: 2px solid;
   padding-bottom: 3rem;
@@ -65,45 +43,17 @@ p {
 #masterhead #home-button #og-home-button {
   text-decoration: none;
   color: black;
-  background-color: white;
   font-weight: bold;
   padding: 0.6rem 1.2rem 0.6rem 1.2rem;
 }
 #masterhead #home-button #og-home-button:hover {
-  background-color: #FF8E6B;
+  background-color: rgba(255, 142, 107, 0.5);
 }
 
-/*
-#masterhead_gallery {
-   border-bottom: 2px solid;
-   padding: 1.5rem 0rem 3rem 0rem;
-   margin: 0rem 5.3rem 0rem 5.3rem;
-
-   #home-button{
-      float:left;
-      padding-left: 2.2rem;
-
-      #og-home-button{
-         text-decoration: none;
-         color: black;
-         background-color: white;
-         font-weight: bold;
-         padding: 0.6rem 1.2rem 0.6rem 1.2rem;
-      }
-      #og-home-button:hover {
-         background-color: #FF8E6B;
-      }
-   }
-}
-*/
 #nav {
   padding-left: 2.1rem;
   padding-right: 2.1rem;
   float: right;
-  /*
-     #subnav {
-        border: 1px red solid;
-     }*/
 }
 #nav .nav-link {
   display: inline-block;
@@ -111,12 +61,11 @@ p {
 #nav .nav-link a {
   text-decoration: none;
   color: black;
-  background-color: white;
   font-weight: bold;
   padding: 0.6rem 0.8rem 0.6rem 0.8rem;
 }
 #nav .nav-link a:hover {
-  background-color: #FF8E6B;
+  background-color: rgba(255, 142, 107, 0.5);
 }
 #nav .nav-link:hover #subnav {
   display: block;
@@ -139,7 +88,32 @@ p {
   margin-top: 1.1rem;
 }
 
-/* HOMEPAGE*/
+.active > a {
+  background-color: #FF8E6B;
+}
+
+/* - - - - HOMEPAGE - - - - */
+.welcome_box h1 {
+  font: italic bold 50px Georgia, Serif;
+  padding-top: 5rem;
+}
+
+/* LINE */
+#line {
+  position: absolute;
+  top: -28rem;
+  right: 310px;
+}
+#line img {
+  height: auto;
+  width: 50px;
+  bottom: 0px;
+}
+#line :hover {
+  transform: translateY(30.7rem);
+  transition-duration: 1s;
+}
+
 #fishies_1, #fishies_2 {
   margin-left: auto;
   margin-right: auto;
@@ -209,179 +183,107 @@ p {
     transform: rotateY(180deg);
   }
 }
-/* GALLERY PAGES */
-.gallery_catagories {
-  border: solid black 2px;
-  height: 40vh;
-  margin-right: 5.4rem;
-  margin-left: 5.4rem;
+/*  - - - - PORTFOLIO PAGES  - - - - */
+.see-more .thumbnail {
+  width: 10rem;
+  text-align: center;
+  float: left;
+  margin-right: 0.5rem;
+  color: black;
+  text-decoration: none;
+}
+.see-more h4 {
+  float: left;
+  margin: 0.4rem 1rem 0 0;
+}
+
+.portfolio-labels {
   clear: both;
 }
-.gallery_catagories img {
-  width: 100%;
-  object-fit: cover;
-  opacity: .1;
+
+.line {
+  width: 100vw;
+  height: 3rem;
+  color: black;
 }
 
-/* CSA PAGE */
-#proj-overview {
-  padding-bottom: 3rem;
-}
-#proj-overview img {
-  width: 100%;
-}
-#proj-overview div {
-  position: absolute;
-  right: 4.8rem;
-  bottom: 2rem;
-  width: 26rem;
-  padding: 1rem;
-  z-index: 2;
-  background-color: rgba(255, 255, 255, 0.75);
+.container {
+  margin-top: 2rem;
 }
 
-#project-process {
-  clear: both;
-  padding-bottom: 16rem;
-}
-#project-process #project-process-sub {
-  padding-left: 4.8rem;
-}
-#project-process #project-process-sub div {
-  float: left;
-  margin-right: 1.8rem;
-  width: 23rem;
+.pages, .portfolio-labels, .see-more {
+  display: none;
 }
 
-/* NUSASE and COURSEWORK PAGE */
-.margin, .grey-box {
-  margin-top: 5rem;
-  margin-left: 4.8rem;
-  margin-right: 4.8rem;
-}
-
-.grey-box {
-  background-color: #efefef;
-  padding: 2rem 2rem 0rem 4rem;
-}
-.grey-box .grey-box-headers {
-  float: left;
-  width: 20rem;
-}
-.grey-box p {
-  float: left;
-  width: 30rem;
-  padding-left: 8rem;
-}
-.grey-box ul {
-  float: left;
-  width: 30rem;
-  padding-left: 8rem;
-}
-.grey-box ul li {
-  list-style: none;
-  font-weight: bold;
-}
-
-.project-series {
-  clear: both;
-  padding-top: 3rem;
-}
-.project-series .project-series-text {
-  float: left;
-}
-.project-series .project-series-text .project-series-text ul {
-  list-style: none;
-  font-weight: bold;
-}
-
-/* NUSASE and COURSEWORK IMAGES */
-.project-series-img {
-  width: 20rem;
-  height: 20rem;
-  float: left;
-  background-image: url(../img/placeholder1.png);
-}
-.project-series-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-/* GRAPHIC */
-.thumb {
-  margin-bottom: 2rem;
-  /*   height: $("#thumb").width();*/
-  /*   .img-responsive {
-        height: calc(width*0.75);
-     }*/
-}
-
-.test-stuff-stuff {
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.section-label {
-  clear: left;
-  font-size: 1.5rem;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
-}
-
-/* ABOUT ME */
-.grey-box-contact {
+/*   - - - - ABOUT ME   - - - - */
+.grey-box-contact, .grey-box-contact-2 {
   background-color: #efefef;
   margin-top: 0rem;
   margin-left: 0rem;
   margin-right: 0rem;
-  height: 72vh;
   padding: 2rem 7% 3rem 7%;
 }
-.grey-box-contact .profile {
-  background-image: url(../img/profile.jpg);
-  background-repeat: no-repeat;
-  background-size: 85%;
-  background-position: center;
-  border-radius: 50%;
-  behavior: url(PIE.htc);
-  /* remove if you don't care about IE8 */
-  border: 5px solid red;
-  width: 20rem;
-  height: 20rem;
-  float: none;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 1rem;
-}
-.grey-box-contact .profile-intro {
+.grey-box-contact .profile-intro, .grey-box-contact-2 .profile-intro {
   position: static;
   padding-top: 3rem;
   top: 41rem;
 }
-.grey-box-contact .profile-intro p {
+.grey-box-contact .profile-intro p, .grey-box-contact-2 .profile-intro p {
   width: 20rem;
   padding-bottom: 1rem;
   margin: auto;
 }
-.grey-box-contact .icon {
+.grey-box-contact .icon, .grey-box-contact-2 .icon {
   padding-top: 1rem;
   width: 20rem;
   margin: auto;
 }
-.grey-box-contact .icon a > img {
+.grey-box-contact .icon a > img, .grey-box-contact-2 .icon a > img {
   width: 16%;
   margin: auto;
 }
-.grey-box-contact .icon .hidden_icon {
-  visibility: visible;
+
+.profile-box {
+  height: 22rem;
+  overflow: hidden;
+}
+.profile-box .profile1, .profile-box .profile2 {
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  behavior: url(PIE.htc);
+  /* remove if you don't care about IE8 */
+  width: 18rem;
+  height: 18rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.profile-box .profile1 {
+  background-image: url(../img/profile1.jpg);
+  background-size: 110%;
+  border: 5px solid red;
+  margin-top: 1rem;
+}
+.profile-box .profile2 {
+  background-image: url(../img/profile2.jpg);
+  background-size: 120%;
+  border: 5px solid darkblue;
+  margin-top: 8rem;
+}
+
+.grey-box-contact {
+  height: 24rem;
+}
+
+.grey-box-contact-2 {
+  height: 56vh;
 }
 
 form {
   width: 80%;
   margin: auto;
   margin-top: 1rem;
+  margin-bottom: 2rem;
   font-size: 0.9rem;
 }
 form input, form textarea {
@@ -389,8 +291,8 @@ form input, form textarea {
   padding: .4rem 0 .4rem 1rem;
   margin-bottom: .5rem;
 }
-form #form-button {
-  width: 30%;
+form .form-button {
+  width: 40%;
 }
 
 .icon img {
@@ -418,10 +320,6 @@ form #form-button {
   color: red;
 }
 
-.hidden_icon {
-  visibility: hidden;
-}
-
 /* FOOTER */
 #footer {
   clear: both;
@@ -433,7 +331,7 @@ form #form-button {
   padding: 0.5rem 0rem 0.5rem 4.8rem;
 }
 
-/* MEDIA QUERIES */
+/*   - - - - MEDIA QUERIES - - - - */
 #alt-home-button {
   visibility: visible;
   position: static;
@@ -444,41 +342,7 @@ form #form-button {
   position: absolute;
 }
 
-/*
-
-@media screen and (min-width: 992px) {
-
-   .grey-box-contact {
-      height: 45rem;
-
-      form {
-         clear:left;
-         width: 26rem;
-         margin-top: 4rem;
-         margin-right: 3rem;
-      }
-
-      .icon {
-         margin-top: 5rem;
-      }
-
-      .profile {
-         width:18rem;
-         height:18rem;
-      }
-
-      .profile-intro{
-         position: static;
-
-         p {
-            float: left;
-            width: 45%;
-            padding-right: 0;
-         }
-      }
-   }
-}
-*/
+/* MEDIUM SCREEN 768 */
 @media screen and (min-width: 768px) {
   #alt-home-button, #minimize {
     visibility: visible;
@@ -535,63 +399,59 @@ form #form-button {
     width: 12rem;
   }
 
-  .grey-box-contact {
-    height: 69vh;
+  .grey-box-contact, .grey-box-contact-2 {
     margin-left: 2rem;
     margin-right: 2rem;
+    padding-left: 0rem;
   }
-  .grey-box-contact .profile-intro {
+  .grey-box-contact .profile-intro, .grey-box-contact-2 .profile-intro {
     position: static;
     top: 35rem;
   }
-  .grey-box-contact .profile-intro p {
-    clear: both;
-    width: 28rem;
+  .grey-box-contact .profile-intro p, .grey-box-contact-2 .profile-intro p {
+    width: 23rem;
   }
-  .grey-box-contact form {
+  .grey-box-contact form, .grey-box-contact-2 form {
     width: 30rem;
   }
-  .grey-box-contact .icon {
+  .grey-box-contact .icon, .grey-box-contact-2 .icon {
     margin-top: 0rem;
     width: 20rem;
   }
-  .grey-box-contact .icon .hidden_icon {
-    visibility: visible;
-  }
-  .grey-box-contact .nav-link a {
+  .grey-box-contact .nav-link a, .grey-box-contact-2 .nav-link a {
     padding: .3rem 0.65rem .3rem 0.65rem;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 992px) {
-  .grey-box-contact {
-    height: 50vh;
+/* BIG SCREEN 992 */
+@media screen and (min-width: 992px) {
+  .grey-box-contact, .grey-box-contact-2 {
     margin-left: 4.8rem;
     margin-right: 4.8rem;
   }
-  .grey-box-contact .profile {
+  .grey-box-contact .profile, .grey-box-contact-2 .profile {
     width: 18rem;
     height: 18rem;
     float: left;
-    margin-left: 15rem;
+    margin-left: 12rem;
   }
-  .grey-box-contact .profile-intro {
-    width: 6rem;
+  .grey-box-contact .profile-intro, .grey-box-contact-2 .profile-intro {
     float: left;
     margin-left: 5rem;
   }
-  .grey-box-contact .profile-intro p {
-    width: 20rem;
+  .grey-box-contact .profile-intro p, .grey-box-contact-2 .profile-intro p {
+    width: 24rem;
   }
-  .grey-box-contact form {
-    width: 25rem;
+  .grey-box-contact form, .grey-box-contact-2 form {
+    width: 20.6rem;
     margin-left: 8rem;
     float: left;
   }
-  .grey-box-contact .icon {
+  .grey-box-contact .icon, .grey-box-contact-2 .icon {
     float: left;
   }
-  .grey-box-contact .icon .hidden_icon {
-    visibility: hidden;
+
+  .grey-box-contact {
+    height: 50vh;
   }
 
   #masterhead {
@@ -616,5 +476,15 @@ form #form-button {
 
   .flip img {
     animation-duration: 14s;
+  }
+
+  .profile-box {
+    float: left;
+    padding-left: 8rem;
+    overflow: visible;
+  }
+
+  .profile-intro > div {
+    padding-bottom: 6rem;
   }
 }
