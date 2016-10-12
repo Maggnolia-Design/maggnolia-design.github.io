@@ -1,0 +1,12 @@
+Issues/Questions:
+
+- can I combine the jQuery functions which do the same thing but just with different buttons?
+- is it bad to use h4 when you don’t have h2 and h3 about it? should i use h2 and then edit it in css instead?
+- how to keep portfolio drawdown active for longer — bc it always disappears before I can click on the things below?
+
+
+
+Notes to self:
+- rename “Extracurriculars” to get it to fit
+- keep improving lightbox stuff
+- it’s kind of annoying that refresh button doesn’t work

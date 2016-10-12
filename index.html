@@ -1,3 +1,9 @@
+<!-- - - - - "All Work" button not working - - - - -->
+<!-- - - - - change opacity on nav hover - - - - -->
+<!-- - - - - implement lightbox - - - - -->
+<!-- - - - - how to fix layout of "all work" - - - - -->
+<!-- - - - - add more projects; accordion, art book, king lear - - - - -->
+
 <!DOCTYPE html>
 
 <html>
@@ -46,13 +52,7 @@
             <li class="nav-link active" id="home-btn"><a id="alt-home-button" href="#">Home</a></li>
             <li class="nav-link active" id="about-btn"><a href="#">About</a></li>
             <li class="nav-link active" id="contact-btn"><a href="#">Contact</a></li>
-            <li class="nav-link active" id="portfolio-btn"><a>Portfolio</a>
-               <ul id="subnav">
-                  <li class="subnav-link" id="classwork-btn"><a href="#">Class Work</a></li>
-                  <li class="subnav-link" id="student-btn"><a href="#">Extracurriculars</a></li>
-                  <li class="subnav-link" id="chinese-btn"><a href="#">Chinese Design</a></li>
-               </ul>
-            </li>
+            <li class="nav-link active" id="portfolio-btn"><a href="#">Portfolio</a></li>
          </ul>
       </div>
 
@@ -79,8 +79,8 @@
             <input name="email" placeholder="Email" type="text">
             <input name="subject" placeholder="Subject" type="text">
             <textarea cols="15" name="message" placeholder="What do you want to talk about?" rows="10"></textarea>
-            <input id="form-button" type="reset" value="Reset">
-            <input id="form-button" type="submit" value="Submit">
+            <input class="form-button" type="reset" value="Reset">
+            <input class="form-button" type="submit" value="Submit">
          </form>
 
          <div class="profile-intro">
@@ -102,10 +102,19 @@
       <h1 class="margin">About Me!</h1>
       <div class="grey-box-contact">
          <div>
-            <div class="profile"></div>
+            <div class="profile-box">
+               <div class="profile1"></div>
+               <div class="profile2"></div>
+            </div>
             <div class="profile-intro">
-               <p>Hello, my name is Maggie! Pa simus aceribus alibus si test, sint ea pligendios eost laccus aut omnis enderia aut autenihit quam il id quia vol- orum elibus.</p>
-               <p>Hello, my name is Maggie! Pa simus aceribus alibus si test, sint ea pligendios eost laccus aut omnis enderia aut autenihit quam il id quia vol- orum elibus.</p>
+               <div>
+                  <p>Hey, I’m Maggie! I’m a graphic designer in Boston, MA, and a Candidate for the Bachelor of Fine Arts with a Concentration in Interaction at Northeastern University. I like to balance dependability and imagination in all aspects of my life, and get a thrill out of finding beauty in chaos.</p>
+                  <p>Often times, I do this through the design of advertisements and branding projects for various cultural organizations in my community. In 2014, I collaborated with university students from Northeastern, Boston University, and Harvard as a member of the East Coast Asian American Student Union to promote racial awareness and publicize a regional conference on APPI identity. Since then, various cultural clubs at Northeastern have reached out to me with subsequent branding and marketing projects.</p>
+               </div>
+               <div>
+                  <p>My most recent endeavor — and matter of much personal investment and fulfillment — is Eon Dance Troupe. Co-founded and ran by myself and a friend, Eon is a classical, ethnic, and fusion Chinese dance group that teaches and performs dances with members of all experience levels. Along with promoting Eon through social media and generating our brand through identities designs, photography, and video, I share logistical responsibilities with my partner such as organizing practices and establishing relationships with other clubs.</p>
+                  <p>In my free time, I also enjoy sports, modern dance, and web design; pushing boundaries, learning something new, and solving problems is a delightful and never-ending process!</p>
+               </div>
             </div>
          </div>
       </div>
@@ -114,14 +123,41 @@
 
 <!-- - - - end of page 3 - - - - -->
 
+   <div class="see-more" id="see-more">
+      <h4>Filter By:</h4>
+      <a href="#" class="thumbnail" id="portfolio-btn">All Work</a>
+      <a href="#" class="thumbnail" id="classwork-btn">Class Work</a>
+      <a href="#" class="thumbnail" id="student-btn">Student Activities</a>
+      <a href="#" class="thumbnail" id="chinese-btn">Chinese Design</a>
+      <a href="#" class="thumbnail" id="interactive-btn">Miscellaneous</a>
+   </div>
+
+   <div class="col-lg-12 portfolio-labels" id="all-label">
+       <h1 class="margin">All Work</h1>
+   </div>
+
+   <div class="col-lg-12 portfolio-labels" id="classwork-label">
+       <h1 class="margin">Class Work</h1>
+   </div>
+
+   <div class="col-lg-12 portfolio-labels" id="student-label">
+       <h1 class="margin">Student Activities</h1>
+   </div>
+
+   <div class="col-lg-12 portfolio-labels" id="chinese-label">
+       <h1 class="margin">Chinese Design</h1>
+   </div>
+
+   <div class="col-lg-12 portfolio-labels" id="interactive-label">
+       <h1 class="margin">Interactive Design</h1>
+   </div>
+   <div class="line"></div>
+
+
+<!-- - - - - end of portfolio labels - - - - -->
+
    <div class="pages" id="classwork-page">
         <div class="row grid" data-masonry='{ "itemSelector": ".grid-item"}'>
-
-            <div class="col-lg-12">
-                <h1 class="margin">Class Work</h1>
-            </div>
-
-            <div class="line"></div>
 
             <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
                 <a class="thumbnail" href="img/projects/BiogenSystems.jpg" data-lightbox="classwork">
@@ -155,13 +191,6 @@
                 </a>
                 <p>Tape dispenser graphic translation and juxtaposition</p>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 .offset-lg-3 .offset-md-3 grid-item">
-               <div class="thumbnail see-more">
-                  <h4>See More:</h4>
-                  <p><a href="#" class="student-btn">Student Activities</a></p>
-                  <p><a href="#" class="chinese-btn">Chinese Design</a></p>
-               </div>
-            </div>
         </div>
    </div>
 
@@ -169,11 +198,6 @@
 
    <div class="pages" id="student-page">
         <div class="row grid" data-masonry='{ "itemSelector": ".grid-item"}'>
-
-            <div class="col-lg-12">
-                <h1 class="margin">Student Activities</h1>
-            </div>
-            <div class="line"></div>
             <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
                 <a class="thumbnail" href="img/projects/Ecaasu1.jpg" data-lightbox="student">
                     <img class="img-responsive" src="img/projects/Ecaasu1.jpg" alt="">
@@ -198,13 +222,6 @@
                 </a>
                 <p>Eon Dance Troupe advertising and branding materials</p>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 .offset-lg-3 .offset-md-3 grid-item">
-               <div class="thumbnail see-more">
-                  <h4>See More:</h4>
-                  <p><a href="#" class="classwork-btn">Class Work</a></p>
-                  <p><a href="#" class="chinese-btn">Chinese Design</a></p>
-               </div>
-            </div>
         </div>
    </div>
 
@@ -212,11 +229,6 @@
 
    <div class="pages" id="chinese-page">
         <div class="row grid" data-masonry='{ "itemSelector": ".grid-item"}'>
-
-            <div class="col-lg-12">
-                <h1 class="margin">Chinese Design</h1>
-            </div>
-            <div class="line"></div>
             <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
                 <a class="thumbnail" href="img/projects/PeonyPoster.jpg" data-lightbox="chinese">
                     <img class="img-responsive" src="img/projects/PeonyPoster.jpg" alt="">
@@ -236,16 +248,34 @@
                 <p>Case studies in Chinese typography and design</p>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-xs-6 .offset-lg-3 .offset-md-3 grid-item">
-               <div class="thumbnail see-more">
-                  <h4>See More:</h4>
-                  <p><a href="#" class="classwork-btn">Class Work</a></p>
-                  <p><a href="#" class="student-btn">Student Activities</a></p>
-               </div>
-            </div>
         </div>
    </div>
 <!-- end of chinese page -->
+
+   <div class="pages" id="interactive-page">
+        <div class="row grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="img/projects/arvo.jpg" data-lightbox="interactive">
+                    <img class="img-responsive" src="img/projects/arvo.jpg" alt="">
+                </a>
+                <p>A webpage for the album "Alina" by Arvo Part.</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="img/projects/rams.png" data-lightbox="interactive">
+                    <img class="img-responsive" src="img/projects/rams.png" alt="">
+                </a>
+                <p>Website showcasing the 10 Principles for Good Design by Dieter Rams.</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 grid-item">
+                <a class="thumbnail" href="img/projects/mistafish.png" data-lightbox="interactive">
+                    <img class="img-responsive" src="img/projects/mistafish.png" alt="">
+                </a>
+                <p>Personal website for my design and artwork.</p>
+            </div>
+
+        </div>
+   </div>
+<!-- end of interactive page -->
 
 <!-- - - - end of portfolio subcategories - - - - -->
  </div>

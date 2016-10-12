@@ -23,7 +23,7 @@ body {
    font-family: 'Lato', sans-serif;
 
    #og-home-button:hover {
-      background-color: #FF8E6B;
+      background-color: rgba(#FF8E6B, 0.5);
    }
 }
 
@@ -53,7 +53,7 @@ p {
          padding: 0.6rem 1.2rem 0.6rem 1.2rem;
       }
       #og-home-button:hover {
-         background-color: #FF8E6B;
+         background-color: rgba(#FF8E6B, 0.5);
       }
    }
 }
@@ -74,7 +74,7 @@ p {
          padding: 0.6rem 0.8rem 0.6rem 0.8rem;
       }
       a:hover {
-         background-color: #FF8E6B;
+         background-color: rgba(#FF8E6B, 0.5);
       }
    }
 
@@ -196,6 +196,25 @@ p {
 
 /*  - - - - PORTFOLIO PAGES  - - - - */
 
+.see-more {
+   .thumbnail {
+      width: 10rem;
+      text-align: center;
+      float: left;
+      margin-right: 0.5rem;
+      color: black;
+      text-decoration: none;
+   }
+   h4 {
+      float: left;
+      margin: 0.4rem 1rem 0 0;
+   }
+}
+
+.portfolio-labels {
+   clear: both;
+}
+
 .line {
    width: 100vw;
    height: 3rem;
@@ -205,10 +224,9 @@ p {
 .container {
    margin-top: 2rem;
 }
-.pages{
+.pages, .portfolio-labels, .see-more{
    display: none;
 }
-
 
 /*   - - - - ABOUT ME   - - - - */
 
@@ -218,22 +236,6 @@ p {
    margin-left: 0rem;
    margin-right: 0rem;
    padding: 2rem 7% 3rem 7%;
-
-   .profile {
-      background-image: url(../img/profile.jpg);
-      background-repeat: no-repeat;
-      background-size: 85%;
-      background-position: center;
-      border-radius: 50%;
-      behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-      border: 5px solid red;
-      width:20rem;
-      height:20rem;
-      float:none;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 1rem;
-   }
 
    .profile-intro {
       position: static;
@@ -258,18 +260,48 @@ p {
    }
 }
 
-.grey-box-contact {
-   height: 72vh;
+.profile-box{
+   height:22rem;
+   overflow: hidden;
+
+   .profile1, .profile2 {
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+      width:18rem;
+      height:18rem;
+      margin-right: auto;
+      margin-left: auto;
+   }
+
+   .profile1 {
+      background-image: url(../img/profile1.jpg);
+      background-size: 110%;
+      border: 5px solid red;
+      margin-top: 1rem;
+   }
+   .profile2 {
+      background-image: url(../img/profile2.jpg);
+      background-size: 120%;
+      border: 5px solid darkblue;
+      margin-top: 8rem;
+   }
 }
 
-.grey-box-contact-2 {
-   height: 82vh;
+.grey-box-contact {
+   height: 24rem;
 }
+
+   .grey-box-contact-2 {
+      height: 56vh;
+   }
 
 form {
    width: 80%;
    margin: auto;
    margin-top: 1rem;
+   margin-bottom: 2rem;
    font-size: 0.9rem;
 
    input, textarea {
@@ -278,8 +310,8 @@ form {
       margin-bottom: .5rem;
    }
 
-   #form-button {
-      width: 30%;
+   .form-button {
+      width: 40%;
    }
 }
 
@@ -389,38 +421,35 @@ form {
       width: 12rem;
    }
 
-   .grey-box-contact, .grey-box-contact-2 {
-      margin-left: 2rem;
-      margin-right: 2rem;
-     padding-left: 0rem;
+.grey-box-contact, .grey-box-contact-2 {
+   margin-left: 2rem;
+   margin-right: 2rem;
+   padding-left: 0rem;
 
-      .profile-intro {
-         position: static;
-         top: 35rem;
-
-         p {
-            clear: both;
-            width: 28rem;
-            }
-         }
-
-         form {
-            width: 30rem;
-         }
-
-         .icon {
-            margin-top: 0rem;
-            width: 20rem;
-         }
-
-      .nav-link a{
-         padding: .3rem 0.65rem .3rem 0.65rem;
+   .profile-intro {
+      position: static;
+      top: 35rem;
+      p {
+         width: 23rem;
       }
    }
 
-   .grey-box-contact {
-      height: 69vh;
+   form {
+      width: 30rem;
    }
+
+   .icon {
+      margin-top: 0rem;
+      width: 20rem;
+   }
+
+   .nav-link a{
+      padding: .3rem 0.65rem .3rem 0.65rem;
+   }
+}
+
+}
+
 
 /* BIG SCREEN 992 */
 
@@ -433,20 +462,19 @@ form {
          width:18rem;
          height:18rem;
          float:left;
-         margin-left: 15rem;
+         margin-left: 12rem;
       }
 
       .profile-intro {
-         width: 6rem;
          float: left;
          margin-left: 5rem;
          p {
-            width: 20rem;
+            width: 24rem;
          }
       }
 
       form {
-         width: 25rem;
+         width: 20.6rem;
          margin-left: 8rem;
          float: left;
       }
@@ -460,9 +488,6 @@ form {
       height: 50vh;
    }
 
-   .grey-box-contact-2 {
-      height: 62vh;
-   }
 
    #masterhead {
       margin-left: 2rem;
@@ -489,7 +514,14 @@ form {
    .flip img {
       animation-duration: 14s;
    }
-}
 
+   .profile-box {
+      float: left;
+      padding-left: 8rem;
+      overflow: visible;
+   }
+   .profile-intro >div {
+      padding-bottom: 6rem;
+   }
 
 }
