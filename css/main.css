@@ -428,11 +428,11 @@ form .form-button {
     margin-left: 4.8rem;
     margin-right: 4.8rem;
   }
-  .grey-box-contact .profile, .grey-box-contact-2 .profile {
-    width: 18rem;
-    height: 18rem;
+  .grey-box-contact .profile1, .grey-box-contact .profile2, .grey-box-contact-2 .profile1, .grey-box-contact-2 .profile2 {
+    width: 14rem;
+    height: 14rem;
     float: left;
-    margin-left: 12rem;
+    margin-left: 8rem;
   }
   .grey-box-contact .profile-intro, .grey-box-contact-2 .profile-intro {
     float: left;
@@ -440,6 +440,9 @@ form .form-button {
   }
   .grey-box-contact .profile-intro p, .grey-box-contact-2 .profile-intro p {
     width: 24rem;
+  }
+  .grey-box-contact .profile-intro p:nth-of-type(3), .grey-box-contact-2 .profile-intro p:nth-of-type(3) {
+    padding-top: 4rem;
   }
   .grey-box-contact form, .grey-box-contact-2 form {
     width: 20.6rem;
@@ -451,7 +454,7 @@ form .form-button {
   }
 
   .grey-box-contact {
-    height: 26rem;
+    height: 23rem;
   }
 
   #masterhead {
@@ -480,8 +483,9 @@ form .form-button {
 
   .profile-box {
     float: left;
-    padding-left: 8rem;
+    padding-left: 3rem;
     overflow: visible;
+    width: 26rem;
   }
 
   .profile-intro > div {
