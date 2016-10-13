@@ -198,7 +198,8 @@ p {
       background-image: url(../img/profile2.jpg);
       background-size: 120%;
       border: 5px solid darkblue;
-      margin-top: 8rem;
+      margin-top: 8.5rem;
+      margin-bottom: 5rem;
    }
 }
 
@@ -232,15 +233,6 @@ form {
    img {
       width: 80%;
    }
-}
-
-.profile-intro>p>a {
-   font-family: "Lato",sans-serif;
-   color: #b04;
-}
-
-.profile-intro>p>a:hover {
-   color: red;
 }
 
 /* FOOTER */
@@ -353,6 +345,11 @@ form {
 /* BIG SCREEN 992 */
 
 @media screen and (min-width: 992px) {
+
+   p {
+      font-size: 14px;
+   }
+
    .grey-box-contact, .grey-box-contact-2 {
       margin-left: 4.8rem;
       margin-right: 4.8rem;
@@ -367,9 +364,6 @@ form {
       .profile-intro {
          float: left;
          margin-left: 5rem;
-         p {
-            width: 24rem;
-         }
       }
 
       form {
@@ -384,7 +378,7 @@ form {
    }
 
    .grey-box-contact {
-      height: 27rem;
+      height: 26rem;
    }
 
    #masterhead {
@@ -408,7 +402,7 @@ form {
       overflow: visible;
    }
    .profile-intro >div {
-      padding-bottom: 6rem;
+      padding-bottom: 7rem;
    }
 
 }
