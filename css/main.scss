@@ -115,117 +115,30 @@ p {
   padding-top: 5rem;
 }
 
-/* LINE */
-
-#line {
-   position: absolute;
-   top:-28rem;
-   right: 310px;
-
-   img{
-      height: auto;
-      width: 50px;
-      bottom:0px;
-   }
-
-   :hover{
-      transform: translateY(30.7rem);
-      transition-duration: 1s;
-   }
-}
-
-
-#fishies_1, #fishies_2 {
-   margin-left: auto;
-   margin-right: auto;
-   width: 80%;
-   height: 70%;
-}
-
-#fishies_1 {
-   position: absolute;
-   top: 7rem;
-   -webkit-animation:  swim1 4s linear infinite alternate;
-   -moz-animation:     swim1 4s linear infinite alternate;
-   -o-animation:       swim1 4s linear infinite alternate;
-   animation:          swim1 4s linear infinite alternate;
-
-   img{
-      width: 5rem;
-      clear:both;
-      padding:3.65rem;
-   }
-}
-
-#fishies_2 {
-   position: absolute;
-   top: 11.35rem;
-   -webkit-animation:  swim2 3s linear infinite alternate;
-   -moz-animation:     swim2 3s linear infinite alternate;
-   -o-animation:       swim2 3s linear infinite alternate;
-   animation:          swim2 3s linear infinite alternate;
-
-   img{
-      width: 10rem;
-      clear:both;
-      padding:3rem;
-   }
-}
-
-.flip img {
-   -webkit-animation:  flip 6s steps(2,start) infinite;
-   -moz-animation:     flip 6s steps(2,start) infinite;
-   -o-animation:       flip 6s steps(2,start) infinite;
-   animation:          flip 6s steps(2,start) infinite;
-}
-
-@keyframes swim1 {
-   from { margin-left: 10%; width: 16%;}
-   to { margin-left: 85%;}
-}
-
-@keyframes swim2 {
-   from { margin-left: -10%; width: 24%; }
-   to { margin-left: 100%; width: 24%; }
-}
-
-@keyframes flip {
-   from { transform: rotateY(-180deg); }
-   to { transform: rotateY(180deg); }
-}
 
 /*  - - - - PORTFOLIO PAGES  - - - - */
-
-.see-more {
-   .thumbnail {
-      width: 10rem;
-      text-align: center;
-      float: left;
-      margin-right: 0.5rem;
-      color: black;
-      text-decoration: none;
-   }
-   h4 {
-      float: left;
-      margin: 0.4rem 1rem 0 0;
-   }
-}
-
-.portfolio-labels {
-   clear: both;
-}
-
-.line {
-   width: 100vw;
-   height: 3rem;
-   color: black;
-}
 
 .container {
    margin-top: 2rem;
 }
-.pages, .portfolio-labels, .see-more{
+.pages {
    display: none;
+   .margin {
+      padding-bottom: 2rem;
+
+   }
+}
+
+.grid-item:last-of-type {
+    padding-bottom: 4rem;
+}
+
+.grid-item {
+   margin-bottom: 3rem;
+ }
+
+.thumbnail {
+   margin-bottom: 1rem;
 }
 
 /*   - - - - ABOUT ME   - - - - */
@@ -318,20 +231,6 @@ form {
 .icon {
    img {
       width: 80%;
-   }
-
-   img:hover {
-      -webkit-box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.75);
-      -o-box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.75);
-      box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.75);
-   }
-
-   img:active {
-      -webkit-box-shadow: -2px -4px 4px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: -2px -4px 4px 0px rgba(0,0,0,0.75);
-      -o-box-shadow: -2px -4px 4px 0px rgba(0,0,0,0.75);
-      box-shadow: -2px -4px 4px 0px rgba(0,0,0,0.75);
    }
 }
 
@@ -485,9 +384,8 @@ form {
    }
 
    .grey-box-contact {
-      height: 50vh;
+      height: 27rem;
    }
-
 
    #masterhead {
       margin-left: 2rem;
@@ -502,17 +400,6 @@ form {
 
    .welcome_box h1 {
      font: italic bold 80px Georgia, Serif;
-   }
-
-   #fishies_1, #fishies_2{
-      animation-duration: 7s;
-      img {
-         width: 14rem;
-      }
-   }
-
-   .flip img {
-      animation-duration: 14s;
    }
 
    .profile-box {
