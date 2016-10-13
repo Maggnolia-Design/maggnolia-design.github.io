@@ -1,7 +1,6 @@
-window.onload = function() {
+window.onload = function () {
    $("#home-page").show();
-}
-
+};
 
 $(document).ready(function(){
 

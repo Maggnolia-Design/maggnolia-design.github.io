@@ -298,18 +298,6 @@ form .form-button {
 .icon img {
   width: 80%;
 }
-.icon img:hover {
-  -webkit-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.75);
-  -o-box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.75);
-}
-.icon img:active {
-  -webkit-box-shadow: -2px -4px 4px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px -4px 4px 0px rgba(0, 0, 0, 0.75);
-  -o-box-shadow: -2px -4px 4px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: -2px -4px 4px 0px rgba(0, 0, 0, 0.75);
-}
 
 .profile-intro > p > a {
   font-family: "Lato",sans-serif;
@@ -454,7 +442,7 @@ form .form-button {
   }
 
   .grey-box-contact {
-    height: 23rem;
+    height: 20rem;
   }
 
   #masterhead {
