@@ -114,10 +114,6 @@ p {
   padding-bottom: 4rem;
 }
 
-.grid-item {
-  margin-bottom: 3rem;
-}
-
 .thumbnail {
   margin-bottom: 1rem;
 }
@@ -126,23 +122,28 @@ p {
 .grey-box-contact {
   background-color: #efefef;
 }
-.grey-box-contact .profile-intro {
+
+.profile-intro, .contact-intro {
   position: static;
   padding-top: 3rem;
   top: 41rem;
 }
-.grey-box-contact .profile-intro p {
+.profile-intro p, .contact-intro p {
   width: 20rem;
   padding-bottom: 1rem;
   margin: auto;
 }
 
+.contact-intro {
+  padding-top: 2rem;
+}
+
 .icon {
   width: 20rem;
+  margin: auto;
 }
 .icon a > img {
-  width: 16%;
-  margin: auto;
+  width: 20%;
 }
 
 .profile-box {
@@ -164,7 +165,7 @@ p {
   background-image: url(../img/profile1.jpg);
   background-size: 110%;
   border: 5px solid red;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .profile-box .profile2 {
   background-image: url(../img/profile2.jpg);
@@ -175,7 +176,7 @@ p {
 }
 
 .grey-box-contact {
-  height: 24rem;
+  height: 22.5rem;
 }
 
 form {
@@ -277,16 +278,15 @@ form .form-button {
     width: 12rem;
   }
 
-  .profile-intro {
+  .profile-intro, .contact-intro {
     position: static;
     top: 35rem;
   }
-  .profile-intro p {
-    width: 23rem;
+  .profile-intro p, .contact-intro p {
+    width: 24rem;
   }
 
   .icon {
-    margin-top: 0rem;
     width: 20rem;
   }
 
@@ -307,13 +307,21 @@ form .form-button {
     margin-left: 12rem;
   }
 
-  .profile-intro {
+  .profile-intro, .contact-intro {
     float: left;
     margin-left: 5rem;
   }
 
+  .contact-intro {
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+  }
+
   .icon {
     float: left;
+    margin: auto;
+    width: 27rem;
+    padding-left: 8rem;
   }
 
   .grey-box-contact {
