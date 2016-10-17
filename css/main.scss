@@ -143,12 +143,8 @@ p {
 
 /*   - - - - ABOUT ME   - - - - */
 
-.grey-box-contact, .grey-box-contact-2 {
+.grey-box-contact {
    background-color: #efefef;
-   margin-top: 0rem;
-   margin-left: 0rem;
-   margin-right: 0rem;
-   padding: 2rem 7% 3rem 7%;
 
    .profile-intro {
       position: static;
@@ -161,17 +157,16 @@ p {
       }
    }
 
+}
+
    .icon {
-      padding-top: 1rem;
       width: 20rem;
-      margin: auto;
 
       a>img {
          width: 16%;
          margin: auto;
       }
    }
-}
 
 .profile-box{
    height:22rem;
@@ -205,10 +200,6 @@ p {
 
 .grey-box-contact {
    height: 24rem;
-}
-
-.grey-box-contact-2 {
-  height: 31rem;
 }
 
 form {
@@ -312,21 +303,12 @@ form {
       width: 12rem;
    }
 
-.grey-box-contact, .grey-box-contact-2 {
-   margin-left: 2rem;
-   margin-right: 2rem;
-   padding-left: 0rem;
-
    .profile-intro {
       position: static;
       top: 35rem;
       p {
          width: 23rem;
       }
-   }
-
-   form {
-      width: 30rem;
    }
 
    .icon {
@@ -337,7 +319,6 @@ form {
    .nav-link a{
       padding: .3rem 0.65rem .3rem 0.65rem;
    }
-}
 
 }
 
@@ -350,32 +331,22 @@ form {
       font-size: 14px;
    }
 
-   .grey-box-contact, .grey-box-contact-2 {
-      margin-left: 4.8rem;
-      margin-right: 4.8rem;
 
-      .profile {
-         width:18rem;
-         height:18rem;
-         float:left;
-         margin-left: 12rem;
-      }
+  .profile {
+     width:18rem;
+     height:18rem;
+     float:left;
+     margin-left: 12rem;
+  }
 
-      .profile-intro {
-         float: left;
-         margin-left: 5rem;
-      }
+  .profile-intro {
+     float: left;
+     margin-left: 5rem;
+  }
 
-      form {
-         width: 20.6rem;
-         margin-left: 8rem;
-         float: left;
-      }
-
-      .icon {
-         float: left;
-      }
-   }
+  .icon {
+     float: left;
+  }
 
    .grey-box-contact {
       height: 26rem;

@@ -123,29 +123,24 @@ p {
 }
 
 /*   - - - - ABOUT ME   - - - - */
-.grey-box-contact, .grey-box-contact-2 {
+.grey-box-contact {
   background-color: #efefef;
-  margin-top: 0rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  padding: 2rem 7% 3rem 7%;
 }
-.grey-box-contact .profile-intro, .grey-box-contact-2 .profile-intro {
+.grey-box-contact .profile-intro {
   position: static;
   padding-top: 3rem;
   top: 41rem;
 }
-.grey-box-contact .profile-intro p, .grey-box-contact-2 .profile-intro p {
+.grey-box-contact .profile-intro p {
   width: 20rem;
   padding-bottom: 1rem;
   margin: auto;
 }
-.grey-box-contact .icon, .grey-box-contact-2 .icon {
-  padding-top: 1rem;
+
+.icon {
   width: 20rem;
-  margin: auto;
 }
-.grey-box-contact .icon a > img, .grey-box-contact-2 .icon a > img {
+.icon a > img {
   width: 16%;
   margin: auto;
 }
@@ -181,10 +176,6 @@ p {
 
 .grey-box-contact {
   height: 24rem;
-}
-
-.grey-box-contact-2 {
-  height: 31rem;
 }
 
 form {
@@ -286,26 +277,20 @@ form .form-button {
     width: 12rem;
   }
 
-  .grey-box-contact, .grey-box-contact-2 {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding-left: 0rem;
-  }
-  .grey-box-contact .profile-intro, .grey-box-contact-2 .profile-intro {
+  .profile-intro {
     position: static;
     top: 35rem;
   }
-  .grey-box-contact .profile-intro p, .grey-box-contact-2 .profile-intro p {
+  .profile-intro p {
     width: 23rem;
   }
-  .grey-box-contact form, .grey-box-contact-2 form {
-    width: 30rem;
-  }
-  .grey-box-contact .icon, .grey-box-contact-2 .icon {
+
+  .icon {
     margin-top: 0rem;
     width: 20rem;
   }
-  .grey-box-contact .nav-link a, .grey-box-contact-2 .nav-link a {
+
+  .nav-link a {
     padding: .3rem 0.65rem .3rem 0.65rem;
   }
 }
@@ -315,26 +300,19 @@ form .form-button {
     font-size: 14px;
   }
 
-  .grey-box-contact, .grey-box-contact-2 {
-    margin-left: 4.8rem;
-    margin-right: 4.8rem;
-  }
-  .grey-box-contact .profile, .grey-box-contact-2 .profile {
+  .profile {
     width: 18rem;
     height: 18rem;
     float: left;
     margin-left: 12rem;
   }
-  .grey-box-contact .profile-intro, .grey-box-contact-2 .profile-intro {
+
+  .profile-intro {
     float: left;
     margin-left: 5rem;
   }
-  .grey-box-contact form, .grey-box-contact-2 form {
-    width: 20.6rem;
-    margin-left: 8rem;
-    float: left;
-  }
-  .grey-box-contact .icon, .grey-box-contact-2 .icon {
+
+  .icon {
     float: left;
   }
 
