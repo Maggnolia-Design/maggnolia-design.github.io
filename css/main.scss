@@ -229,14 +229,15 @@ form {
 
 /* FOOTER */
 
-#footer {
-   clear:both;
-   right:0;
-   bottom:0;
-   left:0;
-   margin-top: 2rem;
-   background-color: #efefef;
-   padding: 0.5rem 0rem 0.5rem 4.8rem;
+.container {
+   width: 15rem;
+   margin-right: 0rem;
+   margin-top: 1rem;
+}
+
+.navbar-fixed-bottom {
+   padding: 1rem;
+   background: white;
 }
 
 /*   - - - - MEDIA QUERIES - - - - */
