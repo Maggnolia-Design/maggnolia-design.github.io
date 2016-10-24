@@ -36,7 +36,7 @@ p {
 /* - - - - NAV - - - - */
 
 #masterhead {
-   border-bottom: 2px solid;
+   border-bottom: 1px solid;
    padding-bottom: 3rem;
    margin-top: 2rem;
    margin-left: 0rem;
@@ -71,7 +71,8 @@ p {
          text-decoration: none;
          color: black;
          font-weight: bold;
-         padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+         padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+          margin-left: 0.5rem;
       }
       a:hover {
          background-color: rgba(#FF8E6B, 0.5);
@@ -116,6 +117,8 @@ p {
 }
 
 
+
+
 /*  - - - - PORTFOLIO PAGES  - - - - */
 
 .container {
@@ -153,6 +156,14 @@ p {
       margin: auto;
    }
 }
+
+   .extended-profile-intro {
+      display:none;
+   }
+
+   .profile-intro >div {
+      padding-bottom: 7rem;
+   }
 
 .contact-intro {
    padding-top: 1.5rem;
@@ -195,7 +206,7 @@ p {
       background-size: 120%;
       border: 5px solid darkblue;
       margin-top: 8.5rem;
-      margin-bottom: 5rem;
+      margin-bottom: 7rem;
    }
 }
 
@@ -267,8 +278,8 @@ form {
    }
 
    #masterhead {
-      margin-left: 2rem;
-      margin-right: 2rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
       #home-button {
          visibility:visible;
          position:absolute;
@@ -349,6 +360,10 @@ form {
    padding-bottom: 2rem;
   }
 
+   .extended-profile-intro {
+      display:unset;
+   }
+
   .icon {
      float: left;
      margin: auto;
@@ -379,10 +394,6 @@ form {
       float: left;
       padding-left: 8rem;
       overflow: visible;
-   }
-
-   .profile-intro >div {
-      padding-bottom: 7rem;
    }
 
    .pages {
