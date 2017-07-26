@@ -140,6 +140,31 @@ p {
    margin-bottom: 1rem;
 }
 
+
+/*  - - - - EXTERNAL PROJECT FILES  - - - -  */
+
+#infosection {
+    background: white;
+    Width: 30vw;
+    overflow: hidden;
+    position: fixed;
+    padding: 4rem;
+}
+
+#projectexpansion {
+    width: 60vw;
+    margin-left: 30vw;
+    padding: 5rem;
+    
+    img {
+        width:100%;
+        overflow: hidden;
+    }
+}
+
+
+
+
 /*   - - - - ABOUT ME   - - - - */
 
 .grey-box-contact {

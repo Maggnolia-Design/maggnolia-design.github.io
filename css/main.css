@@ -3,30 +3,24 @@
 html {
   margin: 0;
   padding: 0;
-  font-size: 13px;
-}
+  font-size: 13px; }
 
 body {
   font-size: 13px;
-  line-height: 1.4;
-}
+  line-height: 1.4; }
 
 #project-process, #proj-overview, #masterhead, .welcome_box {
-  margin-right: 4.8rem;
-}
+  margin-right: 4.8rem; }
 
 /* - - - - TEXT - - - - */
 #home-button, ul, h1, h2, h3 {
-  font-family: 'Lato', sans-serif;
-}
-#home-button #og-home-button:hover, ul #og-home-button:hover, h1 #og-home-button:hover, h2 #og-home-button:hover, h3 #og-home-button:hover {
-  background-color: rgba(255, 142, 107, 0.5);
-}
+  font-family: 'Lato', sans-serif; }
+  #home-button #og-home-button:hover, ul #og-home-button:hover, h1 #og-home-button:hover, h2 #og-home-button:hover, h3 #og-home-button:hover {
+    background-color: rgba(255, 142, 107, 0.5); }
 
 p {
   font-family: Garamond, serif;
-  line-height: 1.3em;
-}
+  line-height: 1.3em; }
 
 /* - - - - NAV - - - - */
 #masterhead {
@@ -34,335 +28,280 @@ p {
   padding-bottom: 3rem;
   margin-top: 2rem;
   margin-left: 0rem;
-  margin-right: 0rem;
-}
-#masterhead #home-button {
-  float: left;
-  padding-left: 2.2rem;
-}
-#masterhead #home-button #og-home-button {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  padding: 0.6rem 1.2rem 0.6rem 1.2rem;
-}
-#masterhead #home-button #og-home-button:hover {
-  background-color: rgba(255, 142, 107, 0.5);
-}
+  margin-right: 0rem; }
+  #masterhead #home-button {
+    float: left;
+    padding-left: 2.2rem; }
+    #masterhead #home-button #og-home-button {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 0.6rem 1.2rem 0.6rem 1.2rem; }
+    #masterhead #home-button #og-home-button:hover {
+      background-color: rgba(255, 142, 107, 0.5); }
 
 #nav {
   padding-left: 2.1rem;
   padding-right: 2.1rem;
-  float: right;
-}
-#nav .nav-link {
-  display: inline-block;
-}
-#nav .nav-link a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  padding: 0.6rem 1.2rem 0.6rem 1.2rem;
-  margin-left: 0.5rem;
-}
-#nav .nav-link a:hover {
-  background-color: rgba(255, 142, 107, 0.5);
-}
-#nav .nav-link:hover #subnav {
-  display: block;
-  width: 100%;
-}
+  float: right; }
+  #nav .nav-link {
+    display: inline-block; }
+    #nav .nav-link a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+      margin-left: 0.5rem; }
+    #nav .nav-link a:hover {
+      background-color: rgba(255, 142, 107, 0.5); }
+  #nav .nav-link:hover #subnav {
+    display: block;
+    width: 100%; }
 
 #alt-home-button {
   visibility: hidden;
-  position: absolute;
-}
+  position: absolute; }
 
 #subnav {
   position: absolute;
   padding-left: 0rem;
   padding-top: .8rem;
   display: none;
-  list-style: none;
-}
-#subnav .subnav-link {
-  margin-top: 1.1rem;
-}
+  list-style: none; }
+  #subnav .subnav-link {
+    margin-top: 1.1rem; }
 
 .active > a {
-  background-color: #FF8E6B;
-}
+  background-color: #FF8E6B; }
 
 /* - - - - HOMEPAGE - - - - */
 .welcome_box h1 {
   font: italic bold 50px Georgia, Serif;
-  padding-top: 5rem;
-}
+  padding-top: 5rem; }
 
 /*  - - - - PORTFOLIO PAGES  - - - - */
 .container {
-  margin-top: 2rem;
-}
+  margin-top: 2rem; }
 
 .pages {
-  display: none;
-}
-.pages .margin {
-  padding-bottom: 5rem;
-}
+  display: none; }
+  .pages .margin {
+    padding-bottom: 5rem; }
 
 .grid-item:last-of-type {
-  padding-bottom: 4rem;
-}
+  padding-bottom: 4rem; }
 
 .thumbnail {
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1rem; }
+
+/*  - - - - EXTERNAL PROJECT FILES  - - - -  */
+#infosection {
+  background: white;
+  Width: 30vw;
+  overflow: hidden;
+  position: fixed;
+  padding: 4rem; }
+
+#projectexpansion {
+  width: 60vw;
+  margin-left: 30vw;
+  padding: 5rem; }
+  #projectexpansion img {
+    width: 100%;
+    overflow: hidden; }
 
 /*   - - - - ABOUT ME   - - - - */
 .grey-box-contact {
-  background-color: #efefef;
-}
+  background-color: #efefef; }
 
 .profile-intro, .contact-intro {
   position: static;
   padding-top: 3rem;
-  top: 41rem;
-}
-.profile-intro p, .contact-intro p {
-  width: 20rem;
-  padding-bottom: 1rem;
-  margin: auto;
-}
+  top: 41rem; }
+  .profile-intro p, .contact-intro p {
+    width: 20rem;
+    padding-bottom: 1rem;
+    margin: auto; }
 
 .extended-profile-intro {
-  display: none;
-}
+  display: none; }
 
 .profile-intro > div {
-  padding-bottom: 7rem;
-}
+  padding-bottom: 7rem; }
 
 .contact-intro {
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
+  padding-bottom: 1.5rem; }
 
 .icon {
   width: 20rem;
-  margin: auto;
-}
-.icon a > img {
-  width: 20%;
-}
+  margin: auto; }
+  .icon a > img {
+    width: 20%; }
 
 .profile-box {
   height: 22rem;
-  overflow: hidden;
-}
-.profile-box .profile1, .profile-box .profile2 {
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-  behavior: url(PIE.htc);
-  /* remove if you don't care about IE8 */
-  width: 18rem;
-  height: 18rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-.profile-box .profile1 {
-  background-image: url(../img/profile1.jpg);
-  background-size: 110%;
-  border: 5px solid red;
-  margin-top: 2rem;
-}
-.profile-box .profile2 {
-  background-image: url(../img/profile2.jpg);
-  background-size: 120%;
-  border: 5px solid darkblue;
-  margin-top: 8.5rem;
-  margin-bottom: 7rem;
-}
+  overflow: hidden; }
+  .profile-box .profile1, .profile-box .profile2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    /* remove if you don't care about IE8 */
+    width: 18rem;
+    height: 18rem;
+    margin-right: auto;
+    margin-left: auto; }
+  .profile-box .profile1 {
+    background-image: url(../img/profile1.jpg);
+    background-size: 110%;
+    border: 5px solid red;
+    margin-top: 2rem; }
+  .profile-box .profile2 {
+    background-image: url(../img/profile2.jpg);
+    background-size: 120%;
+    border: 5px solid darkblue;
+    margin-top: 8.5rem;
+    margin-bottom: 7rem; }
 
 .grey-box-contact {
-  height: 22.5rem;
-}
+  height: 22.5rem; }
 
 form {
   width: 80%;
   margin: auto;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  font-size: 0.9rem;
-}
-form input, form textarea {
-  width: 100%;
-  padding: .4rem 0 .4rem 1rem;
-  margin-bottom: .5rem;
-}
-form .form-button {
-  width: 40%;
-}
+  font-size: 0.9rem; }
+  form input, form textarea {
+    width: 100%;
+    padding: .4rem 0 .4rem 1rem;
+    margin-bottom: .5rem; }
+  form .form-button {
+    width: 40%; }
 
 .icon img {
-  width: 80%;
-}
+  width: 80%; }
 
 /* FOOTER */
 .container {
   margin-right: 0rem;
-  margin-top: 1rem;
-}
+  margin-top: 1rem; }
 
 .navbar-fixed-bottom {
   padding: 1rem;
-  background: white;
-}
+  background: white; }
 
 /*   - - - - MEDIA QUERIES - - - - */
 #alt-home-button {
   visibility: visible;
-  position: static;
-}
+  position: static; }
 
 #home-button, #minimize {
   visibility: hidden;
-  position: absolute;
-}
+  position: absolute; }
 
 /* MEDIUM SCREEN 768 */
 @media screen and (min-width: 768px) {
   #alt-home-button, #minimize {
     visibility: visible;
-    position: static;
-  }
+    position: static; }
 
   #un-minimize, #alt-home-button, #home-button > span {
     visibility: hidden;
-    position: absolute;
-  }
+    position: absolute; }
 
   #masterhead {
     margin-left: 0rem;
-    margin-right: 0rem;
-  }
-  #masterhead #home-button {
-    visibility: visible;
-    position: absolute;
-  }
+    margin-right: 0rem; }
+    #masterhead #home-button {
+      visibility: visible;
+      position: absolute; }
 
   .welcome_box h1 {
-    font: italic bold 70px Georgia, Serif;
-  }
+    font: italic bold 70px Georgia, Serif; }
 
   #fishies_1, #fishies_2 {
-    animation-duration: 6s;
-  }
+    animation-duration: 6s; }
 
   .flip img {
-    animation-duration: 12s;
-  }
+    animation-duration: 12s; }
 
   @keyframes swim1 {
     from {
-      margin-left: -40%;
-    }
+      margin-left: -40%; }
     to {
-      margin-left: 70%;
-    }
-  }
+      margin-left: 70%; } }
   @keyframes swim2 {
     from {
-      margin-left: -60%;
-    }
+      margin-left: -60%; }
     to {
-      margin-left: 80%;
-    }
-  }
+      margin-left: 80%; } }
   #fishies_1 img {
-    width: 7rem;
-  }
+    width: 7rem; }
 
   #fishies_2 img {
-    width: 12rem;
-  }
+    width: 12rem; }
 
   .profile-intro, .contact-intro {
     position: static;
-    top: 35rem;
-  }
-  .profile-intro p, .contact-intro p {
-    width: 24rem;
-  }
+    top: 35rem; }
+    .profile-intro p, .contact-intro p {
+      width: 24rem; }
 
   .icon {
-    width: 20rem;
-  }
+    width: 20rem; }
 
   .nav-link a {
-    padding: .3rem 0.65rem .3rem 0.65rem;
-  }
-}
+    padding: .3rem 0.65rem .3rem 0.65rem; } }
 /* BIG SCREEN 992 */
 @media screen and (min-width: 992px) {
   p {
-    font-size: 14px;
-  }
+    font-size: 14px; }
 
   .profile {
     width: 18rem;
     height: 18rem;
     float: left;
-    margin-left: 12rem;
-  }
+    margin-left: 12rem; }
 
   .profile-intro, .contact-intro {
     float: left;
-    margin-left: 5rem;
-  }
+    margin-left: 5rem; }
 
   .contact-intro {
     padding-top: 0rem;
-    padding-bottom: 2rem;
-  }
+    padding-bottom: 2rem; }
 
   .extended-profile-intro {
-    display: unset;
-  }
+    display: unset; }
 
   .icon {
     float: left;
     margin: auto;
     width: 27rem;
-    padding-left: 8rem;
-  }
+    padding-left: 8rem; }
 
   .grey-box-contact {
-    height: 26rem;
-  }
+    height: 26rem; }
 
   #masterhead {
     margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  #masterhead #home-button a, #masterhead #home-button span {
-    visibility: visible;
-    position: relative;
-  }
+    margin-right: 2rem; }
+    #masterhead #home-button a, #masterhead #home-button span {
+      visibility: visible;
+      position: relative; }
 
   .welcome_box h1 {
-    font: italic bold 80px Georgia, Serif;
-  }
+    font: italic bold 80px Georgia, Serif; }
 
   .profile-box {
     float: left;
     padding-left: 8rem;
-    overflow: visible;
-  }
+    overflow: visible; }
 
   .pages {
     padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-}
+    padding-right: 2.5rem; } }
+
+/*# sourceMappingURL=main.css.map */
