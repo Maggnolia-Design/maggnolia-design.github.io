@@ -145,24 +145,34 @@ p {
 
 #infosection {
     background: white;
-    Width: 30vw;
     overflow: hidden;
-    position: fixed;
-    padding: 4rem;
+    padding: 3rem 4rem 4rem 4rem;
+}
+
+.infosection-details {
+    margin-bottom: 3rem;
+    
+    h3 {
+        font-size: 2rem;
+    }
 }
 
 #projectexpansion {
-    width: 60vw;
-    margin-left: 30vw;
-    padding: 5rem;
+    padding: 0rem 5rem 5rem 5rem;
     
+    .projectexpansion-container {
+        margin-bottom: 3rem;
+    }
     img {
         width:100%;
         overflow: hidden;
     }
 }
 
-
+.divider {
+    border-top: 1px black solid;
+    margin: 3rem 0 3rem 0;
+}
 
 
 /*   - - - - ABOUT ME   - - - - */
@@ -355,8 +365,22 @@ form {
    .nav-link a{
       padding: .3rem 0.65rem .3rem 0.65rem;
    }
+    
+    // Thumbnail expansions
+    
+    #infosection {
+        width: 40vw;
+        position: fixed;
+    }
+    
+    #projectexpansion {
+        padding: 5rem;
+        width: 65vw;
+        margin-left: 35vw;
+    }
 
 }
+
 
 
 /* BIG SCREEN 992 */
@@ -424,4 +448,16 @@ form {
       padding-left: 2.5rem;
       padding-right: 2.5rem;
    }
+    
+    // thumbnail expansinos
+    
+    #infosection {
+        width: 35rem;
+        position: fixed;
+    }
+    
+    #projectexpansion {
+        width: 60vw;
+        margin-left: 33rem;
+    }
 }
