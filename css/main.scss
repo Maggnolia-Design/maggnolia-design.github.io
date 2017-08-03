@@ -319,6 +319,10 @@ form {
          position:absolute;
       }
    }
+    
+    .page-label {
+        padding-left: 2rem;
+    }
 
    .welcome_box h1 {
      font: italic bold 70px Georgia, Serif;
@@ -423,6 +427,11 @@ form {
       height: 26rem;
    }
 
+    .padding {
+        margin-left: 10vw;  
+        margin-right: 10vw;
+    }
+    
    #masterhead {
       margin-left: 2rem;
       margin-right: 2rem;
@@ -433,6 +442,10 @@ form {
          }
       }
    }
+    
+    .page-label {
+        padding-left: 4.5rem;
+    }
 
    .welcome_box h1 {
      font: italic bold 80px Georgia, Serif;
