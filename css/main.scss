@@ -58,6 +58,9 @@ p {
    }
 }
 
+.page-label, .footer-label {
+    padding-left: 1.5rem;
+}
 
 #nav {
    padding-left: 2.1rem;
@@ -121,9 +124,6 @@ p {
 
 /*  - - - - PORTFOLIO PAGES  - - - - */
 
-.container {
-   margin-top: 2rem;
-}
 .pages {
    display: none;
    .margin {
@@ -275,10 +275,6 @@ form {
 
 /* FOOTER */
 
-.container {
-   margin-right: 0rem;
-   margin-top: 1rem;
-}
 
 .navbar-fixed-bottom {
    padding: 1rem;
@@ -319,10 +315,6 @@ form {
          position:absolute;
       }
    }
-    
-    .page-label {
-        padding-left: 2rem;
-    }
 
    .welcome_box h1 {
      font: italic bold 70px Georgia, Serif;
@@ -443,7 +435,7 @@ form {
       }
    }
     
-    .page-label {
+    .page-label, .footer-label {
         padding-left: 4.5rem;
     }
 
