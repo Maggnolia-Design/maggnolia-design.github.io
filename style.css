@@ -413,12 +413,12 @@ h4 {
 
 /* Portfolio - Individual Adgustments */
 
-.eon, .peony, .jenson, .icons {top: 21rem; }
-.walsh, .cartoon {top: 22rem;}
-/*.glad, .bobbi {top: 17.2rem; }*/
-
 /* header height */
 
+.eon, .peony, .jenson, .icons {top: 21rem; }
+.walsh, .cartoon {top: 22rem;}
+.df_art { top:20rem; }
+/*.glad, .bobbi {top: 17.2rem; }*/
 
 /* images */
 
@@ -443,10 +443,15 @@ h4 {
 
 .icons2 { height: 20rem; }
 
+.art1 > img { height: 12rem; }
+
+.art2 >img { height: 16rem; }
+
 @media (min-width: 900px) {
 	.eon, .peony, .jenson, .icons {top: 21.1rem; }
 	.walsh, .cartoon {top: 22.2rem;}
 	.glad, .bobbi {top: 17.2rem; }
+	.df_art { top:18rem; }
 }
 
 @media (min-width: 1110px) {
