@@ -1,0 +1,203 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  width:300px; 
+  height:250px; 
+  clip: rect(top right bottom left);
+  border: 1px solid #000;
+}
+
+.container {
+  position: relative;
+  width: 300px; 
+  height:250px; 
+  overflow: hidden;
+  clip: rect(top right bottom left);
+  background-color: #fed231;
+  }
+
+#play {
+  position: fixed;
+  top: 78px;
+  left:110px;
+  z-index: 10;
+}
+
+#play:hover {
+  opacity: .7;
+}
+
+/* FRAME IMAGES */
+
+.frame1{
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.frame2{
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  opacity: 0;
+  z-index: 1;
+  }
+
+.frame3{
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  opacity: 0;
+  z-index: 1;
+  }
+
+.frame4{
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  opacity: 0;
+  z-index: 1;
+  }
+
+.frame5{
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  opacity: 0;
+  z-index: 1;
+  }
+
+.frame6{
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  opacity: 0;
+  z-index: 1;
+  }
+
+/* FRAME 1 */
+
+.base {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  opacity: 1;
+}
+
+.bag {
+  position: absolute;
+  left: 21px;
+  top: 10px;
+  opacity: 1;
+}
+
+.package_st {
+  position: absolute;
+  left: 10px;
+  top: 73px;
+  opacity: 1;
+}
+
+.headline_st {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 300px;
+  height: 250px;
+  opacity:1;
+}
+
+.hello_st {
+  position: relative;
+  left: 177px;
+  top: 12px;
+  opacity: 1;
+}
+
+
+.best_bag_st {
+  position: relative;
+  left: 177px;
+  top: 90px;
+  opacity: 1;
+}
+
+.ever_st {
+  position: relative;
+  left: 65px;
+  top: 128px;
+  opacity: 1;
+}
+
+.available {
+  position: absolute;
+  left: 196px;
+  top: 204px;
+  opacity: 1;
+}
+
+/* FRAME 2 */
+
+.glad {
+  position: absolute;
+  left: 0px;
+  top: 18px;
+  z-index: 3;
+}
+
+.force_flex {
+  position: absolute;
+  left: 30px;
+  top: 97px;
+  z-index: 3;
+}
+
+/* FRAME 3 */
+
+.rip {
+  position: absolute;
+  top: 64px;
+  left: 135px;
+  opacity: 1;
+}
+
+.leak {
+  position: absolute;
+  top: 124px;
+  left: 25px;
+  opacity: 1;
+}
+
+.reinforced {
+  position: absolute;
+  top: 200px;
+  left: 53px;
+  opacity: 1;
+}
+
+/* FRAME 4 */
+
+
+.headline_end {
+  position: absolute;
+  left: 195px;
+  top: 34px;
+  opacity: 1;
+}
+
+.package_end {
+  position: relative;
+  top: 16px;
+  left: 73px;
+  opacity: 1;
+}
+
+.cta {
+  position: absolute;
+  top: 147px;
+  left: 195px;
+  opacity: 1;
+}

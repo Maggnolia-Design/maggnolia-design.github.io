@@ -1,0 +1,214 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  width:300px; 
+  height:600px; 
+  clip: rect(top right bottom left);
+  border: 1px solid #000;
+}
+
+.container {
+  position: relative;
+  width: 300px; 
+  height:600px; 
+  overflow: hidden;
+  clip: rect(top right bottom left);
+  background-color: #fed231;
+  }
+
+#play {
+  position: fixed;
+  top: 250px;
+  left:110px;
+  z-index: 10;
+}
+
+#play:hover {
+  opacity: .7;
+}
+
+/* FRAME IMAGES */
+
+.frame1{
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.frame2{
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  opacity: 0;
+  z-index: 1;
+  }
+
+.frame3{
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  opacity: 0;
+  z-index: 1;
+  }
+
+.frame4{
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  opacity: 0;
+  z-index: 1;
+  }
+
+.frame5{
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  opacity: 0;
+  z-index: 1;
+  }
+
+.frame6{
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  opacity: 0;
+  z-index: 1;
+  }
+
+/* FRAME 1 */
+
+.base {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  opacity: 1;
+}
+
+.bag {
+  position: absolute;
+  left: 18px;
+  top: 107px;
+  opacity: 1;
+}
+
+.package_start {
+  position: absolute;
+  left: 10px;
+  top: 272px;
+  opacity: 1;
+}
+
+.headline_start {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 300px;
+  height: 200px;
+  opacity:1;
+}
+
+.hello {
+  position: relative;
+  left: 34px;
+  top: -10px;
+  opacity: 1;
+}
+
+.best_{
+  position: relative;
+  left: 34px;
+  top: 60px;
+  opacity: 1;
+}
+.bag_{
+  position: relative;
+  left: 35px;
+  top: 60px;
+  opacity: 1;
+}
+
+.ever_{
+  position: relative;
+  left: 37px;
+  top: 60px;
+  opacity: 1;
+}
+
+
+.available {
+  position: absolute;
+  left: 29px;
+  top: 545px;
+  opacity: 1;
+  z-index: 9;
+}
+
+/* FRAME 2 */
+
+.glad {
+  position: absolute;
+  left: 0px;
+  top: 23px;
+  z-index: 3;
+}
+
+.force_flex {
+  position: absolute;
+  left: 10px;
+  top: 276px;
+  z-index: 3;
+}
+
+/* FRAME 3 */
+
+.rip {
+  position: absolute;
+  top: 216px;
+  left: 108px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.leak {
+  position: absolute;
+  top: 307px;
+  left: 11px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.reinforced {
+  position: absolute;
+  top: 419px;
+  left: 84px;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* FRAME 4 */
+
+.headline_end {
+  position: absolute;
+  top:64px;
+  left:0;
+  width: 300px;
+  height: 200px;
+  opacity:1;
+}
+
+.package_end {
+  position: relative;
+  top: 165px;
+  left: 78px;
+  opacity: 1;
+}
+
+.cta {
+  position: absolute;
+  top: 468px;
+  left: 78px;
+  opacity: 1;
+}
