@@ -21,25 +21,11 @@ function checkSize(){
 
 	else {
 		$(".target").removeClass("toggle");
-	// 	console.log("goodbye");
-	// 	$(window).off('scroll resize', checkSize);
 	}
 };
 
-$(function() { // toggles nav on click
-	$(".toggle-nav" ).click(function(event) {
-	    $("#navigation .toggle").toggle();
-	});
-});
 
 // NAVIGATION ANIMATIONS _____________________________________
-
-// reset page position on refresh
-
-$(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
-
-});
 
 // Keep link active when scrolled to certain range
 $(window).scroll(function(event) {
@@ -80,5 +66,18 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - offset
     }, 500);
+});
+
+
+// reset page position on refresh
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+
+});
+
+$(function() { // toggles nav on click
+    $(".toggle-nav" ).click(function(event) {
+        $("#navigation .toggle").toggle();
+    });
 });
 

@@ -68,14 +68,12 @@ h4 {
   line-height: 1rem;
   margin-bottom: .4rem; }
 
-.col-sm p, .piece_image > p {
+.col-sm p, .grid p {
 	font: 0.5rem 'Avenir Next Condensed Medium';
 	text-transform: uppercase;
 	margin: .2rem 0; }
 
 /* GRADIENTS */
-
-
 
 #landing {
 
@@ -288,9 +286,11 @@ h4 {
 
 /* LAYOUT / GRID */
 
-.thumbnail img {
-	width: calc(100% - 5rem);
-	border: 6px solid white; }
+.grid > div {
+	padding-bottom: .5rem;
+	padding-right: .2rem; }
+
+.grid > div > img { width: 100%; }
 
 .container {
 	max-width: 400px;
@@ -307,6 +307,17 @@ h4 {
 	position: relative;
 	width: 100%;
 	min-height: 1px; }
+
+.thumbnail img {
+	width: calc(100% - 5rem);
+	border: 6px solid white; }
+
+.width-xs { width: 210px; }
+.grid > .width-xs > img { width: 110%; }
+
+.width-sm { width: 300px; }
+.width-md { width: 420px; }
+.width-lg { width: 450px; }
 
 @media (min-width: 576px) {
 
@@ -372,9 +383,9 @@ h4 {
 		max-width: 100%; }
 }
 
-/* PORTFOLIO PIECE */
+/* PIECE PAGES */
 
-/* ________ section spacing ________ */
+/* (piece_page) */
 .piece_page {
 	right: 0rem;
 	left: 0rem;
@@ -404,62 +415,17 @@ h4 {
 	margin-top: 0rem;
 	padding-right: .5rem; }
 
+/* (image_page) */
 .image_page {
 	right: 0rem;
 	left: 0rem;
 	border-top: 1rem solid white;
 	position: relative;
-	z-index: 1; }
-
-.piece_image {
-	padding: 0 0.8rem 2.5rem 0; }
-
-.piece_image img {
-	height: 100%;
-	padding-right: .5rem;}
-
-/* ________ individual pages spacing ________ */
-
-#eon .piece_image {
-	height: 19rem;
-}
-
-#peony .piece_image, #jenson .piece_image, #walsh .piece_image, .cartoon2 {
-	height: 25rem; }
-
-.cartoon1 { height: 35rem; }
-
-.cartoon3 { height: 15.5rem; }
-
-.icons1 {
-	padding-bottom: 1.2rem;
-}
-
-.icons1 > img{
-	height: 10rem;
-	padding-bottom: .2rem; }
-
-.icons2 { height: 20rem; }
-
-.art1 > img { height: 12rem; }
-
-.art2 >img { height: 16rem; }
-
-.t_play1 > img, .t_play2 > img, .t_play3 > img { height: 18rem; }
+	z-index: 1;}
 
 
-/* ________ media queries ________ */
+/* ________ individual adjustments ________ */
 
-/*@media (min-width: 900px) {
-	.eon, .peony, .jenson, .icons {top: 21.1rem; }
-	.walsh, .cartoon {top: 22.2rem;}
-	.glad, .bobbi {top: 17.2rem; }
-	.df_art { top:17rem; }
-}
+.icons_1 > img { width: 10rem; }
+.icons_1 > img { width: 15rem; }
 
-@media (min-width: 1335px) {
-	.eon, .peony, .jenson, .icons {top: 15.2rem; }
-	.walsh, .cartoon {top: 16.3rem;}
-	.glad, .bobbi {top: 17.2rem; }
-}
-*/
