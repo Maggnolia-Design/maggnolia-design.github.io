@@ -420,11 +420,6 @@ h4 {
 
 /* ________ individual pages spacing ________ */
 
-/*.eon, .peony, .jenson, .icons {top: 21rem; }
-.walsh, .cartoon {top: 22rem;}
-.df_art { top:20rem; }
-.glad, .bobbi {top: 17.2rem; }*/
-
 #eon .piece_image {
 	height: 19rem;
 }
@@ -451,7 +446,6 @@ h4 {
 .art2 >img { height: 16rem; }
 
 .t_play1 > img, .t_play2 > img, .t_play3 > img { height: 18rem; }
-
 
 
 /* ________ media queries ________ */
