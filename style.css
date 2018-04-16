@@ -68,7 +68,7 @@ h4 {
   line-height: 1rem;
   margin-bottom: .4rem; }
 
-.col-sm p, .piece-image > p {
+.col-sm p, .piece_image > p {
 	font: 0.5rem 'Avenir Next Condensed Medium';
 	text-transform: uppercase;
 	margin: .2rem 0; }
@@ -375,28 +375,28 @@ h4 {
 /* PORTFOLIO PIECE */
 
 /* ________ section spacing ________ */
-.piece-page {
+.piece_page {
 	right: 0rem;
 	left: 0rem;
 	position: fixed;
 	padding-bottom: 2rem;
 	z-index: 2; }
 
-.piece-header h2 { margin: 0; }
+.piece_header h2 { margin: 0; }
 
-.piece-header h4 { margin-top: 1rem; }
+.piece_header h4 { margin-top: 1rem; }
 
-.piece-header, .piece-description {
+.piece_header, .piece_description {
 	float: left;
 	margin-top: 1rem; }
 
-.piece-description { padding-right: 3rem; }
+.piece_description { padding-right: 3rem; }
 
-.piece-description > div > h4 { margin-top: 0rem; }
+.piece_description > div > h4 { margin-top: 0rem; }
 
-.piece-description > div { float: left; }
+.piece_description > div { float: left; }
 
-.piece-description p {
+.piece_description p {
 	width: 17rem;
 	font-size: 12.8px;
 	line-height: 1rem;
@@ -404,17 +404,17 @@ h4 {
 	margin-top: 0rem;
 	padding-right: .5rem; }
 
-.image-page {
+.image_page {
 	right: 0rem;
 	left: 0rem;
 	border-top: 1rem solid white;
 	position: relative;
 	z-index: 1; }
 
-.piece-image {
+.piece_image {
 	padding: 0 0.8rem 2.5rem 0; }
 
-.piece-image img {
+.piece_image img {
 	height: 100%;
 	padding-right: .5rem;}
 
@@ -425,11 +425,11 @@ h4 {
 .df_art { top:20rem; }
 .glad, .bobbi {top: 17.2rem; }*/
 
-#eon .piece-image {
+#eon .piece_image {
 	height: 19rem;
 }
 
-#peony .piece-image, #jenson .piece-image, #walsh .piece-image, .cartoon2 {
+#peony .piece_image, #jenson .piece_image, #walsh .piece_image, .cartoon2 {
 	height: 25rem; }
 
 .cartoon1 { height: 35rem; }
