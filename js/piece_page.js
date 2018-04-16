@@ -5,7 +5,7 @@ $(document).ready(function() {
 		var $match = $('.piece_page[class*="'+id+'"]');
 
 		if($match.length){
-	        $(this).css('top', $match.outerHeight(true) - 15);
+	        $(this).css('top', $match.outerHeight(true) - 18);
 	        return false;
 			// $('#'+id+'').css("top", 500);
 		}
