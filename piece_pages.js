@@ -1,0 +1,1 @@
+$("????? .image-page").css({'top':($(".piece-page").height()+'px'})

@@ -374,6 +374,7 @@ h4 {
 
 /* PORTFOLIO PIECE */
 
+/* ________ section spacing ________ */
 .piece-page {
 	right: 0rem;
 	left: 0rem;
@@ -388,6 +389,12 @@ h4 {
 .piece-header, .piece-description {
 	float: left;
 	margin-top: 1rem; }
+
+.piece-description { padding-right: 3rem; }
+
+.piece-description > div > h4 { margin-top: 0rem; }
+
+.piece-description > div { float: left; }
 
 .piece-description p {
 	width: 17rem;
@@ -411,22 +418,18 @@ h4 {
 	height: 100%;
 	padding-right: .5rem;}
 
-/* Portfolio - Individual Adgustments */
+/* ________ individual pages spacing ________ */
 
-/* header height */
-
-.eon, .peony, .jenson, .icons {top: 21rem; }
+/*.eon, .peony, .jenson, .icons {top: 21rem; }
 .walsh, .cartoon {top: 22rem;}
 .df_art { top:20rem; }
-/*.glad, .bobbi {top: 17.2rem; }*/
+.glad, .bobbi {top: 17.2rem; }*/
 
-/* images */
-
-.eon .piece-image {
+#eon .piece-image {
 	height: 19rem;
 }
 
-.peony .piece-image, .jenson .piece-image, .walsh .piece-image, .cartoon2 {
+#peony .piece-image, #jenson .piece-image, #walsh .piece-image, .cartoon2 {
 	height: 25rem; }
 
 .cartoon1 { height: 35rem; }
@@ -447,16 +450,22 @@ h4 {
 
 .art2 >img { height: 16rem; }
 
-@media (min-width: 900px) {
+.t_play1 > img, .t_play2 > img, .t_play3 > img { height: 18rem; }
+
+
+
+/* ________ media queries ________ */
+
+/*@media (min-width: 900px) {
 	.eon, .peony, .jenson, .icons {top: 21.1rem; }
 	.walsh, .cartoon {top: 22.2rem;}
 	.glad, .bobbi {top: 17.2rem; }
-	.df_art { top:18rem; }
+	.df_art { top:17rem; }
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1335px) {
 	.eon, .peony, .jenson, .icons {top: 15.2rem; }
 	.walsh, .cartoon {top: 16.3rem;}
 	.glad, .bobbi {top: 17.2rem; }
 }
-
+*/
