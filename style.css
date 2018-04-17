@@ -287,8 +287,7 @@ h4 {
 /* LAYOUT / GRID */
 
 .grid > div {
-	padding-bottom: .5rem;
-	padding-right: .2rem; }
+	padding-bottom: 7px; }
 
 .grid > div > img { width: 100%; }
 
@@ -312,12 +311,13 @@ h4 {
 	width: calc(100% - 5rem);
 	border: 6px solid white; }
 
-.width-xs { width: 210px; }
-.grid > .width-xs > img { width: 110%; }
+.width-icon { width: 200px; }
 
-.width-sm { width: 300px; }
-.width-md { width: 420px; }
-.width-lg { width: 450px; }
+.width-xs { width: 170px; }
+.width-sm { width: 290px; }
+.width-md { width: 440px; }
+.width-lg { width: 470px; }
+.width-xl { width: 560px; }
 
 @media (min-width: 576px) {
 
