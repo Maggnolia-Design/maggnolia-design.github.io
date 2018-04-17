@@ -43,7 +43,7 @@
 	<section name="landing" class="page" id="landing">
 	    <h1>Hi, I'm Maggie Zhang.</h1>
 	    <div class="description">
-	    	<h3>LOOKING FOR A FREELANCER?</h3>
+	    	<h3>LOOKING FOR A<span id="TypeIt"></span> DESIGNER?</h3>
 		    <p>This is my design portfolio, where you can learn about my previous projects and work experiences.</p>
 		    <p>Feel free to use it for personal inspiration, or reach out to me with requests! Social media links, resume, and contact information to the right.</p>
 		</div>
@@ -153,6 +153,27 @@
 			<p>Carrier pigeons are the preferred means of contact; however, e-mails and phone calls are also encouraged. You can also follow me on social media and review my resume by following the icons to the right!</p>
 		</div>
 	</section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.9.0/typeit.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			new TypeIt('#TypeIt', {
+				speed: 100,
+		        strings: [
+		        	'freelance',
+		        	'graphic',
+		        	'interaction',
+		        	'brand identity',
+		        	'website',
+		        	'publication'
+	        	],
+		        breakLines: false,
+		        autoStart: true,
+		        nextStringDelay: [400, 2000],
+		        loop: true
+	    	});
+    	});
+    </script>
 </body>
 
 
