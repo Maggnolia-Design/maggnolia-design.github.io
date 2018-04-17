@@ -289,7 +289,7 @@ h4 {
 .grid > div {
 	padding-bottom: 7px; }
 
-.grid > div > img { width: 100%; }
+.grid > div > img { width: 99%; }
 
 .container {
 	max-width: 400px;
@@ -390,7 +390,11 @@ h4 {
 	right: 0rem;
 	left: 0rem;
 	position: fixed;
+	-webkit-transition: height 0.3s;
+	 -moz-transition: height 0.3s;
+	 transition: height 0.3s;
 	padding-bottom: 2rem;
+	border-bottom: 1rem solid white;
 	z-index: 2; }
 
 .piece_header h2 { margin: 0; }
@@ -415,11 +419,34 @@ h4 {
 	margin-top: 0rem;
 	padding-right: .5rem; }
 
+/* (piece-page animations) */
+
+.piece_page * {
+	 -webkit-transition: all 0.3s;
+	 -moz-transition: all 0.3s;
+	 transition: all 0.3s; }
+
+.shrink > .piece_header > h2 {
+	 font-size:1.2rem; }
+
+.shrink > .piece_header > h4 {
+	 font-size:.8rem; }
+
+.shrink > .piece_description {
+	height: 0;
+	margin: 0; }
+
+.shrink > .piece_description > h4 {
+	 font-size: 0; }
+
+.shrink > .piece_description > p {
+	 font-size: 0; }
+
+
 /* (image_page) */
 .image_page {
 	right: 0rem;
 	left: 0rem;
-	border-top: 1rem solid white;
 	position: relative;
 	z-index: 1;}
 

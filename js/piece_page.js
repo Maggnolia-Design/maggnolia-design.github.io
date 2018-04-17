@@ -4,9 +4,11 @@ $(document).ready(function() {
     // run test on initial page load
     checkSize();
 	adjHeight();
+	shrinking();
 
-    // run test on resize of the window
+    // run test on resize and scroll of the window
     $(window).resize(checkSize, adjHeight);
+    $(window).scroll(shrinking);
 
 	$('.grid').masonry({
 	  // options
@@ -37,11 +39,21 @@ function adjHeight(){
 		var $match = $('.piece_page[class*="'+id+'"]');
 
 		if($match.length){
-	        $(this).css('top', $match.outerHeight(true) - 18);
+	        $(this).css('padding-top', $match.outerHeight(true) + 10);
 	        return false;
 			// $('#'+id+'').css("top", 500);
 		}
 	});
+};
+
+function shrinking() {
+	var shrinkTrigger = 70;
+	if(window.pageYOffset > shrinkTrigger) {
+		$('.piece_page').addClass("shrink");
+	}
+	else {
+		$('.piece_page').removeClass("shrink");
+	}
 };
 
 $(function() { // toggles nav on click
