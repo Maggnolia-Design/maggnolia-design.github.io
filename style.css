@@ -47,6 +47,12 @@ h1 {
 .description p {
 	width: 8rem;
 	font-size: 8.5px;
+	line-height: .65rem;
+	clear: both; }
+
+.piece_description p {
+	width: 8rem;
+	font-size: 8.5px;
 	line-height: .65rem; }
 
 h2 {
@@ -60,12 +66,20 @@ h3 {
 	font: .9rem 'Moon Light', sans-serif;
 	color: #0093A3;
 	letter-spacing: 1.2px;
-	padding-right: 3rem; }
+	padding-right: 3rem;
+	padding-bottom: 2rem; }
 
 h4 {
   font: .7rem 'Avenir Next Bold', sans-serif;
   line-height: 1rem;
   margin-bottom: .4rem; }
+
+h3 > span {
+	float: left; }
+
+#TypeIt { clear: left; }
+
+.bold { font-family: "Moon Bold"; }
 
 .col-sm p, .grid p {
 	font: 0.5rem 'Avenir Next Condensed Medium';
@@ -90,16 +104,17 @@ h4 {
 	
 }
 
-@media (min-width: 576px) {
+@media (min-width: 500px) {
 
 	.page { padding: 2rem 0 2rem 4rem; }
 
 	h1 {font-size: 2rem; }
 
-	h3 {font-size: 1.3rem;
-		letter-spacing: 2px; }
+	h3 {font-size: 1.2rem;
+		letter-spacing: 2px;
+		padding-bottom: 3rem; }
 
-	.description p {
+	.description p, .piece_description p {
 		width: 13rem;
 		font-size: 10px;
 		line-height: .8rem; }
@@ -123,15 +138,15 @@ h4 {
     flex-grow: 1;
     max-width: 100%; }
 
-	.description {margin-left: 18vw; }
+	.description {margin-left: 12vw; }
 
 	h1 {
 		width: 23rem;
-		margin-left: 12vw;}
+		margin-left: 8vw;}
 
-	h2 {font-size: 2rem; letter-spacing: 2px; }
+	h2 {font-size: 1.8rem; letter-spacing: 2px; }
 
-	.description p {
+	.description p, .piece_description p {
 		width: 17.5rem;
 		font-size: .85rem;
 		line-height: 1.1rem; }
@@ -140,8 +155,17 @@ h4 {
 		font-size: .9rem;
 		line-height: 1.3rem; }
 
+	h3 { padding-bottom: 1.5rem; }
+
+	h3 > span { float: none; }
+
 	.col-sm p {
 		font-size: 0.6rem; }
+}
+
+@media (min-width: 992px) {
+	.description {margin-left: 23vw; }
+	h1 { margin-left:19vw; }
 }
 
 /* _____________________________________________*/
@@ -233,7 +257,7 @@ h4 {
 	background-color: black;
 	margin: .3rem 0; }
 
-@media (min-width: 576px) {
+@media (min-width: 500px) {
 
 	.nav-link {
 	    width: 10rem;
@@ -285,6 +309,12 @@ h4 {
 
 /* LAYOUT / GRID */
 
+.grid { max-width: 97%; }
+
+.grid-item {
+	max-width: 90%;
+}
+
 .grid > div {
 	padding-bottom: 7px; }
 
@@ -318,11 +348,10 @@ h4 {
 .width-lg { width: 470px; }
 .width-xl { width: 560px; }
 
-@media (min-width: 576px) {
+@media (min-width: 500px) {
 
 	.thumbnail img {
-		width: calc(100% - 2rem);
-		border-width: 10px; }
+		width: calc(100% - 2rem); }
 
     .container {
 	  	max-width: 585px;
@@ -342,8 +371,14 @@ h4 {
 }
 
 @media (min-width: 768px) {
+
+	.grid { max-width: 94%; }
+
+	.thumbnail img {
+		border-width: 10px; }
+
     .container {
-	  	max-width: 810px;
+	  	max-width: 850px;
 	    width: 86%; }
 
     .col-md {
@@ -359,7 +394,6 @@ h4 {
 }
 
 @media (min-width: 992px) {
-	.container {max-width: 960px;}
 
 	.col-lg {
 		-ms-flex-preferred-size: 0;
@@ -371,7 +405,7 @@ h4 {
 }
 
 @media (min-width: 1200px) {
-	.container {max-width: 1140px;}
+	.container {max-width: 1120px;}
 
 	.col-xl {
 		-ms-flex-preferred-size: 0;
@@ -411,9 +445,6 @@ h4 {
 .piece_description > div { float: left; }
 
 .piece_description p {
-	width: 17rem;
-	font-size: 12.8px;
-	line-height: 1rem;
 	float: left;
 	margin-top: 0rem;
 	padding-right: .5rem; }
