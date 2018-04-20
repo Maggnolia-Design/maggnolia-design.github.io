@@ -34,9 +34,8 @@ body {
 /* TEXT */
 
 
-h1 {
-	width: 9rem;
-	font: 1.5rem 'Avenir Next Bold', sans-serif;
+h1 { width: 9rem;
+	font: 2rem 'Avenir Next Bold', sans-serif;
 	color: black;
 	padding-top: 3rem;
 	text-align: left; }
@@ -55,8 +54,9 @@ h1 {
 	font-size: 8.5px;
 	line-height: .65rem; }
 
-h2 {
-	font: 1.2rem 'Moon Bold', sans-serif;
+h2 { padding: 20vh 0 32vh;
+	vertical-align: center;
+	font: 2.5rem 'Moon Bold', sans-serif;
 	color: #0093A3;
 	letter-spacing: 2px;
 	padding-right: 3rem; }
@@ -108,7 +108,8 @@ h3 > span {
 
 	.page { padding: 2rem 0 2rem 4rem; }
 
-	h1 {font-size: 2rem; }
+	h1 {font-size: 2.5rem;
+		width: auto; }
 
 	h3 {font-size: 1.2rem;
 		letter-spacing: 2px;
@@ -140,11 +141,11 @@ h3 > span {
 
 	.description {margin-left: 12vw; }
 
-	h1 {
+	h1 { font-size: 3rem;
 		width: 23rem;
-		margin-left: 8vw;}
+		margin: 12vh 0 13vh 8vw;}
 
-	h2 {font-size: 1.8rem; letter-spacing: 2px; }
+	h2 {font-size: 3rem; letter-spacing: 2px; }
 
 	.description p, .piece_description p {
 		width: 17.5rem;
@@ -240,7 +241,7 @@ h3 > span {
 #social-media {
 	position: fixed;
 	right: 1.5rem;
-	top: 35vh;
+	top: 28vh;
 	z-index: 3; }
 
 .social-icon img {
@@ -262,6 +263,10 @@ h3 > span {
 	.nav-link {
 	    width: 10rem;
 	    float: right; }
+
+	.social-icon img {
+		width: 1.3rem;
+		padding: .2rem 0; }
 }
 
 @media (min-width: 768px) {
@@ -297,8 +302,7 @@ h3 > span {
 		right: 2.6rem; }
 
 	.social-icon img {
-		width: 1.4rem;
-		padding: .2rem 0; }
+		width: 1.6rem; }
 
 	.line {
 		width: 1.3rem;
@@ -452,22 +456,23 @@ h3 > span {
 /* (piece-page animations) */
 
 .piece_page * {
-	 -webkit-transition: all 0.3s;
-	 -moz-transition: all 0.3s;
-	 transition: all 0.3s; }
+	 -webkit-transition: all 0.5s;
+	 -moz-transition: all 0.5s;
+	 transition: all 0.5s; }
+
+.shrink > .piece_header { margin: 0; }
 
 .shrink > .piece_header > h2 {
 	 font-size:1.2rem; }
 
 .shrink > .piece_header > h4 {
-	 font-size:.8rem; }
+	font-size:0rem;
+	height:0;
+	margin:0;}
 
 .shrink > .piece_description {
 	height: 0;
 	margin: 0; }
-
-.shrink > .piece_description > h4 {
-	 font-size: 0; }
 
 .shrink > .piece_description > p {
 	 font-size: 0; }
