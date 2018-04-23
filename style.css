@@ -55,11 +55,17 @@ h1 {padding-top: 12vh;
 	color: black;
 	text-align: left; }
 
-.description {
+#landing .description {
 	position: absolute;
 	bottom: 20vh; }
 
+#about .description {
+	position: absolute;
+	bottom: 10vh; }
+
 .description p {
+	margin:0;
+	padding-bottom: .5rem;
 	width: 8rem;
 	font: 8.5px 'Avenir Next Regular', sans-serif;
 	line-height: .7rem;
@@ -334,6 +340,17 @@ h3 > span { float: left; }
 		width: 1.3rem;
 		margin: .5rem 0; }
 	}
+
+/* ABOUT */
+
+.profile_pic {
+	margin: 0 2rem .5rem 0;
+	width: 8rem;
+	border: 6px solid white; }
+
+.profile_text, .profile_pic {
+	float: left;
+}
 
 /* __________________________________________________________*/
 
