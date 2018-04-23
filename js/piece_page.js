@@ -1,10 +1,12 @@
 // NAVIGATION TOGGLE _____________________________________
 
 $(document).ready(function() {
+
     // run test on initial page load
     checkSize();
 	adjHeight();
 	shrinking();
+	closeLook();
 
     // run test on resize and scroll of the window
     $(window).resize(checkSize, adjHeight);
@@ -23,7 +25,6 @@ function checkSize(){
 		$(".target").removeClass("toggle");
 	}
 };
-
 
 // set height of piece_page as top value of image_page
 function adjHeight(){
@@ -56,3 +57,19 @@ $(function() { // toggles nav on click
 	    $("#navigation .toggle").toggle();
 	});
 });
+
+// enlarge portfolio image hwen clicked
+function closeLook() {
+	$(".thumbnail img").click(function() { 
+	    var animWidth=$(this);
+
+	    if( $(this).hasClass('wide') ){
+	        animWidth = $(this).width() / 1.3;
+	        // $(this).css(position:'relative');
+	    } else{
+	        animWidth = $(this).width() * 1.3;
+	        // $(this).css(position:'absolute');
+	    }
+	    $(this).toggleClass('wide').animate({width: animWidth});
+	});
+};

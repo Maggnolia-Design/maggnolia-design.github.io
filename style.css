@@ -399,11 +399,13 @@ h3 > span { float: left; }
 	width: 86%;
 }
 
-/*.thumbnail:click > img {
+/*.thumbnail:active > img {
 	-webkit-transition: all 0.5s;
 	 -moz-transition: all 0.5s;
 	 transition: all 0.5s;
-	width: 80rem;
+ 	 margin-top: 0;
+	 margin-left: 0;
+	width: 103%;
 }*/
 
 @media (min-width: 500px) {
