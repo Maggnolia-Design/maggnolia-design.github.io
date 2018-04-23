@@ -178,7 +178,7 @@ h3 > span { float: left; }
 		line-height: 1.1rem; }
 
 	h4 {
-		font-size: .9rem;
+		font-size: 1rem;
 		line-height: 1.3rem; }
 
 	h3 { padding-bottom: .5rem; }
@@ -187,11 +187,20 @@ h3 > span { float: left; }
 
 	.col-sm p {
 		font-size: 0.6rem; }
+
+	#about .description { bottom: 20vh; }
 }
 
 @media (min-width: 992px) {
 	.description {margin-left: 23vw; }
-	h1 { margin-left:19vw; }
+
+	h1 {font-size: 5rem; 
+		padding-top: 8vh;
+		margin-left:19vw; }
+
+	h4 {
+		font-size: 1.2rem;
+		line-height: 1.6rem;}
 
 }
 
@@ -224,7 +233,7 @@ h3 > span { float: left; }
     list-style: none;
     clear: both;
     padding: .15rem 0;
-    font: .5rem 'Moon Light', sans-serif;
+    font: .6rem 'Moon Light', sans-serif;
 	letter-spacing: 1px;
     width: 8.5rem;
     float: right; }
@@ -317,13 +326,13 @@ h3 > span { float: left; }
 		background-color: #f6f6f6;
 		z-index: 3; }
 
-	#nav-right {
+	#navigation #nav-right {
 		float: right;
-		padding-right: 2.8rem; }
+		padding-right: 2rem; }
 
-	#nav-left {
+	#navigation #nav-left {
 		float: left;
-		padding-left: 2.8rem; }
+		padding-left: 2rem; }
 
 	.nav-link {
 		padding: .8rem 1.8rem 0rem 1.8rem;
@@ -344,8 +353,8 @@ h3 > span { float: left; }
 /* ABOUT */
 
 .profile_pic {
-	margin: 0 2rem .5rem 0;
-	width: 8rem;
+	margin: 2rem 2rem .5rem 0;
+	width: 10rem;
 	border: 6px solid white; }
 
 .profile_text, .profile_pic {
@@ -365,7 +374,8 @@ h3 > span { float: left; }
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	flex-wrap: wrap; }
+	flex-wrap: wrap;
+	padding-bottom: .5rem;}
 
 .col-sm, .col-md, .col-lg, .col-xl {
 	position: relative;
@@ -379,6 +389,22 @@ h3 > span { float: left; }
 .thumbnail img {
 	width: calc(100% - 5rem);
 	border: 6px solid white; }
+
+.thumbnail img:hover {
+	-webkit-transition: all 0.5s;
+	 -moz-transition: all 0.5s;
+	 transition: all 0.5s;
+	 margin-top: 2%;
+	 margin-left: 3%;
+	width: 86%;
+}
+
+/*.thumbnail:click > img {
+	-webkit-transition: all 0.5s;
+	 -moz-transition: all 0.5s;
+	 transition: all 0.5s;
+	width: 80rem;
+}*/
 
 @media (min-width: 500px) {
 
@@ -425,6 +451,8 @@ h3 > span { float: left; }
 
 @media (min-width: 992px) {
 
+	.row h4 { padding-right: 4rem; }
+
 	.col-lg {
 		-ms-flex-preferred-size: 0;
 		flex-basis: 0;
@@ -457,7 +485,7 @@ h3 > span { float: left; }
 .piece_header h2 { margin: 0; }
 
 .piece_description {
-	margin-top: 2rem;
+	margin-top: 4rem;
 	/*position: absolute;
 	bottom: 20vh; */}
 

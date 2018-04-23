@@ -69,12 +69,6 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 });
 
 
-// reset page position on refresh
-$(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
-
-});
-
 $(function() { // toggles nav on click
     $(".toggle-nav" ).click(function(event) {
         $("#navigation .toggle").toggle();
