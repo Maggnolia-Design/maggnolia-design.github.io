@@ -10,13 +10,6 @@ $(document).ready(function() {
     $(window).resize(checkSize, adjHeight);
     $(window).scroll(shrinking);
 
-	$('.grid').masonry({
-	  // options
-	  itemSelector: '.grid-item',
-	  columnWidth: 30
-	});
-
-
 });
 
 //Function to add or remove classes based on css rules
@@ -50,9 +43,11 @@ function shrinking() {
 	var shrinkTrigger = 70;
 	if(window.pageYOffset > shrinkTrigger) {
 		$('.piece_page').addClass("shrink");
+		$('.image_page').addClass("shrink");
 	}
 	else {
 		$('.piece_page').removeClass("shrink");
+		$('.image_page').removeClass("shrink");
 	}
 };
 
