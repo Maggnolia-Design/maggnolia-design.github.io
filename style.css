@@ -382,31 +382,30 @@ h3 > span { float: left; }
 	width: 100%;
 	min-height: 1px; }
 
-.col-ad {
-	padding-left: 1rem;
-}
+.col-ad { padding-left: 1rem; }
 
 .thumbnail img {
 	width: calc(100% - 5rem);
 	border: 6px solid white; }
 
 .thumbnail img:hover {
+	transform: scale(.95);
 	-webkit-transition: all 0.5s;
 	 -moz-transition: all 0.5s;
-	 transition: all 0.5s;
-	 margin-top: 2%;
-	 margin-left: 3%;
-	width: 86%;
+	 transition: all 0.5s; }
+
+.thumbnail .closeLook {
+	position: fixed;
+	top: 5%;
+	left: 5%;
+	width: 90vw;
+	z-index: 30; }
+
+.thumbnail .closeLook:hover {
+	transform: scale(1);
 }
 
-/*.thumbnail:active > img {
-	-webkit-transition: all 0.5s;
-	 -moz-transition: all 0.5s;
-	 transition: all 0.5s;
- 	 margin-top: 0;
-	 margin-left: 0;
-	width: 103%;
-}*/
+
 
 @media (min-width: 500px) {
 
