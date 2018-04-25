@@ -7,9 +7,6 @@ $(document).ready(function() {
     // run test on resize of the window
     $(window).resize(checkSize);
 
-    // highlight landing link on initial page load
-    $('a[href="#landing"]').css({"border-bottom": "3px solid red", "padding-bottom": ".3rem"});
-
 });
 
 //Function to add or remove classes based on css rules
@@ -30,31 +27,31 @@ function checkSize(){
 // Keep link active when scrolled to certain range
 $(window).scroll(function(event) {
     var scroll = $(window).scrollTop();
-    var red_line = {"border-bottom": "3px solid red", "padding-bottom": ".3rem"};
-    var no_line = {"border-bottom": "none"};
+    var red_line = {"width" : "100%"};
+    var no_line = {"width" : "0"};
     var offset = 270;
 
     var pos_portfolio = $('#portfolio').offset().top - offset;
     var pos_art = $('#art-craft').offset().top - offset;
     var pos_about = $('#about').offset().top - offset;
 
-	$('a[href^="#"]').css(no_line);
+    $('a[href^="#"] span').css(no_line);
 
     if(scroll >= 0 && scroll < pos_portfolio) {
     	console.log("landing");
-        $('a[href="#landing"]').css(red_line);
+        $('a[href="#landing"] span').css(red_line);
     }
     else if(scroll >= pos_portfolio && scroll < pos_art ) {
     	console.log("portfolio");
-        $('a[href="#portfolio"]').css(red_line);
+        $('a[href="#portfolio"] span').css(red_line);
     }
     else if(scroll >= pos_art && scroll < pos_about ) {
     	console.log("art-craft");
-        $('a[href="#art-craft"]').css(red_line);
+        $('a[href="#art-craft"] span').css(red_line);
     }
     else {
     	console.log("about");
-        $('a[href="#about"]').css(red_line);
+        $('a[href="#about"] span').css(red_line);
     }
 });
 

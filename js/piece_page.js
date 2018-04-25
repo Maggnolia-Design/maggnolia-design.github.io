@@ -11,6 +11,11 @@ $(document).ready(function() {
     $(window).resize(checkSize, adjHeight);
     $(window).scroll(shrinking);
 
+	$('.exit_back').click(function(){
+		parent.history.back();
+		return false;
+	});
+
 });
 
 //Function to add or remove classes based on css rules
@@ -54,18 +59,5 @@ function shrinking() {
 $(function() { // toggles nav on click
 	$(".toggle-nav" ).click(function(event) {
 	    $("#navigation .toggle").toggle();
-	});
-});
-
-$(function() { // toggle class when clicked
-	$('.thumbnail img').click(function(e){
-		// console.log('hide?')
-		// console.log($(this).width())
-		$('.thumbnail img').removeClass('closeLook');
-		$(this).addClass('closeLook');
-		e.stopPropagation()
-	}),
-	$(document).click(function() {
-		$('.thumbnail img').removeClass('closeLook');
 	});
 });
