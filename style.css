@@ -63,14 +63,6 @@ h1 {padding-top: 12vh;
 	color: black;
 	text-align: left; }
 
-#landing .description {
-	position: absolute;
-	bottom: 20vh; }
-
-#about .description {
-	position: absolute;
-	bottom: 10vh; }
-
 .description p {
 	margin:0;
 	padding-bottom: .5rem;
@@ -83,7 +75,7 @@ h1 {padding-top: 12vh;
 h2 { 
 	font: 1.6rem 'Avenir Next Bold', sans-serif;
 	letter-spacing: 2px;
-	margin-bottom: 8rem; }
+	margin-bottom: 7rem; }
 
 h3 {
 	font: .9rem 'Moon Light', sans-serif;
@@ -195,20 +187,20 @@ h3 > span { float: left; }
 
 	.col-sm p {
 		font-size: 0.6rem; }
-
-	#about .description { bottom: 20vh; }
 }
 
 @media (min-width: 992px) {
 	.description {margin-left: 23vw; }
 
-	h1 {font-size: 5rem; 
-		padding-top: 8vh;
-		margin-left:19vw; }
-
 	h4 {
 		font-size: 1.2rem;
 		line-height: 1.6rem;}
+}
+
+@media (min-width: 1200px) {
+	h1 {font-size: 4.5rem; 
+		padding-top: 3vh;
+		margin-left:19vw; }
 
 }
 
@@ -231,40 +223,41 @@ h3 > span { float: left; }
 .toggle {
 	display: none;
 	height: 0;
-	margin: 1.5rem .2rem; }
+	margin-top: 1.7rem;
+	margin-right: 4rem; }
 
-#navigation ul {
-	margin: 0;
-	padding: 0rem 1rem; }
 
 .nav-link {
     list-style: none;
     clear: both;
-    padding: .15rem 0;
+    float: right;
+    padding: .3rem 0;
     font: .6rem 'Moon Light', sans-serif;
 	letter-spacing: 1px;
-    width: 8.5rem;
-    float: right; }
+    width: 6rem; }
 
 .nav-link a {
 	position: relative;
     text-decoration: none;
-    color: black; }
+    color: black;
+	padding: .3rem 0;}
 
 .toggle-nav {
 	position: fixed;
-	padding: .5rem .7rem;
-	border-radius: 3px;
-	font-size: 1rem;
+	padding-right: .5rem;
+	font: 3rem 'Moon Light', sans-serif;
 	top: 2rem;
 	right: 2rem;
 	text-decoration: none;
     color: black;
-    background-color: #ebebeb;
     display: block; }
 
 .hyperlink {
 	font: .9rem 'Avenir Next Medium', sans-serif;
+}
+
+#nav-left, #nav-right {
+	margin: 0;
 }
 
 .nav-link .exit_back {
@@ -289,14 +282,6 @@ h3 > span { float: left; }
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
 	transform: rotate(45deg); }
-
-/*.nav-link:hover .plus span {
-	transition: all .5s;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-	transform: rotate(-45deg); }*/
 
 /* NAV ANIMATIONS */
 
@@ -354,11 +339,20 @@ h3 > span { float: left; }
 	background-color: black;
 	margin: .3rem 0; }
 
+
 @media (min-width: 500px) {
 
 	.nav-link {
-	    width: 10rem;
-	    float: right; }
+		padding: .8rem .8rem;
+		clear: none;
+		width: auto;
+		float: right;
+		height: 3rem;
+		background-color: #f6f6f6; }
+
+	#nav-plus .nav-link {
+		float: none;
+	}
 
 	.social-icon img {
 		width: 1.3rem;
@@ -373,21 +367,12 @@ h3 > span { float: left; }
 
 	#navigation {
 		position: fixed;
-		height: 3.6rem;
-		padding-top: 2rem;
+		height: 4rem;
 		top:0;
 		right: 0;
 		left: 0;
 		background-color: #f6f6f6;
 		z-index: 3; }
-
-	#navigation #nav-right {
-		float: right;
-		padding-right: 2rem; }
-
-	#navigation #nav-left {
-		float: left;
-		padding-left: 2rem; }
 
 	.nav-link {
 		padding: 0 1.8rem;
@@ -398,6 +383,18 @@ h3 > span { float: left; }
 	.nav-link a {
 		padding: .7rem 0;
 	}
+
+	#navigation ul {
+	margin: 0;
+	padding: 2rem 1rem 0 1rem; }
+
+	#navigation #nav-right {
+		float: right;
+		padding-right: 2rem; }
+
+	#navigation #nav-left {
+		float: left;
+			padding-left: 2rem; }
 
 	#social-media { right: 22px; }
 
@@ -535,9 +532,7 @@ h3 > span { float: left; }
 .piece_header h2 { margin: 0; }
 
 .piece_description {
-	margin-top: 4rem;
-	/*position: absolute;
-	bottom: 20vh; */}
+	margin-top: 4rem; }
 
 .piece_description > div > h4 { margin-top: 0rem; }
 
@@ -596,9 +591,6 @@ h3 > span { float: left; }
 .icons_1 > img { width: 10rem; }
 .icons_1 > img { width: 15rem; }
 
-
-/*@media (min-width: 500px) {
-}*/
 
 @media (min-width: 768px) {
  	.image-page {
