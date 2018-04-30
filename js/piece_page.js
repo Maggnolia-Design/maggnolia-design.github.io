@@ -10,12 +10,6 @@ $(document).ready(function() {
     // run test on resize and scroll of the window
     $(window).resize(checkSize, adjHeight);
     $(window).scroll(shrinking);
-
-	$('.exit_back').click(function(){
-		parent.history.back();
-		return false;
-	});
-
 });
 
 //Function to add or remove classes based on css rules
