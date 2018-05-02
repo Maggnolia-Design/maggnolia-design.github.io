@@ -104,13 +104,13 @@
 				<h4 class="col-sm col-md col-lg col-lx">Animated Advertisements</h4>
 				<div class="col-sm col-md col-lg col-lx">
 					<p>Bobbi Brown Animated</p>
-					<a class="thumbnail" href="bobbi.html">
+					<a class="thumbnail" type="button" value="Enter Protected Area" onClick="passWord1()">
 	                    <img src="img/bobbi.jpg" alt="">
 	                </a>
 				</div>
 				<div class="col-sm col-md col-lg col-lx">
 					<p>Glad® Animated HTML</p>
-					<a class="thumbnail" href="glad.html">
+					<a class="thumbnail" type="button" value="Enter Protected Area" onClick="passWord2()">
 	                    <img src="img/glad.jpg" alt="">
 	                </a>
 				</div>
@@ -182,6 +182,47 @@
 	    	});
     	});
     </script>
+    <SCRIPT>
+	function passWord1() {
+		var testV = 1;
+		var pass1 = prompt('Please Enter Your Password',' ');
+		while (testV < 3) {
+			if (!pass1) 
+			history.go(-1);
+			if (pass1.toLowerCase() == "mzd_client") {
+				alert('You Got it Right!');
+				window.open('bobbi.html','_self');
+				break;
+			} 
+			testV+=1;
+			var pass1 = 
+			prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+		}
+		if (pass1.toLowerCase()!="password" & testV ==3) 
+			history.go(-1);
+			return " ";
+		}
+
+	function passWord2() {
+		var testV = 1;
+		var pass1 = prompt('Please Enter Your Password',' ');
+		while (testV < 3) {
+			if (!pass1) 
+			history.go(-1);
+			if (pass1.toLowerCase() == "mzd_client") {
+				alert('You Got it Right!');
+				window.open('glad.html','_self');
+				break;
+			} 
+			testV+=1;
+			var pass1 = 
+			prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+		}
+		if (pass1.toLowerCase()!="password" & testV ==3) 
+			history.go(-1);
+			return " ";
+		} 
+	</SCRIPT>
 </body>
 
 

@@ -18,6 +18,7 @@ function checkSize(){
 
 	else {
 		$(".target").removeClass("toggle");
+        $(".toggle-nav").removeClass("rotation");
 	}
 };
 
@@ -66,9 +67,13 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 });
 
 
-$(function() { // toggles nav on click
-    $(".toggle-nav" ).click(function(event) {
+$(function() {
+    $(".toggle-nav" ).click(function(event) { // toggles nav on click
         $("#navigation .toggle").toggle();
+    });
+
+    $(".toggle-nav" ).click(function(event) { // trigger rotation on click
+        $(".toggle-nav").toggleClass("rotation");
     });
 });
 
