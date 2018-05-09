@@ -243,7 +243,7 @@ h3 > span { float: left; }
 	padding-right: .5rem;
 	font: 3rem 'Moon Light', sans-serif;
 	top: 1.7rem;
-	right: 2rem;
+	right: 1.5rem;
 	text-decoration: none;
     color: black;
     display: block; }
@@ -275,6 +275,10 @@ h3 > span { float: left; }
 .plus {
 	height: 3rem;
 	width: 1.5rem; }
+
+#nav-plus > .nav-link {
+	float: left;
+}
 
 /* NAV ANIMATIONS */
 
@@ -363,10 +367,6 @@ h3 > span { float: left; }
 		background-color: #f6f6f6;
 		height: 2.5rem;
 		padding: 1.2rem 1.2rem 0rem calc(100vw - 28rem);
-	}
-
-	#nav-plus .nav-link {
-		float: right;
 	}
 
 	.social-icon img {
