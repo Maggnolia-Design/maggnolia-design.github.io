@@ -94,7 +94,9 @@ h4 {
 
 h3 > span { float: left; }
 
-#TypeIt { clear: left; }
+#TypeIt {
+	clear: left;
+	color: #d00; }
 
 .bold { font-family: "Moon Bold"; }
 
@@ -240,10 +242,8 @@ h3 > span { float: left; }
 
 .toggle-nav {
 	position: fixed;
-	padding-right: .5rem;
 	font: 3rem 'Moon Light', sans-serif;
-	top: 1.7rem;
-	right: 1.5rem;
+	right: -2.05rem;
 	text-decoration: none;
     color: black;
     display: block; }
@@ -266,7 +266,7 @@ h3 > span { float: left; }
 	padding: 0; }
 
 .backto {
-	width: 6rem;
+	width: 3rem;
 	line-height: .9rem;
 	font-size: .5rem;
 	padding-top: .5rem;
@@ -274,7 +274,8 @@ h3 > span { float: left; }
 
 .plus {
 	height: 3rem;
-	width: 1.5rem; }
+	width: 1.5rem;
+	font-size: 3rem;}
 
 #nav-plus > .nav-link {
 	float: left;
@@ -290,10 +291,18 @@ h3 > span { float: left; }
 	 transition: all 0.3s;
 }
 
-.nav-link span, .span {
+.nav-link span {
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	width: 0%;
+	height: 3px;
+	background: red;
+	transition: all .3s;
+}
+
+.span {
+	position: absolute;
 	width: 0%;
 	height: 3px;
 	background: red;
@@ -304,7 +313,7 @@ h3 > span { float: left; }
 	width: 100% !important;
 }
 
-.nav-link a:hover .span {
+a:hover .span {
 	width: 22px;
 }
 
@@ -313,6 +322,10 @@ h3 > span { float: left; }
 
 .nav-link:hover .backto {
 	opacity: 1;
+}
+
+.toggle-nav:hover .backto {
+	opacity:1;
 }
 
 .rotation {
@@ -341,6 +354,10 @@ h3 > span { float: left; }
     color: #0093A3;
 	letter-spacing: 1px; }
 
+.social-icon:hover {
+	color: #e00;
+}
+
 .line {
 	float: left;
 	clear: both;
@@ -366,12 +383,16 @@ h3 > span { float: left; }
 		width: 25rem;
 		background-color: #f6f6f6;
 		height: 2.5rem;
-		padding: 1.2rem 1.2rem 0rem calc(100vw - 28rem);
+		padding: 1.2rem 3.2rem 0rem calc(100vw - 26rem);
 	}
 
 	.social-icon img {
 		width: 1.3rem;
 		padding: .2rem 0; }
+
+	.toggle-nav {
+		right: 0rem;
+	}
 }
 
 @media (min-width: 768px) {
@@ -429,7 +450,7 @@ h3 > span { float: left; }
 
 .profile_pic {
 	margin: 2rem 2rem 5rem 0;
-	width: 10rem;
+	width: 12rem;
 	border: 6px solid white; }
 
 .profile_text, .profile_pic {

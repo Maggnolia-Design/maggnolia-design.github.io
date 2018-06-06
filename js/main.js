@@ -73,7 +73,7 @@ $(function() {
     });
 
     $(".toggle-nav" ).click(function(event) { // trigger rotation on click
-        $(".toggle-nav").toggleClass("rotation");
+        $(".plus").toggleClass("rotation");
     });
 });
 
