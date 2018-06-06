@@ -449,13 +449,14 @@ a:hover .span {
 /* ABOUT */
 
 .profile_pic {
-	margin: 2rem 2rem 5rem 0;
+	margin: 0rem 2.2rem 2rem 0;
 	width: 12rem;
 	border: 6px solid white; }
 
 .profile_text, .profile_pic {
-	display: inline-block;
+	float: left;
 }
+
 /* __________________________________________________________*/
 
 /* LAYOUT / GRID */
