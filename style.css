@@ -491,9 +491,6 @@ a:hover .span {
 	-webkit-transition: all 0.5s;
 	 -moz-transition: all 0.5s;
 	 transition: all 0.5s; }
-.thumbnail img:active {
-	transform: scale(1.2);
-}
 
 
 @media (min-width: 500px) {
