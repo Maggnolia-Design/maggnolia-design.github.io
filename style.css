@@ -690,7 +690,7 @@ a:hover .span {
 
 iframe { display: none; }
 
-.glad_300x250:hover iframe {
+/*.glad_300x250:hover iframe {
 	position: fixed;
 	left: calc(50vw - 150px);
 	top: calc(50vh - 125px);
@@ -704,7 +704,7 @@ iframe { display: none; }
 	top: calc(50vh - 300px);
 	display: block;
 	z-index: 3;
-	}
+	}*/
 
 .glad_300x250 {
 	width: 150px;
@@ -728,7 +728,7 @@ iframe { display: none; }
 
 	.glad_300x250 {
 		width: 210px;
-		height: 182px; }
+		height: 175px; }
 
 	.glad_300x600 {
 		width: 210px;
