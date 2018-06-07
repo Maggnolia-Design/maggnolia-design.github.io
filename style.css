@@ -690,21 +690,6 @@ a:hover .span {
 
 iframe { display: none; }
 
-/*.glad_300x250:hover iframe {
-	position: fixed;
-	left: calc(50vw - 150px);
-	top: calc(50vh - 125px);
-	display: block;
-	z-index: 3;
-	}
-
-.glad_300x600:hover iframe {
-	position: fixed;
-	left: calc(50vw - 150px);
-	top: calc(50vh - 300px);
-	display: block;
-	z-index: 3;
-	}*/
 
 .glad_300x250 {
 	width: 150px;
@@ -719,10 +704,14 @@ iframe { display: none; }
 	background-image: url(img/glad_big.jpg);
 	background-size: cover; }
 
-.glad_300x250:active, .glad_300x600:active {
+.glad_300x250:hover, .glad_300x600:hover {
 	opacity: .7;
 }
 
+
+.modal-content {
+	padding: .5rem;
+}
 
 @media (min-width: 390px) {
 
@@ -738,6 +727,11 @@ iframe { display: none; }
 
 @media (min-width: 500px) {
 	iframe { display: inline; }
+
+/*	.glad_300x600, .glad_300x250 {
+		pointer-events: none;
+	}*/
+
 
 	.glad_300x250 {
 		width: 300px;
