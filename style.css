@@ -41,7 +41,7 @@ body {
 .page:last-of-type { border-bottom: 14px solid white; }
 
 .wrapper {
-	margin-top: 18vh;
+	margin-top: 15vh;
 	margin-left: 2rem;
 	margin-bottom: 8vh;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .piece_page .wrapper {
-	margin-top: 28vh;
+	margin-top: 23vh;
 }
 
 .shrink.piece_page .wrapper {
@@ -156,6 +156,10 @@ h3 > span { float: left; }
 }
 
 @media (min-width: 500px) {
+
+	.piece_page .wrapper {
+		margin-top: 28vh;
+	}
 
 	.image_page .wrapper {
 		margin-left: 21vw;
@@ -397,7 +401,7 @@ h3 > span { float: left; }
 	z-index: 1; }
 
 .social-icon {
-    font: 8px 'Moon Regular', sans-serif;
+    font: 9.3px 'Moon Regular', sans-serif;
     text-decoration: none;
     padding: .5rem;
     color: #0093A3;
@@ -629,8 +633,12 @@ h3 > span { float: left; }
 	width: calc(100vw - 1.75rem);
 	background-color: #f6f6f6;}
 
+.piece_header { padding-right: 2.5rem; }
+
 .piece_header h2 {
-	margin: 0; }
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0; }
 
 .piece_description {
 	margin-top: 2rem; }
@@ -701,13 +709,15 @@ h3 > span { float: left; }
 	height: 125px;
 	margin-bottom: 1.5rem; 
 	background-image: url(img/glad_small.jpg);
-	background-size: cover; }
+	background-size: cover;
+	cursor: pointer; }
 
 .glad_300x600 {
 	width: 150px;
 	height: 300px;
 	background-image: url(img/glad_big.jpg);
-	background-size: cover; }
+	background-size: cover;
+	cursor: pointer; }
 
 .glad_300x250:hover, .glad_300x600:hover {
 	opacity: .7;
@@ -745,10 +755,6 @@ h3 > span { float: left; }
 	.glad_300x600 {
 		width: 300px;
 		height: 600px; }
-
-	.piece_header {
-	padding-right: 2.5rem;
-}
 }
 
 @media (min-width: 768px) {
