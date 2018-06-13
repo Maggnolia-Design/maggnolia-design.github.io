@@ -54,7 +54,7 @@
 		    <h1>Hi, I'm Maggie.</h1>
 		    <div class="description">
 		    	<h3><span>Looking for a</span><span id="TypeIt" class="bold"></span><span class="bold">designer?</span></h3>
-			    <p>Welcome to my page. Feel free to use it for personal inspiration, or reach out to me with requests! Social media links, resume, and contact information can be found to the right.</p>
+			    <p>Welcome to Maggie Zhang Design! Feel free to browse my portfolio, or contact me with creative inquiries.</p>
 			</div>
 		</div>
 	</section>
@@ -189,40 +189,21 @@
     </script>
 
     <SCRIPT>
-	function passWord1() {
-		var testV = 1;
-		var pass1 = prompt('Please Enter Your Password',' ');
-		while (testV < 3) {
-			if (!pass1) 
-			history.go(-1);
-			if (pass1.toLowerCase() == "mzd_client") {
-				alert('You Got it Right!');
-				window.open('bobbi.html','_self');
-				break;
-			} 
-			testV+=1;
-			var pass1 = 
-			prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-		}
-		if (pass1.toLowerCase()!="password" & testV ==3) 
-			history.go(-1);
-			return " ";
-		}
 
 	function passWord2() {
 		var testV = 1;
-		var pass1 = prompt('Please Enter Your Password',' ');
+		var pass1 = prompt('Please enter the password to view this client work.',' ');
 		while (testV < 3) {
 			if (!pass1) 
 			history.go(-1);
 			if (pass1.toLowerCase() == "mzd_client") {
-				alert('You Got it Right!');
+				alert('Access Granted!');
 				window.open('glad.html','_self');
 				break;
 			} 
 			testV+=1;
 			var pass1 = 
-			prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+			prompt('Access Denied - Password incorrect, please try again.','Password');
 		}
 		if (pass1.toLowerCase()!="password" & testV ==3) 
 			history.go(-1);
