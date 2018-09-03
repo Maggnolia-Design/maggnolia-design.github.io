@@ -17,8 +17,8 @@
 	src: url("fonts/AvenirNextBold.otf") format("opentype"); }
 
 @font-face {
-	font-family: 'Avenir Next Medium';
-	src: url("fonts/AvenirNextMedium.otf") format("opentype"); }
+	font-family: 'Avenir Next Regular';
+	src: url("fonts/AvenirNextMedium.ttf") format("truetype"); }
 
 body {
 	margin: 0; }
@@ -45,6 +45,7 @@ h1 {
 	padding-bottom: 5rem; }
 
 .description p {
+	font-family: 'Avenir Next Medium', sans-serif;
 	width: 8rem;
 	font-size: 8.5px;
 	line-height: .65rem; }
