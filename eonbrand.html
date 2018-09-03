@@ -6,77 +6,88 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width" initial-scale=1”>
-    <title>Maggie Zhang | Design</title>
+    <title>Eon Dance Troupe | Maggie Zhang Design</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/piece_page.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link href="dist/css/lightbox.css" rel="stylesheet">
 </head>
 
 <body>
 
 <!-- NAVIGATION -->
     <nav id="navigation">
-        <a class="toggle-nav" href="#">☰</a>
-        <div class="target">
-            <ul id="nav-left">
-                <li class="nav-link"><a href="index.html#landing">MAGGIE ZHANG DESIGNS</a></li>
-            </ul>
-            <ul id="nav-right">
-                <li class="nav-link">
-                    <a
-                        style="border-bottom:3px solid red; padding-bottom:.3rem;"
-                        href="index.html#portfolio">PORTFOLIO
-                    </a>
-                    <span style="color:firebrick">[ Project ]</span>
-                </li>
-                <li class="nav-link"><a href="index.html#art-craft">ARTS + CRAFT</a></li>
-                <li class="nav-link"><a href="index.html#about">ABOUT</a></li>
-            </ul>
-        </div>
+        <ul id="nav-plus">
+            <li class="nav-link">
+                <a class="exit_back" href="index.html#portfolio">
+                    <div class="plus">+</div>
+                    <div class="span"></div>
+                    <div class="backto">back to homepage</div>
+                </a></li>
+        </ul>
     </nav>
 
 <!-- SOCIAL MEDIA -->
     <div id="social-media">
-        <a class="social-icon" href="behance.............." target="_blank"><img src="img/icon_behance.png" alt="Behance" width="" height=""></a>
-        <a class="social-icon" href="https://github.com/MistaFish31" target="_blank"><img src="img/icon_github.png" alt="GitHub" width="" height=""></a>
-        <a class="social-icon" href="dribble.............." target="_blank"><img src="img/icon_dribble.png" alt="Dribble" width="" height=""></a>
-        <div class=" social-icon line"></div>
-        <a class="social-icon" href="mailto:zhang.ma@husky.neu.edu"><img src="img/icon_email.png" alt="Email" width="" height=""></a>
-        <a class="social-icon" href="https://www.linkedin.com/in/maggiezhangdesign" target="_blank"><img src="img/icon_linkedin.png" alt="LinkedIn" width="" height=""></a>
+        <div class="rotate">
+            <a class="social-icon" href="https://www.behance.net/zhangma676c" target="_blank">BEHANCE</a>
+            <a class="social-icon" href="https://github.com/MistaFish31" target="_blank">GITHUB</a>
+            <a class="social-icon" href="mailto:zhang.ma@husky.neu.edu">E-MAIL</a>
+            <a class="social-icon" href="img/resume.pdf" target="_blank">RESUME</a>
+        </div>
     </div>
 
 <!-- PORTFOLIO INFO PAGE -->
-    <section class="page piece-page">
-        <div class="piece-header">
-            <h2>EON DANCE TROUPE</h2>
-            <h4>Identity | Photoshop and Illustrator</h4>
-        </div>
-        <div class="piece-description">
-            <p>Eon Dance Troupe is an Asian dance group which I co-founded and branded. We bring tradition and culture to young contemporary audiences. The logo expresses Eon's name and mission in a merging of traditional and modern aesthetics.</p>
-            <p>The handwritten "eon" mimics the elegant, rounded aesthetic of classical Chinese dance — our main competence. The monochrome aesthetic can be easily adapted for different situations, including promoting new dances each semester.</p>
-        </div>
-    </section>
-
-    <section class="page image-page eon">
-        <div class="row">
-            <div class="piece-image">
-                <p>Eon Dance Troupe Logo</p>
-                <img src="img/projects/EonLogo.jpg">
+    <section class="page piece_page">
+        <div class="wrapper">
+            <div class="piece_header">
+                <h2>Eon Dance Troupe</h2>
+                <h4>Identity | Photoshop and Illustrator</h4>
             </div>
-            <div class="piece-image">
-                <p>Stationary Mockup</p>
-                <img src="img/projects/EonMockup2.jpg">
-            </div>
-            <div class="piece-image">
-                <p>Promotional usage (as photo frame and overlay)</p>
-                <img src="img/projects/EonMisc.jpg"> 
-            </div>
-            <div class="piece-image">
-                <p>Previous Drafts</p>
-                <img src="img/projects/EonDrafts.jpg"> 
+            <div class="piece_description">
+                <p>Eon Dance Troupe is an Asian dance group which I co-founded and branded. We bring tradition and culture to young contemporary audiences. The logo expresses Eon's name and mission in a merging of traditional and modern aesthetics.</p>
+                <p>The handwritten "eon" mimics the elegant, rounded aesthetic of classical Chinese dance — our main competence. The monochrome aesthetic can be easily adapted for different situations, including promoting new dances. Mentor: JiHyun Yoo.</p>
             </div>
         </div>
     </section>
 
+    <section class="image_page" id="eon_brand">
+        <div class="wrapper">
+            <div class="row 1">
+                <div class="col-sm col-md col-lg col-lx">
+                    <p>Eon Dance Troupe Logo</p>
+                    <a class="thumbnail" href="img/projects/eonlogo.jpg" data-lightbox="eonbrand">
+                        <img src="img/projects/eonlogo.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="row 2">
+                <div class="col-sm col-md col-lg col-lx">
+                    <p>Stationary Mockup</p>
+                    <a class="thumbnail" href="img/projects/eonmockup2.jpg" data-lightbox="eonbrand">
+                        <img src="img/projects/eonmockup2.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="row 3">
+                <div class="col-sm col-md col-lg col-lx">
+                    <p>Promotional usage (photo overlay)</p>
+                    <a class="thumbnail" href="img/projects/eonmisc.jpg" data-lightbox="eonbrand">
+                        <img src="img/projects/eonmisc.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="row 4">
+                <div class="col-sm col-md col-lg col-lx">
+                    <p>Previous Drafts</p>
+                    <a class="thumbnail" href="img/projects/eondrafts.jpg" data-lightbox="eonbrand">
+                        <img src="img/projects/eondrafts.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/lightbox.js"></script>
 
 </body>
 
