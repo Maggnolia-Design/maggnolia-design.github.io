@@ -89,10 +89,19 @@ p {
     padding-bottom: 5rem; }
 
 .grid-item:last-of-type {
-  padding-bottom: 4rem; }
+  padding-bottom: 2rem; }
 
 .thumbnail {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+}
+
+.grid-item {
+    margin-bottom: 1.5rem;
+}
+
+.last-grid-item {
+    margin-bottom: 6rem;
+}
 
 /*  - - - - EXTERNAL PROJECT FILES  - - - -  */
 #infosection {
@@ -124,7 +133,7 @@ p {
 .profile-intro, .contact-intro {
   position: static;
   padding-top: 3rem;
-  top: 41rem; }
+  top: 37rem; }
   .profile-intro p, .contact-intro p {
     width: 20rem;
     padding-bottom: 1rem;
@@ -168,7 +177,7 @@ p {
     background-image: url(../img/profile2.jpg);
     background-size: 120%;
     border: 5px solid darkblue;
-    margin-top: 8.5rem;
+    margin-top: 4.5rem;
     margin-bottom: 7rem; }
 
 .grey-box-contact {
@@ -293,9 +302,6 @@ form {
     margin: auto;
     width: 27rem;
     padding-left: 8rem; }
-
-  .grey-box-contact {
-    height: 26rem; }
 
   .padding {
     margin-left: 10vw;
