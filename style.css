@@ -88,8 +88,8 @@ h1 {padding-top: 12vh;
 .description p {
 	font-family: 'Avenir Next Medium', sans-serif;
 	width: 8rem;
-	font-size: 8.5px;
-	line-height: .65rem; }
+	font-size: 9px;
+	line-height: .75rem; }
 
 /* TEXT (portfolio) */
 
@@ -100,7 +100,7 @@ h2 {
 	letter-spacing: 2px; }
 
 h3 {
-	font: .9rem 'Moon Light', sans-serif;
+	font: .9rem 'Moon', sans-serif;
 	color: #0093A3;
 	letter-spacing: 1.2px;
 	padding-bottom: 2rem;
@@ -109,7 +109,7 @@ h3 {
 .ti-cursor { padding-right: 4px; }
 
 h4 {
-	font: 15px 'Avenir Next Demi', sans-serif;
+	font: 15px 'Moon', sans-serif;
 	color: #0093A3;
 	line-height: 1.2rem; }
 
@@ -127,6 +127,33 @@ h3 > span { float: left; }
 
 .bold { font-family: "Moon Bold"; }
 
+
+/* TEXT (resume) */
+
+.resume-points {
+	list-style: none;
+	font: 9px 'Avenir Next Regular', sans-serif;
+	line-height: .75rem;
+	padding-left: 0rem;
+	width: 10rem; }
+
+.resume-points li { padding-bottom: .4rem; }
+
+.narrow {
+	padding: 0;
+	width: 5rem;
+	list-style: none;
+	float: left; }
+
+.resume-points div { height: 1rem; }
+
+.resume-icon {
+	font: .8rem 'Avenir Next Condensed Medium';
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black; }
+
+.resume-icon:hover { color: #e00; }
 
 /* TEXT (piece pages) */
 
@@ -191,8 +218,7 @@ h3 > span { float: left; }
 
 	.shrink .piece_header h2 { font-size:1.4rem; }
 
-	h3 {font-size: 1.2rem;
-		letter-spacing: 2px;
+	h3 {font-size: 1.4rem;
 		padding-bottom: 2rem; }
 
 	h4 {
@@ -203,8 +229,17 @@ h3 > span { float: left; }
 
 	.description p, .piece_description p {
 		width: 14rem;
-		font-size: 11.5px;
-		line-height: 1rem; }
+		font-size: 13.5px;
+		line-height: 1.3rem; }
+
+	.resume-points {
+		font-size: 13.5px;
+	    line-height: 1.3rem;
+	    width: 14rem; }
+
+	.resume-icon { font-size: 1rem; }
+
+	.narrow { width: 7rem; }
 }
 
 @media (min-width: 768px) {
@@ -213,9 +248,13 @@ h3 > span { float: left; }
 		margin-top: 26vh;
 	}
 
-	.wrapper { margin-left: 3rem; }
+	.wrapper { margin-left: 5rem; }
 
 	.page { min-height: calc(100vh - 1.6rem); }
+
+	.resume-icon {
+		padding-top: 2rem;
+		font-size: 1rem; }
 
 	.col-md {
 	    -ms-flex-preferred-size: 0;
@@ -229,10 +268,13 @@ h3 > span { float: left; }
 
 	h1 { font-size: 3rem;
 		width: 23rem;
-		margin: 10vh 0 12vh 8vw;}
+		margin: 10vh 0 8vh 8vw;}
 
 	h2 {font-size: 2.6rem; letter-spacing: 2px; }
 	.shrink .piece_header h2 { font-size:1.6rem; }
+
+	.col-sm p, .image_page p {
+		font-size: 0.9rem; }
 
 	.shrink .piece_header h4 {
 		font-size:1.1rem;
@@ -241,30 +283,70 @@ h3 > span { float: left; }
 
 	.description p, .piece_description p {
 		width: 17.5rem;
-		font-size: 13px;
-		line-height: 1.1rem; }
+		font-size: 16px;
+		line-height: 1.4rem; }
 
-	h4, .piece_header h4 { font-size: 1.2rem;
+	h4, .piece_header h4 {
+		font-size: 1.1rem;
 		line-height: 1.5rem; }
 
 	h3 { padding-bottom: .5rem; }
 
 	h3 > span { float: none; }
+
+	#resume h4 {
+	    max-width: 20rem; }
+
+	.resume-points {
+		width: 17.5rem;
+	    font-size: 16px;
+	    line-height: 1.4rem; }
+
+	.narrow { width: 8rem; }
 }
 
 @media (min-width: 992px) {
 	h2 {font-size: 3rem; }
 
-	.description {margin-left: 23vw; }
+	.wrapper { margin-left: 7rem; }
+
+	.resume-icon {
+		padding-top: 2rem;
+		font-size: 1.2rem; }
+
+	.col-sm p, .image_page p {
+		font-size: 1rem; }
+
+	.description {margin-left: 19vw; }
+
+	.description p, .piece_description p {
+		width: 19rem; }
 
 	.shrink.piece_page .wrapper { margin-top: 34vh; }
 	.shrink .piece_header h2 { font-size: 1.8rem; }
+
+	.resume-points {
+		font-size: 16px;
+	    line-height: 1.4rem;
+	    width: 18rem; }
 }
 
 @media (min-width: 1200px) {
-	h1 {font-size: 4.5rem; 
-		padding-top: 3vh;
-		margin-left:19vw; }
+	h1 {font-size: 4.2rem;
+		padding-top: 6rem;
+		margin-left:19vw;
+		line-height: 5rem; }
+
+	h3 { font-size: 1.6rem ; }
+
+	h4, .piece_header h4 {
+		font-size: 1.3rem; }
+
+	.description {margin-left: 23vw; }
+
+	.resume-points {
+		font-size: 18px;
+	    line-height: 1.5rem; }
 
 }
 
@@ -292,7 +374,7 @@ h3 > span { float: left; }
     clear: both;
     float: right;
     padding: .3rem 0;
-    font: .6rem 'Moon Light', sans-serif;
+    font: .7rem 'Moon Light', sans-serif;
 	letter-spacing: 1px;
     width: 6rem; }
 
@@ -405,8 +487,8 @@ h3 > span { float: left; }
 #social-media {
 	position: fixed;
 	transform: rotate(90deg);
-	width: 270px;
-	height: 270px;
+	width: 320px;
+	height: 320px;
 	right: 18px;
 	top: 30vh;
 	z-index: 1; }
@@ -433,7 +515,7 @@ h3 > span { float: left; }
 
 @media (min-width: 500px) {
 	.social-icon {
-	    font-size: 9px;
+	    font-size: 9.8px;
 	}
 
 	.nav-link {
@@ -450,7 +532,7 @@ h3 > span { float: left; }
 		width: 25rem;
 		background-color: #f6f6f6;
 		height: 2.5rem;
-		padding: 1.2rem 3.2rem 0rem calc(100vw - 26rem);
+		padding: 1.2rem 3.2rem 0rem calc(100vw - 30rem);
 	}
 
 	.social-icon img {
@@ -464,6 +546,10 @@ h3 > span { float: left; }
 
 @media (min-width: 768px) {
 
+	.social-icon {
+	    font-size: 10.8px;
+	}
+
 	.toggle-nav { display:none; }
 
 	.target { display:block !important; }
@@ -475,7 +561,7 @@ h3 > span { float: left; }
 		right: 0;
 		left: 0;
 		background-color: #f6f6f6;
-		z-index: 3; }
+		z-index: 4; }
 
 	.nav-link {
 		padding: 0 1.8rem;
@@ -496,7 +582,7 @@ h3 > span { float: left; }
 
 	#navigation ul {
 	margin: 0;
-	padding: 2rem 1rem 0 1rem; }
+	padding: 1.6rem 1rem 0 1rem; }
 
 	#navigation #nav-right {
 		float: right;
@@ -513,18 +599,36 @@ h3 > span { float: left; }
 		margin: .5rem 0; }
 	}
 
+@media (min-width: 992px) {
+	.social-icon {
+	    font-size: 12px; }
+
+	#social-media {
+		padding-top: 1rem;
+	}
+
+	.nav-link {
+	    font-size: .8rem;
+	}
+
+}
+
 /* ABOUT */
 
 .profile_pic {
-	margin: 0rem 2.2rem 2rem 0;
+	margin: 0rem 3rem 2rem 0;
 	width: 12rem;
 	border: 6px solid white; }
 
 @media (min-width: 500px) {
 	.profile_text, .profile_pic {
-		float: left;
-	}
+		float: left; }
+
+	.profile_text { padding-bottom: 2rem; }
+
+	.wrapper .description { overflow: auto; }
 }
+
 
 /* __________________________________________________________*/
 
@@ -573,7 +677,7 @@ h3 > span { float: left; }
 	  	width: 92%; }
 
     .row h4 { max-width: 5rem;
-  		padding-right: 2rem; }
+  		padding-right: 4rem; }
 
     .col-sm {
 	    -ms-flex-preferred-size: 0;
@@ -602,8 +706,7 @@ h3 > span { float: left; }
 	    flex-grow: 1;
 	    max-width: 100%; }
 
-    .row h4 { max-width: 9rem;
-  		padding-right: 1rem; }
+    .row h4 { max-width: 9rem; }
 }
 
 @media (min-width: 992px) {

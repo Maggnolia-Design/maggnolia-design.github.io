@@ -33,7 +33,7 @@ $(window).scroll(function(event) {
     var offset = 270;
 
     var pos_portfolio = $('#portfolio').offset().top - offset;
-    var pos_art = $('#art-craft').offset().top - offset;
+    var pos_resume = $('#resume').offset().top - offset;
     var pos_about = $('#about').offset().top - offset;
 
     $('a[href^="#"] span').css(no_line);
@@ -42,13 +42,13 @@ $(window).scroll(function(event) {
     	console.log("landing");
         $('a[href="#landing"] span').css(red_line);
     }
-    else if(scroll >= pos_portfolio && scroll < pos_art ) {
+    else if(scroll >= pos_portfolio && scroll < pos_resume ) {
     	console.log("portfolio");
         $('a[href="#portfolio"] span').css(red_line);
     }
-    else if(scroll >= pos_art && scroll < pos_about ) {
-    	console.log("art-craft");
-        $('a[href="#art-craft"] span').css(red_line);
+    else if(scroll >= pos_resume && scroll < pos_about ) {
+    	console.log("resume");
+        $('a[href="#resume"] span').css(red_line);
     }
     else {
     	console.log("about");
