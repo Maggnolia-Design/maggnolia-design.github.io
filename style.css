@@ -618,7 +618,7 @@ h3 > span { float: left; }
 .profile_pic {
 	margin: 0rem 3rem 2rem 0;
 	width: 12rem;
-	border: 6px solid white; }
+	border: 10px solid white; }
 
 @media (min-width: 500px) {
 	.profile_text, .profile_pic {
@@ -710,6 +710,8 @@ h3 > span { float: left; }
 }
 
 @media (min-width: 992px) {
+	.thumbnail img {
+		width: calc(100% - 4rem); }
 
 	.row h4 { padding-right: 4rem; }
 
