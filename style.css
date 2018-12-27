@@ -12,24 +12,10 @@
 	font-family: 'Avenir Next Condensed Medium';
 	src: url("fonts/AvenirNextCondensedMedium.ttf") format("truetype"); }
 
-@font-face {
-	font-family: 'Avenir Next Bold';
-	src: url("fonts/AvenirNextBold.otf") format("opentype"); }
-
-@font-face {
-	font-family: 'Avenir Next Regular';
-	src: url("fonts/AvenirNextMedium.ttf") format("truetype"); }
-
-	font-family: 'Avenir Next Demi';
-	src: url("fonts/AvenirNextDemi.ttf") format("truetype"); }
-
-@font-face {
-	font-family: 'Avenir Next Regular';
-	src: url("fonts/AvenirNextRegular.otf") format("opentype"); }
-
 
 body {
-	margin: 0; }
+	margin: 0;
+}
 
 
 .page {
@@ -73,7 +59,7 @@ body {
 
 h1 {padding-top: 12vh; 
 	width: 9rem;
-	font: 2rem 'Avenir Next Bold', sans-serif;
+	font: 2rem futura-pt-bold, sans-serif;
 	color: black;
 	text-align: left; }
 
@@ -81,12 +67,12 @@ h1 {padding-top: 12vh;
 	margin:0;
 	padding-bottom: .5rem;
 	width: 11rem;
-	font: 9.5px 'Avenir Next Regular', sans-serif;
+	font: 9.5px futura-pt, sans-serif;
 	line-height: .9rem;
 	clear: both; }
 
 .description p {
-	font-family: 'Avenir Next Medium', sans-serif;
+	font-family: futura-pt, sans-serif;
 	width: 8rem;
 	font-size: 9px;
 	line-height: .75rem; }
@@ -95,12 +81,12 @@ h1 {padding-top: 12vh;
 
 
 h2 {
-	font-family: 'Avenir Next Bold', sans-serif;
+	font-family: futura-pt-bold, sans-serif;
 	font-size: 1.2rem;
 	letter-spacing: 2px; }
 
 h3 {
-	font: .9rem 'Moon', sans-serif;
+	font: 1.4rem 'Moon', sans-serif;
 	color: #0093A3;
 	letter-spacing: 1.2px;
 	padding-bottom: 2rem;
@@ -132,7 +118,7 @@ h3 > span { float: left; }
 
 .resume-points {
 	list-style: none;
-	font: 9px 'Avenir Next Regular', sans-serif;
+	font: 9px futura-pt, sans-serif;
 	line-height: .75rem;
 	padding-left: 0rem;
 	width: 10rem; }
@@ -148,7 +134,7 @@ h3 > span { float: left; }
 .resume-points div { height: 1rem; }
 
 .resume-icon {
-	font: .8rem 'Avenir Next Condensed Medium';
+	font: .8rem futura-pt;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: black; }
@@ -162,8 +148,8 @@ h3 > span { float: left; }
 	line-height: 20px;
 	font: 8.5px 'Avenir Next Regular', sans-serif; }*/
 
-.col-sm p, .image_page p {
-	font: 0.7rem 'Avenir Next Condensed Medium';
+.col-sm-6 p, .image_page p {
+	font: 0.7rem 'Moon Light', sans-serif;
 	text-transform: uppercase;
 	margin: .2rem 0; }
 
@@ -207,7 +193,7 @@ h3 > span { float: left; }
 	}
 
 	.wrapper {
-		margin-right: 8vw;
+		margin-right: 10vw;
 		margin-left: 3rem; }
 
 	h1 {font-size: 2.5rem;
@@ -254,8 +240,9 @@ h3 > span { float: left; }
 
 	.resume-icon {
 		padding-top: 2rem;
-		font-size: 1rem; }
+		font-size: 1.5rem; }
 
+/*
 	.col-md {
 	    -ms-flex-preferred-size: 0;
 	    flex-basis: 0;
@@ -263,18 +250,20 @@ h3 > span { float: left; }
 	    -ms-flex-positive: 1;
 	    flex-grow: 1;
 	    max-width: 100%; }
+*/
 
 	.description {margin-left: 12vw; }
 
-	h1 { font-size: 3rem;
-		width: 23rem;
+	h1 { font-size: 3.5rem;
+		width: 25rem;
 		margin: 10vh 0 8vh 8vw;}
 
-	h2 {font-size: 2.6rem; letter-spacing: 2px; }
+	h2 {font-size: 3.5rem; letter-spacing: 2px; }
 	.shrink .piece_header h2 { font-size:1.6rem; }
 
-	.col-sm p, .image_page p {
-		font-size: 0.9rem; }
+	.col-sm-6 p, .image_page p {
+		font-size: 1.2rem;
+        }
 
 	.shrink .piece_header h4 {
 		font-size:1.1rem;
@@ -282,15 +271,14 @@ h3 > span { float: left; }
 		}
 
 	.description p, .piece_description p {
-		width: 17.5rem;
-		font-size: 16px;
-		line-height: 1.4rem; }
+		width: 31rem;
+		font-size: 18px;
+		line-height: 2.2rem; }
 
 	h4, .piece_header h4 {
-		font-size: 1.1rem;
-		line-height: 1.5rem; }
-
-	h3 { padding-bottom: .5rem; }
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+        padding-bottom: 1.8rem; }
 
 	h3 > span { float: none; }
 
@@ -298,29 +286,29 @@ h3 > span { float: left; }
 	    max-width: 20rem; }
 
 	.resume-points {
-		width: 17.5rem;
-	    font-size: 16px;
-	    line-height: 1.4rem; }
+		width: 22rem;
+	    font-size: 18px;
+	    line-height: 2.2rem; }
 
-	.narrow { width: 8rem; }
+	.narrow { width: 11rem; }
 }
 
 @media (min-width: 992px) {
 	h2 {font-size: 3rem; }
 
-	.wrapper { margin-left: 7rem; }
+	.wrapper { margin-left: 10rem; }
 
 	.resume-icon {
 		padding-top: 2rem;
-		font-size: 1.2rem; }
+		font-size: 1.6rem; }
 
-	.col-sm p, .image_page p {
-		font-size: 1rem; }
+	.col-sm-6 p, .image_page p {
+		font-size: 1.3rem; }
 
 	.description {margin-left: 19vw; }
 
 	.description p, .piece_description p {
-		width: 19rem; }
+		width: 28rem; }
 
 	.shrink.piece_page .wrapper { margin-top: 34vh; }
 	.shrink .piece_header h2 { font-size: 1.8rem; }
@@ -328,7 +316,7 @@ h3 > span { float: left; }
 	.resume-points {
 		font-size: 16px;
 	    line-height: 1.4rem;
-	    width: 18rem; }
+	    width: 24rem; }
 }
 
 @media (min-width: 1200px) {
@@ -340,13 +328,13 @@ h3 > span { float: left; }
 	h3 { font-size: 1.6rem ; }
 
 	h4, .piece_header h4 {
-		font-size: 1.3rem; }
+		font-size: 1.5rem; }
 
 	.description {margin-left: 23vw; }
 
 	.resume-points {
 		font-size: 18px;
-	    line-height: 1.5rem; }
+	    line-height: 2rem; }
 
 }
 
@@ -374,7 +362,7 @@ h3 > span { float: left; }
     clear: both;
     float: right;
     padding: .3rem 0;
-    font: .7rem 'Moon Light', sans-serif;
+    font: 1.2rem 'Moon Light', sans-serif;
 	letter-spacing: 1px;
     width: 6rem; }
 
@@ -556,12 +544,13 @@ h3 > span { float: left; }
 
 	#navigation {
 		position: fixed;
-		height: 4rem;
+		height: 9rem;
 		top:0;
 		right: 0;
 		left: 0;
 		background-color: #f6f6f6;
-		z-index: 4; }
+		z-index: 4;
+        /* border-bottom: white .5rem solid;*/ }
 
 	.nav-link {
 		padding: 0 1.8rem;
@@ -582,15 +571,15 @@ h3 > span { float: left; }
 
 	#navigation ul {
 	margin: 0;
-	padding: 1.6rem 1rem 0 1rem; }
+	padding: 4rem 1rem 0 1rem; }
 
 	#navigation #nav-right {
 		float: right;
-		padding-right: 2rem; }
+		padding-right: 3.5rem; }
 
 	#navigation #nav-left {
 		float: left;
-		padding-left: 2rem; }
+		padding-left: 3.5rem; }
 
 	#social-media { right: 22px; }
 
@@ -608,7 +597,7 @@ h3 > span { float: left; }
 	}
 
 	.nav-link {
-	    font-size: .8rem;
+	    font-size: 1.2rem;
 	}
 
 }
@@ -636,7 +625,7 @@ h3 > span { float: left; }
 
 .grid-item > img {
 	width: 99%;
-	padding-bottom: 1.5rem; }
+	padding-bottom: 2.5rem; }
 
 .row {
 	display: -webkit-box;
@@ -646,6 +635,7 @@ h3 > span { float: left; }
 	flex-wrap: wrap;
 	padding-bottom: .5rem; }
 
+/*
 .col-sm, .col-md, .col-lg, .col-xl {
 	position: relative;
 	width: 100%;
@@ -653,12 +643,13 @@ h3 > span { float: left; }
 	z-index: 3;  }
 
 .col-ad { padding-left: 1rem; }
+*/
 
-.thumbnail img {
+.project img {
 	width: calc(100% - 5rem);
 	border: 6px solid white; }
 
-.thumbnail img:hover {
+.project img:hover {
 	position: relative;
 	transform: scale(.96);
 	z-index: 30;
@@ -669,8 +660,8 @@ h3 > span { float: left; }
 
 @media (min-width: 500px) {
 
-	.thumbnail img {
-		width: calc(100% - 2rem); }
+	.project img {
+		width: 100%; }
 
     .container {
 	  	max-width: 585px;
@@ -679,6 +670,7 @@ h3 > span { float: left; }
     .row h4 { max-width: 5rem;
   		padding-right: 4rem; }
 
+/*
     .col-sm {
 	    -ms-flex-preferred-size: 0;
 	    flex-basis: 0;
@@ -686,18 +678,21 @@ h3 > span { float: left; }
 	    -ms-flex-positive: 1;
 	    flex-grow: 1;
 	    max-width: 100%; }
+*/
 
 }
 
 @media (min-width: 768px) {
 
-	.thumbnail img {
-		border-width: 10px; }
+	.project img {
+		border-width: 10px;
+    margin-bottom: 3rem; }
 
     .container {
 	  	max-width: 850px;
 	    width: 86%; }
 
+/*
     .col-md {
 	    -ms-flex-preferred-size: 0;
 	    flex-basis: 0;
@@ -705,16 +700,18 @@ h3 > span { float: left; }
 	    -ms-flex-positive: 1;
 	    flex-grow: 1;
 	    max-width: 100%; }
+*/
 
     .row h4 { max-width: 9rem; }
 }
 
 @media (min-width: 992px) {
-	.thumbnail img {
-		width: calc(100% - 4rem); }
+	.project img {
+		width: 100%; }
 
 	.row h4 { padding-right: 4rem; }
 
+/*
 	.col-lg {
 		-ms-flex-preferred-size: 0;
 		flex-basis: 0;
@@ -722,6 +719,7 @@ h3 > span { float: left; }
 		-ms-flex-positive: 1;
 		flex-grow: 1;
 		max-width: 100%; }
+*/
 }
 
 @media (min-width: 1200px) {
@@ -731,6 +729,7 @@ h3 > span { float: left; }
 		width: 15rem;
 	}
 
+/*
 	.col-xl {
 		-ms-flex-preferred-size: 0;
 		flex-basis: 0;
@@ -738,6 +737,7 @@ h3 > span { float: left; }
 		-ms-flex-positive: 1;
 		flex-grow: 1;
 		max-width: 100%; }
+*/
 
 }
 
