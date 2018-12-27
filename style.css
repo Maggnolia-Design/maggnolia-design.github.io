@@ -86,7 +86,7 @@ h2 {
 	letter-spacing: 2px; }
 
 h3 {
-	font: 1.4rem 'Moon', sans-serif;
+	font: 1.6rem 'Moon', sans-serif;
 	color: #0093A3;
 	letter-spacing: 1.2px;
 	padding-bottom: 2rem;
@@ -149,7 +149,7 @@ h3 > span { float: left; }
 	font: 8.5px 'Avenir Next Regular', sans-serif; }*/
 
 .col-sm-6 p, .image_page p {
-	font: 0.7rem 'Moon Light', sans-serif;
+	font: 1.2rem 'Moon Light', sans-serif;
 	text-transform: uppercase;
 	margin: .2rem 0; }
 
@@ -193,10 +193,10 @@ h3 > span { float: left; }
 	}
 
 	.wrapper {
-		margin-right: 11vw;
-		margin-left: 3rem; }
+		margin-right: 13vw;
+		margin-left: 7rem; }
 
-	h1 {font-size: 2.5rem;
+	h1 {font-size: 3.5rem;
 		width: auto; }
 
 	h2 { font-size: 2.1rem;
@@ -204,8 +204,8 @@ h3 > span { float: left; }
 
 	.shrink .piece_header h2 { font-size:1.4rem; }
 
-	h3 {font-size: 1.4rem;
-		padding-bottom: 2rem; }
+	h3 {font-size: 1.6rem;
+		padding-bottom: 6rem; }
 
 	h4 {
 		line-height: 1.4rem;
@@ -214,18 +214,21 @@ h3 > span { float: left; }
 	.piece_header h4 { font-size: 15px; }
 
 	.description p, .piece_description p {
-		width: 14rem;
-		font-size: 13.5px;
-		line-height: 1.3rem; }
+		width: 24rem;
+		font-size: 15.5px;
+		line-height: 1.8rem; }
 
 	.resume-points {
-		font-size: 13.5px;
-	    line-height: 1.3rem;
-	    width: 14rem; }
+		font-size: 15.5px;
+	    line-height: 1.8rem;
+	    width: 24rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;}
 
-	.resume-icon { font-size: 1rem; }
+	.resume-icon { font-size: 1.3rem; }
 
-	.narrow { width: 7rem; }
+	.narrow { width: 10rem;
+    padding-bottom: 2rem; }
 }
 
 @media (min-width: 768px) {
@@ -240,7 +243,7 @@ h3 > span { float: left; }
 
 	.resume-icon {
 		padding-top: 2rem;
-		font-size: 1.5rem; }
+		font-size: 1.6rem; }
 
 /*
 	.col-md {
@@ -254,7 +257,7 @@ h3 > span { float: left; }
 
 	.description {margin-left: 12vw; }
 
-	h1 { font-size: 3.5rem;
+	h1 { font-size: 4rem;
 		width: 32rem;
 		margin: 10vh 0 8vh 8vw;}
 
@@ -262,7 +265,7 @@ h3 > span { float: left; }
 	.shrink .piece_header h2 { font-size:1.6rem; }
 
 	.col-sm-6 p, .image_page p {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
         }
 
 	.shrink .piece_header h4 {
@@ -271,32 +274,47 @@ h3 > span { float: left; }
 		}
 
 	.description p, .piece_description p {
-		width: 31rem;
-		font-size: 18px;
-		line-height: 2.2rem; }
+		width: 28rem;
+		font-size: 16px;
+		line-height: 2rem; }
 
 	h4, .piece_header h4 {
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 		line-height: 1.5rem;
-        padding-bottom: 1.8rem; }
+        padding-bottom: 2.2rem; }
 
 	h3 > span { float: none; }
 
 	#resume h4 {
-	    max-width: 20rem; }
+	    max-width: 30rem; }
 
 	.resume-points {
 		width: 22rem;
-	    font-size: 18px;
-	    line-height: 2.2rem; }
+	    font-size: 16px;
+	    line-height: 2rem;
+        padding-top: 0}
 
 	.narrow { width: 11rem; }
+
+    
+}
+
+@media (min-width: 859px) {
+    
+    .narrow {
+        width: 11rem;
+        float: left;
+    }
+
 }
 
 @media (min-width: 992px) {
 	h2 {font-size: 4rem; }
 
 	.wrapper { margin-left: 14rem; }
+    .narrow {
+        width: 11rem;
+    }
 
 	.resume-icon {
 		padding-top: 2rem;
@@ -314,8 +332,8 @@ h3 > span { float: left; }
 	.shrink .piece_header h2 { font-size: 1.8rem; }
 
 	.resume-points {
-		font-size: 16px;
-	    line-height: 1.4rem;
+		font-size: 18px;
+	    line-height: 2.6rem;
 	    width: 24rem; }
 }
 
@@ -325,16 +343,16 @@ h3 > span { float: left; }
 		margin-left:19vw;
 		line-height: 6rem; }
 
-	h3 { font-size: 1.6rem ; }
+	h3 { font-size: 2rem ; }
 
 	h4, .piece_header h4 {
-		font-size: 1.5rem; }
+		font-size: 2rem; }
 
 	.description {margin-left: 23vw; }
 
 	.resume-points {
 		font-size: 18px;
-	    line-height: 2rem; }
+	    line-height: 2.6rem; }
 
 }
 
@@ -554,6 +572,7 @@ h3 > span { float: left; }
         /* border-bottom: white .5rem solid;*/ }
 
 	.nav-link {
+        font-size: 1.2rem;
 		padding: 0 1.8rem;
 		clear: none;
 		width: auto;
@@ -598,7 +617,7 @@ h3 > span { float: left; }
 	}
 
 	.nav-link {
-	    font-size: 1.2rem;
+	    font-size: 1.3rem;
 	}
 
 }
@@ -607,13 +626,9 @@ h3 > span { float: left; }
 
 .profile_pic {
 	margin: 0rem 6rem 2rem 0;
-	width: 12rem;
+	width: 20rem;
 	border: 10px solid white; }
 
-.copyright {
-    position: absolute;
-    bottom: 3rem;
-}
 
 @media (min-width: 500px) {
 	.profile_text, .profile_pic {
@@ -622,6 +637,16 @@ h3 > span { float: left; }
 	.profile_text { padding-bottom: 2rem; }
 
 	.wrapper .description { overflow: auto; }
+    
+    .copyright {
+        font: 1rem futura-pt, sans-serif;
+        position: absolute;
+        bottom: 3rem; }
+}
+
+@media (min-width: 768px) {
+    .copyright {
+        font-size: 1.4rem; } 
 }
 
 
@@ -673,18 +698,12 @@ h3 > span { float: left; }
 	  	max-width: 585px;
 	  	width: 92%; }
 
-    .row h4 { max-width: 5rem;
+    .row h4 { max-width: 22rem;
   		padding-right: 4rem; }
 
-/*
-    .col-sm {
-	    -ms-flex-preferred-size: 0;
-	    flex-basis: 0;
-	    -webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	    flex-grow: 1;
-	    max-width: 100%; }
-*/
+    .narrow {
+        padding-bottom: 3rem;
+    }
 
 }
 
@@ -708,7 +727,27 @@ h3 > span { float: left; }
 	    max-width: 100%; }
 */
 
-    .row h4 { max-width: 9rem; }
+    .row h4 { max-width: 9rem;
+        padding-right: 1rem;
+        line-height: 2rem;
+        height: 4rem; }
+    
+        .col-sm-4 {
+        width: 43%;
+    }
+    
+    .resume-points {
+        padding-bottom: 3rem;
+    }
+}
+
+@media (min-width: 850px) {
+.col-sm-4 {
+    width: 33.33%;
+}
+    .resume-points {
+        padding-bottom: 3rem;
+    }
 }
 
 @media (min-width: 992px) {
@@ -717,22 +756,13 @@ h3 > span { float: left; }
 
 	.row h4 { padding-right: 4rem; }
 
-/*
-	.col-lg {
-		-ms-flex-preferred-size: 0;
-		flex-basis: 0;
-		-webkit-box-flex: 1;
-		-ms-flex-positive: 1;
-		flex-grow: 1;
-		max-width: 100%; }
-*/
 }
 
 @media (min-width: 1200px) {
 	.container {max-width: 1120px;}
 
 	.profile_pic {
-		width: 22rem;
+		width: 24rem;
 	}
 
 /*
