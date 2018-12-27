@@ -59,7 +59,7 @@ body {
 
 h1 {padding-top: 12vh; 
 	width: 9rem;
-	font: 2rem futura-pt-bold, sans-serif;
+	font: 2.5rem futura-pt-bold, sans-serif;
 	color: black;
 	text-align: left; }
 
@@ -193,7 +193,7 @@ h3 > span { float: left; }
 	}
 
 	.wrapper {
-		margin-right: 10vw;
+		margin-right: 11vw;
 		margin-left: 3rem; }
 
 	h1 {font-size: 2.5rem;
@@ -234,9 +234,9 @@ h3 > span { float: left; }
 		margin-top: 26vh;
 	}
 
-	.wrapper { margin-left: 5rem; }
+	.wrapper { margin-left: 10rem; }
 
-	.page { min-height: calc(100vh - 1.6rem); }
+	.page { min-height: calc(100vh - .5rem); }
 
 	.resume-icon {
 		padding-top: 2rem;
@@ -255,7 +255,7 @@ h3 > span { float: left; }
 	.description {margin-left: 12vw; }
 
 	h1 { font-size: 3.5rem;
-		width: 25rem;
+		width: 32rem;
 		margin: 10vh 0 8vh 8vw;}
 
 	h2 {font-size: 3.5rem; letter-spacing: 2px; }
@@ -294,9 +294,9 @@ h3 > span { float: left; }
 }
 
 @media (min-width: 992px) {
-	h2 {font-size: 3rem; }
+	h2 {font-size: 4rem; }
 
-	.wrapper { margin-left: 10rem; }
+	.wrapper { margin-left: 14rem; }
 
 	.resume-icon {
 		padding-top: 2rem;
@@ -320,10 +320,10 @@ h3 > span { float: left; }
 }
 
 @media (min-width: 1200px) {
-	h1 {font-size: 4.2rem;
-		padding-top: 6rem;
+	h1 {font-size: 4.6rem;
+		padding-top: 8rem;
 		margin-left:19vw;
-		line-height: 5rem; }
+		line-height: 6rem; }
 
 	h3 { font-size: 1.6rem ; }
 
@@ -490,6 +490,7 @@ h3 > span { float: left; }
 
 .social-icon:hover {
 	color: #e00;
+    text-decoration: none;
 }
 
 .line {
@@ -575,11 +576,11 @@ h3 > span { float: left; }
 
 	#navigation #nav-right {
 		float: right;
-		padding-right: 3.5rem; }
+		margin-right: 8.5vw; }
 
 	#navigation #nav-left {
 		float: left;
-		padding-left: 3.5rem; }
+		margin-left: 11rem; }
 
 	#social-media { right: 22px; }
 
@@ -605,9 +606,14 @@ h3 > span { float: left; }
 /* ABOUT */
 
 .profile_pic {
-	margin: 0rem 3rem 2rem 0;
+	margin: 0rem 6rem 2rem 0;
 	width: 12rem;
 	border: 10px solid white; }
+
+.copyright {
+    position: absolute;
+    bottom: 3rem;
+}
 
 @media (min-width: 500px) {
 	.profile_text, .profile_pic {
@@ -726,7 +732,7 @@ h3 > span { float: left; }
 	.container {max-width: 1120px;}
 
 	.profile_pic {
-		width: 15rem;
+		width: 22rem;
 	}
 
 /*
