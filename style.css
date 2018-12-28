@@ -436,22 +436,21 @@ h3 > span { float: left; }
 .nav-link {
     list-style: none;
     clear: both;
-    float: right;
-    padding: .3rem 0;
+    padding: 1.2rem 0;
     font: 1.2rem 'Moon Light', sans-serif;
 	letter-spacing: 1px;
-    width: 6rem; }
+    width: 8rem; }
 
 .nav-link a {
 	position: relative;
     text-decoration: none;
     color: black;
-	padding: .3rem 0;}
+	padding: .7rem 0;}
 
 .toggle-nav {
 	position: fixed;
 	font: 3rem 'Moon Light', sans-serif;
-	right: -2.05rem;
+	right: -4rem;
 	text-decoration: none;
     color: black;
     display: block; }
@@ -463,10 +462,9 @@ h3 > span { float: left; }
 	margin: 0; }
 
 .target {
-	float: right;
-	padding: 1rem 4rem 1rem calc(100vw - 14rem);
-	height: 5rem;
-	width: 8rem;
+	height: calc(100vh - 3rem);
+    padding-top: 15vh;
+    width: 100%;
 	background-color: #f6f6f6; }
 
 .nav-link .exit_back {
@@ -481,9 +479,9 @@ h3 > span { float: left; }
 	opacity: 0;}
 
 .plus {
-	height: 3rem;
-	width: 1.5rem;
-	font-size: 3rem;}
+	height: 4.8rem;
+	width: 2.5rem;
+	font-size: 4rem;}
 
 #nav-plus > .nav-link {
 	float: left;
@@ -518,24 +516,23 @@ h3 > span { float: left; }
 }
 
 @media (hover:hover) { 
+/*
 	.nav-link a:hover span {
-		width: 100% !important;
-	}
+		width: 100% !important; }
 
 	a:hover .span {
-		width: 22px;
-	}
+		width: 22px; }
 
-	.exit_back:hover .plus {
-		transform: rotate(45deg); }
 
 	.nav-link:hover .backto {
-		opacity: 1;
-	}
+		opacity: 1; }
 
 	.toggle-nav:hover .backto {
-		opacity:1;
-	}
+		opacity:1; }
+*/
+    
+    .exit_back:hover .plus {
+    transform: rotate(45deg); }
 }
 
 .rotation {
@@ -553,7 +550,7 @@ h3 > span { float: left; }
 	transform: rotate(90deg);
 	width: 320px;
 	height: 320px;
-	right: 18px;
+	right: 21px;
 	top: 30vh;
 	z-index: 1; }
 
@@ -580,11 +577,14 @@ h3 > span { float: left; }
 
 @media (min-width: 500px) {
 	.social-icon {
-	    font-size: 9.8px;
+	    font-size: 11px;
 	}
+    
+    #social-media { 
+    right: 32px; }
 
 	.nav-link {
-		padding: .8rem .8rem;
+		padding: .8rem 3rem 0 0;
 		background-color: none;
 		width: auto;
 		float: left;
@@ -594,18 +594,22 @@ h3 > span { float: left; }
 	.toggle {
 		float: right;
 		margin: 0;
-		width: 25rem;
 		background-color: #f6f6f6;
-		height: 2.5rem;
-		padding: 1.2rem 3.2rem 0rem calc(100vw - 30rem);
+		padding: 1.2rem 1.2rem 0rem;
 	}
+    
+    .target {
+        padding-top: 2rem;
+        height: 7rem;
+    }
 
 	.social-icon img {
 		width: 1.3rem;
 		padding: .2rem 0; }
 
 	.toggle-nav {
-		right: 0rem;
+        top: 2rem;
+		right: 2rem;
 	}
 }
 
