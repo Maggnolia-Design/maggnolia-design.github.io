@@ -20,7 +20,7 @@ body {
 
 .page {
 	position: relative;
-	min-height: calc(100vh - 2rem);
+	min-height: calc(100vh - .8rem);
 	border-left: 14px solid white;
 	border-right: 14px solid white;
 	border-top: 7px solid white;
@@ -32,7 +32,7 @@ body {
 
 .wrapper {
 	margin-top: 15vh;
-	margin-left: 2rem;
+	margin-left: 2.8rem;
 	margin-bottom: 8vh;
 }
 
@@ -73,31 +73,32 @@ h1 {padding-top: 12vh;
 
 .description p {
 	font-family: futura-pt, sans-serif;
-	width: 8rem;
-	font-size: 9px;
-	line-height: .75rem; }
+	width: 18rem;
+	font-size: 12.5px;
+	line-height: 1.8rem; }
 
 /* TEXT (portfolio) */
 
 
 h2 {
 	font-family: futura-pt-bold, sans-serif;
-	font-size: 1.2rem;
-	letter-spacing: 2px; }
+	font-size: 1.6rem;
+	letter-spacing: 1px; }
 
 h3 {
-	font: 1.6rem 'Moon', sans-serif;
+	font: 12px 'Moon', sans-serif;
 	color: #0093A3;
-	letter-spacing: 1.2px;
+	letter-spacing: 0.6px;
 	padding-bottom: 2rem;
-	height: 1rem; }
+	height: 3.8rem; }
 
 .ti-cursor { padding-right: 4px; }
 
 h4 {
-	font: 15px 'Moon', sans-serif;
+	font: 12px 'Moon', sans-serif;
 	color: #0093A3;
-	line-height: 1.2rem; }
+    letter-spacing: 0.6px;
+	line-height: 0.6rem; }
 
 .piece_header h4 {
 	font-size: .85rem;
@@ -118,23 +119,24 @@ h3 > span { float: left; }
 
 .resume-points {
 	list-style: none;
-	font: 9px futura-pt, sans-serif;
-	line-height: .75rem;
+	font: 12.5px futura-pt, sans-serif;
+	line-height: 1.6rem;
 	padding-left: 0rem;
-	width: 10rem; }
+	width: 16rem; }
 
 .resume-points li { padding-bottom: .4rem; }
 
 .narrow {
 	padding: 0;
-	width: 5rem;
+	width: 8rem;
 	list-style: none;
 	float: left; }
 
 .resume-points div { height: 1rem; }
 
 .resume-icon {
-	font: .8rem futura-pt;
+    padding-top: 1.5rem;
+	font: 1.3rem futura-pt;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: black; }
@@ -148,8 +150,12 @@ h3 > span { float: left; }
 	line-height: 20px;
 	font: 8.5px 'Avenir Next Regular', sans-serif; }*/
 
+.col-sm-6 {
+    padding-bottom: 1.8rem;
+}
+
 .col-sm-6 p, .image_page p {
-	font: 1.2rem 'Moon Light', sans-serif;
+	font: 1rem 'Moon Light', sans-serif;
 	text-transform: uppercase;
 	margin: .2rem 0; }
 
@@ -172,13 +178,55 @@ h3 > span { float: left; }
 	
 }
 
-@media (min-width: 390px) {
-	h2 { font-size: 1.4rem; }
+.copyright {
+    font: 1.1rem futura-pt, sans-serif;
+}
+
+@media (min-width: 370px) {
+	h2 { font-size: 2.2rem;
+    padding-bottom: 1.4rem; }
+    
+    h3 {
+        font: 1.6rem 'Moon', sans-serif;
+    }
 
 	.shrink.piece_page .wrapper {
 		margin-top: 16vh;
 		margin-left: 1.5rem;
 	}
+
+    .resume-points {
+        width: 20rem;
+        font-size: 14px;
+        line-height: 1.8rem;
+    }
+    
+    .narrow {
+        width: 9rem;
+    }
+    
+    .resume-icon {
+        padding-top: 1rem;
+        font-size: 1.4rem;
+    }
+    
+    .description p {
+        font-family: futura-pt, sans-serif;
+        width: 20rem;
+        font-size: 14px;
+        line-height: 1.8rem; }
+    
+    .col-sm-6 {
+        padding-bottom: 2.5rem;
+    }
+    
+    .col-sm-6 p {
+        font: 1.3rem 'Moon Light', sans-serif;
+    }
+    .copyright {
+        font-size: 1.1rem;
+        
+    }
 }
 
 @media (min-width: 500px) {
@@ -193,14 +241,15 @@ h3 > span { float: left; }
 	}
 
 	.wrapper {
-		margin-right: 13vw;
-		margin-left: 7rem; }
+		margin-right: 10vw;
+		margin-left: 5rem; }
 
 	h1 {font-size: 3.5rem;
 		width: auto; }
 
-	h2 { font-size: 2.1rem;
-		 margin-bottom: 7rem; }
+	h2 { font-size: 3.2rem;
+		 margin-bottom: 7rem;
+        letter-spacing: 0px;}
 
 	.shrink .piece_header h2 { font-size:1.4rem; }
 
@@ -210,6 +259,15 @@ h3 > span { float: left; }
 	h4 {
 		line-height: 1.4rem;
 		margin-right: .5rem; }
+    
+    .col-sm-6 {
+        padding-bottom: 24px;
+    }
+    
+    .col-sm-6 p {
+        font: 1.3rem 'Moon Light', sans-serif;
+    }
+
 
 	.piece_header h4 { font-size: 15px; }
 
@@ -225,7 +283,7 @@ h3 > span { float: left; }
         padding-top: 1rem;
         padding-bottom: 2rem;}
 
-	.resume-icon { font-size: 1.3rem; }
+	.resume-icon { font-size: 1.5rem; }
 
 	.narrow { width: 10rem;
     padding-bottom: 2rem; }
@@ -595,11 +653,11 @@ h3 > span { float: left; }
 
 	#navigation #nav-right {
 		float: right;
-		margin-right: 8.5vw; }
+		margin-right: 7vw; }
 
 	#navigation #nav-left {
 		float: left;
-		margin-left: 11rem; }
+		margin-left: 7.5rem; }
 
 	#social-media { right: 22px; }
 
@@ -625,9 +683,9 @@ h3 > span { float: left; }
 /* ABOUT */
 
 .profile_pic {
-	margin: 0rem 6rem 2rem 0;
-	width: 20rem;
-	border: 10px solid white; }
+	margin: 0rem 3rem 2rem 0;
+	width: 15rem;
+	border: 7px solid white; }
 
 
 @media (min-width: 500px) {
@@ -639,7 +697,7 @@ h3 > span { float: left; }
 	.wrapper .description { overflow: auto; }
     
     .copyright {
-        font: 1rem futura-pt, sans-serif;
+        font: 1.3rem futura-pt, sans-serif;
         position: absolute;
         bottom: 3rem; }
 }
