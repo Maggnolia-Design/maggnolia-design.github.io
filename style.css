@@ -151,6 +151,8 @@ h3 > span { float: left; }
 	line-height: 20px;
 	font: 8.5px 'Avenir Next Regular', sans-serif; }*/
 
+.row div { z-index: 3;}
+
 .col-sm-6 {
     padding-bottom: 1.8rem;
 }
@@ -563,13 +565,13 @@ h3 > span { float: left; }
 	position: fixed;
 	transform: rotate(90deg);
 	width: 320px;
-	height: 320px;
-	right: 21px;
-	top: 30vh;
-	z-index: 1; }
+/*	height: 320px;*/
+	right: -130px;
+	top: 28rem;
+	z-index: 2; }
 
 .social-icon {
-    font: 9.3px 'Moon Regular', sans-serif;
+    font: 9.8px 'Moon Regular', sans-serif;
     text-decoration: none;
     padding: .5rem;
     color: #0093A3;
@@ -595,7 +597,8 @@ h3 > span { float: left; }
 	}
     
     #social-media { 
-    right: 32px; }
+    right: -120px;
+	top: 35rem;}
 
 	.nav-link {
 		padding: .8rem 3rem 0 0;
@@ -623,14 +626,14 @@ h3 > span { float: left; }
 
 	.toggle-nav {
         top: 2rem;
-		right: 2rem;
+		right: -.7rem;
 	}
 }
 
 @media (min-width: 768px) {
 
 	.social-icon {
-	    font-size: 10.8px;
+	    font-size: 11px;
 	}
 
 	.toggle-nav { display:none; }
@@ -677,7 +680,7 @@ h3 > span { float: left; }
 		float: left;
 		margin-left: 7.5rem; }
 
-	#social-media { right: 22px; }
+	#social-media { right: -100px; }
 
 	.line {
 		width: 1.3rem;
@@ -818,9 +821,11 @@ h3 > span { float: left; }
 }
 
 @media (min-width: 850px) {
+/*
 .col-sm-4 {
     width: 33.33%;
 }
+*/
     .resume-points {
         padding-bottom: 3rem;
     }
@@ -858,7 +863,7 @@ h3 > span { float: left; }
 .piece_page {
 	position: fixed;
 	height: calc(100vh - 1.6rem);
-	width: calc(100vw - 1.75rem);
+	width: 100vw;
 	background-color: #f6f6f6;}
 
 .piece_header { padding-right: 2.5rem; }
