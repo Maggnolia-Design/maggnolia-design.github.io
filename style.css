@@ -15,6 +15,7 @@
 
 body {
 	margin: 0;
+    font-size: 100%
 }
 
 
@@ -182,6 +183,11 @@ h3 > span { float: left; }
     font: 1.1rem futura-pt, sans-serif;
 }
 
+.copyright a {
+    padding-left: 2rem;
+    color: #0093A3;
+}
+
 @media (min-width: 370px) {
 	h2 { font-size: 2.2rem;
     padding-bottom: 1.4rem; }
@@ -321,6 +327,8 @@ h3 > span { float: left; }
 
 	h2 {font-size: 3.5rem; letter-spacing: 2px; }
 	.shrink .piece_header h2 { font-size:1.6rem; }
+    
+    h3 { padding-bottom: 0rem; }
 
 	.col-sm-6 p, .image_page p {
 		font-size: 1.3rem;
@@ -370,6 +378,10 @@ h3 > span { float: left; }
 	h2 {font-size: 4rem; }
 
 	.wrapper { margin-left: 14rem; }
+    .p-wrapper {
+        margin-left: 8.8rem;
+        margin-right: 12vw; }
+    
     .narrow {
         width: 11rem;
     }
@@ -381,16 +393,18 @@ h3 > span { float: left; }
 	.col-sm-6 p, .image_page p {
 		font-size: 1.3rem; }
 
-	.description {margin-left: 19vw; }
+/*	.description {margin-left: 19vw; }*/
 
 	.description p, .piece_description p {
-		width: 28rem; }
+		width: 38rem;
+        font-size: 17px;
+    line-height: 2.1rem;}
 
 	.shrink.piece_page .wrapper { margin-top: 34vh; }
 	.shrink .piece_header h2 { font-size: 1.8rem; }
 
 	.resume-points {
-		font-size: 18px;
+		font-size: 16px;
 	    line-height: 2.6rem;
 	    width: 24rem; }
 }
@@ -398,7 +412,7 @@ h3 > span { float: left; }
 @media (min-width: 1200px) {
 	h1 {font-size: 4.6rem;
 		padding-top: 8rem;
-		margin-left:19vw;
+		margin-left:12vw;
 		line-height: 6rem; }
 
 	h3 { font-size: 2rem ; }
@@ -406,11 +420,11 @@ h3 > span { float: left; }
 	h4, .piece_header h4 {
 		font-size: 2rem; }
 
-	.description {margin-left: 23vw; }
+/*	.description {margin-left: 23vw; }*/
 
 	.resume-points {
-		font-size: 18px;
-	    line-height: 2.6rem; }
+		font-size: 17px;
+	    line-height: 2.5rem; }
 
 }
 
@@ -687,7 +701,7 @@ h3 > span { float: left; }
 /* ABOUT */
 
 .profile_pic {
-	margin: 0rem 3rem 2rem 0;
+	margin: 0rem 5rem 2rem 0;
 	width: 15rem;
 	border: 7px solid white; }
 
