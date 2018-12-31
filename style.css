@@ -245,11 +245,11 @@ h3 > span { float: left; }
 
 	.image_page .wrapper {
 		margin-left: 21vw;
-		margin-right: 11vw;
+		margin-right: 12vw;
 	}
 
 	.wrapper {
-		margin-right: 10vw;
+		margin-right: 11vw;
 		margin-left: 5rem; }
 
 	h1 {font-size: 3.5rem;
@@ -348,7 +348,7 @@ h3 > span { float: left; }
 
 	h4, .piece_header h4 {
 		font-size: 1.6rem;
-		line-height: 1.5rem;
+		line-height: 2.3rem;
         padding-bottom: 2.2rem; }
 
 	h3 > span { float: none; }
@@ -811,7 +811,7 @@ h3 > span { float: left; }
         line-height: 2rem;
         height: 4rem; }
     
-        .col-sm-4 {
+        #resume .col-sm-4 {
         width: 43%;
     }
     
@@ -821,11 +821,9 @@ h3 > span { float: left; }
 }
 
 @media (min-width: 850px) {
-/*
-.col-sm-4 {
+ #resume .col-sm-4 {
     width: 33.33%;
 }
-*/
     .resume-points {
         padding-bottom: 3rem;
     }
