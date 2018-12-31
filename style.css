@@ -38,8 +38,8 @@ body {
 }
 
 .image_page .wrapper {
-	margin-left: 32vw;
-	margin-right: 5vw;
+	margin-left: 15vw;
+	margin-right: 20.5vw;
 }
 
 #glad .wrapper {
@@ -54,6 +54,10 @@ body {
 .shrink.piece_page .wrapper {
 	margin-top: 0vh;
 	margin-left: 1rem;
+/*
+    background-color: #f6f6f6;
+    z-index: 4;
+*/
 }
 
 /* TEXT (landing) */
@@ -102,7 +106,8 @@ h4 {
 	line-height: 0.6rem; }
 
 .piece_header h4 {
-	font-size: .85rem;
+	font-size: .9rem;
+    line-height: 1rem;
 	margin-top: 1rem; }
 
 
@@ -199,8 +204,8 @@ h3 > span { float: left; }
     }
 
 	.shrink.piece_page .wrapper {
-		margin-top: 16vh;
-		margin-left: 1.5rem;
+		margin-top: -3vh;
+		margin-left: 3.8rem;
 	}
 
     .resume-points {
@@ -208,6 +213,10 @@ h3 > span { float: left; }
         font-size: 14px;
         line-height: 1.8rem;
     }
+    
+    .piece_header h4 {
+	font-size: 1rem;
+        line-height: 1rem; }
     
     .narrow {
         width: 9rem;
@@ -259,7 +268,7 @@ h3 > span { float: left; }
 		 margin-bottom: 7rem;
         letter-spacing: 0px;}
 
-	.shrink .piece_header h2 { font-size:1.4rem; }
+	.shrink .piece_header h2 { font-size:2rem; }
 
 	h3 {font-size: 1.6rem;
 		padding-bottom: 6rem; }
@@ -277,7 +286,8 @@ h3 > span { float: left; }
     }
 
 
-	.piece_header h4 { font-size: 15px; }
+	.piece_header h4 { font-size: 15px;
+        line-height: 1.8rem; }
 
 	.description p, .piece_description p {
 		width: 24rem;
@@ -300,7 +310,7 @@ h3 > span { float: left; }
 @media (min-width: 768px) {
 
 	.shrink.piece_page .wrapper {
-		margin-top: 26vh;
+		margin-top: 14vh;
 	}
 
 	.wrapper { margin-left: 10rem; }
@@ -328,7 +338,10 @@ h3 > span { float: left; }
 		margin: 10vh 0 8vh 8vw;}
 
 	h2 {font-size: 3.5rem; letter-spacing: 2px; }
-	.shrink .piece_header h2 { font-size:1.6rem; }
+	.shrink .piece_header h2 {
+        font-size:2.4rem;
+        padding-bottom: 1rem;
+    }
     
     h3 { padding-bottom: 0rem; }
 
@@ -337,8 +350,8 @@ h3 > span { float: left; }
         }
 
 	.shrink .piece_header h4 {
-		font-size:1.1rem;
-		margin-top: .5rem;
+		font-size:1.4rem;
+		margin-top: 0rem;
 		}
 
 	.description p, .piece_description p {
@@ -402,8 +415,12 @@ h3 > span { float: left; }
         font-size: 17px;
     line-height: 2.1rem;}
 
-	.shrink.piece_page .wrapper { margin-top: 34vh; }
-	.shrink .piece_header h2 { font-size: 1.8rem; }
+	.shrink.piece_page .wrapper {
+        margin-top: 27vh;
+    margin-left: 2.7rem; }
+    
+	.shrink .piece_header h2 { font-size: 2.6rem;
+    margin-top: 0; }
 
 	.resume-points {
 		font-size: 16px;
@@ -412,6 +429,12 @@ h3 > span { float: left; }
 }
 
 @media (min-width: 1200px) {
+    
+    .shrink .piece_header h2 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+    
 	h1 {font-size: 4.6rem;
 		padding-top: 8rem;
 		margin-left:12vw;
@@ -902,13 +925,6 @@ h3 > span { float: left; }
 	 -moz-transition: all .8s;
 	 transition: all .8s; }
 
-.shrink .piece_header {
-	width: 380px;
-	height: 380px;
-	white-space: nowrap;
-	transform: rotate(-90deg);
-	}
-
 
 .shrink .piece_description {
 	height: 0;
@@ -986,6 +1002,14 @@ h3 > span { float: left; }
 	.glad_300x600 {
 		width: 300px;
 		height: 600px; }
+
+    .shrink .piece_header {
+	width: 380px;
+	height: 380px;
+	white-space: nowrap;
+	transform: rotate(-90deg);
+	}
+    
 }
 
 @media (min-width: 768px) {
