@@ -541,8 +541,8 @@ h3 > span { float: left; }
 	margin: 0; }
 
 .target {
-	height: 28rem;
-    padding-top: 10vh;
+	height: 35rem;
+    padding-top: 15vh;
 /*    border-bottom: solid white 1.5rem;*/
     width: 100%;
 	background-color: #343434;
