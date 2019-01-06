@@ -530,6 +530,10 @@ h3 > span { float: left; }
     color: black;
     display: block; }
 
+.toggle-nav:hover, .toggle-nav:focus {
+    color:black;
+}
+
 .hyperlink {
 	font: .9rem 'Avenir Next Medium', sans-serif; }
 
@@ -537,10 +541,20 @@ h3 > span { float: left; }
 	margin: 0; }
 
 .target {
-	height: calc(100vh - 3rem);
-    padding-top: 15vh;
+	height: 28rem;
+    padding-top: 10vh;
+/*    border-bottom: solid white 1.5rem;*/
     width: 100%;
-	background-color: #f6f6f6; }
+	background-color: #343434;
+    /*background-color: rgba(246, 246, 246, 0.9);*/ }
+
+    .target a {
+        color: white;
+    }
+
+.rotation {
+    color: white;
+}
 
 .nav-link .exit_back {
 	font-size: 3rem;
@@ -681,10 +695,19 @@ h3 > span { float: left; }
 		padding: 1.2rem 1.2rem 0rem;
 	}
     
+    .rotation {
+    color: black;
+}
+    
     .target {
         padding-top: 2rem;
         height: 7rem;
     }
+    
+    .target a {
+        color: black;
+    }
+
 
 	.social-icon img {
 		width: 1.3rem;
