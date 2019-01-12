@@ -511,9 +511,9 @@ h3 > span { float: left; }
     list-style: none;
     clear: both;
     padding: 1.2rem 0;
-    font: 1.2rem 'Moon Light', sans-serif;
+    font: 1.5rem 'Moon Light', sans-serif;
 	letter-spacing: 1px;
-    width: 8rem;
+    width: 9rem;
 }
 
 .nav-link a {
@@ -541,12 +541,12 @@ h3 > span { float: left; }
 	margin: 0; }
 
 .target {
-	height: 35rem;
-    padding-top: 15vh;
+	height: 40rem;
+    padding-top: 17vh;
 /*    border-bottom: solid white 1.5rem;*/
     width: 100%;
-	background-color: #343434;
-    /*background-color: rgba(246, 246, 246, 0.9);*/ }
+/*	background-color: #343434;*/
+    background-color: rgba(50, 50, 50, 0.95); }
 
     .target a {
         color: white;
