@@ -67,6 +67,21 @@ a:hover, a:focus, a:active {
 */
 }
 
+i {
+  border: solid #d00;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+  position: absolute;
+  bottom: 12rem;
+  margin-left: 40vw;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 /* TEXT (landing) */
 
 h1 {padding-top: 12vh; 
@@ -100,7 +115,9 @@ h2 {
 
 h3 {
 	font: 12px 'Moon Bold', sans-serif;
-	color: #0093A3;
+/*	color: #0093A3;*/
+/*	color: #006773;*/
+	color: #DE9818;
 	letter-spacing: 0.6px;
 	padding-bottom: 2rem;
 	height: 3.8rem; }
@@ -115,8 +132,10 @@ h3 span:first-of-type {
 .ti-cursor { padding-right: 4px; }
 
 h4 {
-	font: 12px 'Moon Bold', sans-serif;
-	color: #0093A3;
+	font: 12px futura-pt-regular, sans-serif;
+	font-weight: 600;
+/*	color: black;*/
+	color: #DE9818;
     letter-spacing: 0.6px;
 	line-height: 0.6rem; }
 
@@ -157,10 +176,11 @@ h3 > span { float: left; }
 
 .resume-icon {
     padding-top: 1.5rem;
-	font: 1.3rem futura-pt;
+	font: 1.3rem 'Moon', sans-serif;
+	letter-spacing: 0.6px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: black; }
+	color: #0093A3; }
 
 .resume-icon:hover { color: #e00; }
 
@@ -395,7 +415,7 @@ h3 > span { float: left; }
 		line-height: 2rem; }
 
 	h4, .piece_header h4 {
-		font-size: 1.6rem;
+		font-size: 2.2rem;
 		line-height: 2.3rem;
         padding-bottom: 2.2rem; }
 
