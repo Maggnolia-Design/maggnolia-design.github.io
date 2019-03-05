@@ -67,7 +67,7 @@ a:hover, a:focus, a:active {
 */
 }
 
-i {
+.down {
   border: solid #d00;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -80,6 +80,7 @@ i {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  z-index: 20;
 }
 
 /* TEXT (landing) */
@@ -191,7 +192,12 @@ h3 > span { float: left; }
 	line-height: 20px;
 	font: 8.5px 'Avenir Next Regular', sans-serif; }*/
 
+.glad-spacing {
+	margin-right: 2rem;
+}
+
 .row div { z-index: 3;}
+
 
 .col-sm-6 {
     padding-bottom: 1.8rem;
@@ -588,9 +594,9 @@ h3 > span { float: left; }
 	opacity: 0;}
 
 .plus {
-	height: 4.8rem;
-	width: 2.5rem;
-	font-size: 4rem;}
+	height: 5.9rem;
+	width: 2.6rem;
+	font-size: 6rem;}
 
 #nav-plus > .nav-link {
 	float: right;
@@ -697,7 +703,7 @@ h3 > span { float: left; }
 
     #nav-plus > .nav-link {
         right: -1rem;
-        top: 2.2rem;
+        top: 2.15rem;
     }
     
 	.nav-link {
@@ -766,7 +772,7 @@ h3 > span { float: left; }
     
 	.nav-link {
         font-size: 1.2rem;
-		padding: 0 1.8rem;
+		padding: .8rem 2.6rem 0 0;
 		clear: none;
 		width: auto;
 		float: left; }

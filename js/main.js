@@ -66,7 +66,6 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     }, 500);
 });
 
-
 $(function() {
     $(".toggle-nav" ).click(function(event) { // toggles nav on click
         $("#navigation .toggle").toggle();
